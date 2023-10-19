@@ -1,0 +1,291 @@
+html, body {
+    height: 100%;
+}
+/* Resetování výchozích stylů prohlížeče */
+html,body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Základní styly pro tělo stránky */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+/* Styl pro záhlaví stránky */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+h1 {
+    display: block;
+    font-size: 24px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    align-items: center;
+}
+#name_E_shop{
+    flex: 1;
+}
+
+
+header #name_E_shop h1{
+    padding: 0;
+    margin:  0 10px;
+    align-items: center;
+    /*background-color: #fff;*/
+}
+.header-content{
+    display: flex; 
+    flex: 5;
+    justify-content: space-between;
+}
+.search {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 45%;
+}
+
+
+.search input {
+    min-width: 50%;
+    margin-right: 0px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+     /* Roztáhne se na plnou dostupnou šířku */
+}
+.search-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px; /* Mezi tlačítkem a polem pro vyhledávání bude mezera */
+}
+.search-dropdown {
+    /*display: none;*/
+    position: absolute;
+    width: 50%;
+    max-height: 0;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    /*transform: scaleY(0);*/
+    transform-origin: top;
+    transition: opacity 1s, transform 1s, max-height 0.1s;
+    overflow: hidden;
+    
+}
+
+/* Styly pro položky v rozevíracím okně */
+.search-dropdown ul, .list_catalog ul{
+    list-style: none;
+    padding: 0;
+}
+
+.search-dropdown ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.search-dropdown ul li:hover, .list_catalog li:hover {
+    background: #d6d2d2;
+}
+
+.search-dropdown ul li:last-child {
+    border-bottom: none;
+}
+.search input:focus + .search-dropdown {
+    /*display: block;*/
+    position: absolute;
+    top: 100%;
+    opacity: 1;
+    /*transform: scaleY(1);*/
+    /*height: auto;*/
+    max-height: 1000px; 
+}
+.right-header{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+}
+.cart img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Základní styly pro obsah stránky */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    height: 100%;
+}
+
+.list_catalog {
+    display: flex;
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    margin-right: 0px;
+    border: 1px solid #ddd;
+}
+.list_catalog ul{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+}
+.list_catalog li{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+}
+.list_catalog li:hover{
+    border: 1px solid #706b6b;
+}
+.list_catalog li a{
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px 7px 5px 7px;
+    width: 100%;
+    display: flex;
+}
+
+.catalog{
+    flex: 5;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    margin-left: 0;
+    overflow: hidden;
+}
+.catalog h2{
+    margin-left: 10px;
+}
+
+.recommended {
+    display: grid;
+    /*grid-template-columns: 1fr 1fr  ;*/
+    
+    justify-items: start;
+    align-items: start;
+    column-gap: 0px;
+    row-gap: 0px;
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.product {
+    justify-self: center;
+    align-self: stretch;
+    place-self: stretch stretch;
+    justify-self: stretch;
+    max-width: 85px;
+    /*min-width: 45%; /* Každý produkt bude mít 30% šířky, aby se vešly 3 vedle sebe */
+    margin: 5px;
+    text-align: center;
+}
+.product:hover{
+    box-shadow: 4px 4px  rgba(0, 0, 0, 0.2);
+}
+.product a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    /*min-width: 200px;*/
+    min-height: 175px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 0;
+    padding: 10px;
+}
+
+.product img {
+    flex: 2;
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    height: auto;
+    background-color: #e4e0e0;
+}
+/*-------------------------------*/
+.product p {
+    margin: 10px 0;
+}
+
+.add-to-cart {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #0056b3;
+}
+
+/* Styly pro footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info, .quick-links, .social-media {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links ul li {
+    margin-bottom: 5px;
+}
+
+.social-icon {
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Další styly podle vašich potřeb */
+
