@@ -50,6 +50,50 @@ header #name_E_shop h1{
     flex: 5;
     justify-content: space-between;
 }
+
+/* Zacatek stylu pro footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info, .quick-links, .social-media {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links ul li {
+    margin-bottom: 5px;
+}
+
+.social-icon {
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+/* konec stylu pro footer */
+
+
+
+
+
+
 .search {
     display: flex;
     align-items: center;
@@ -187,7 +231,7 @@ header #name_E_shop h1{
 
 .recommended {
     display: grid;
-    /*grid-template-columns: 1fr 1fr  ;*/
+    grid-template-columns: 1fr 1fr  1fr;
     
     justify-items: start;
     align-items: start;
@@ -204,13 +248,13 @@ header #name_E_shop h1{
     align-self: stretch;
     place-self: stretch stretch;
     justify-self: stretch;
-    max-width: 85px;
-    /*min-width: 45%; /* Každý produkt bude mít 30% šířky, aby se vešly 3 vedle sebe */
+    width: 45%;
+    min-width: 45%; /* Každý produkt bude mít 30% šířky, aby se vešly 3 vedle sebe */
     margin: 5px;
     text-align: center;
 }
 .product:hover{
-    box-shadow: 4px 4px  rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 0px 15px 2px rgba(0, 0, 0, 0.2);
 }
 .product a {
     display: flex;
@@ -233,7 +277,7 @@ header #name_E_shop h1{
     height: auto;
     background-color: #e4e0e0;
 }
-/*-------------------------------*/
+
 .product p {
     margin: 10px 0;
 }
@@ -250,42 +294,6 @@ header #name_E_shop h1{
     background-color: #0056b3;
 }
 
-/* Styly pro footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-}
-
-.contact-info, .quick-links, .social-media {
-    flex: 1;
-    padding: 0 20px;
-}
-
-.contact-info p {
-    margin: 5px 0;
-}
-
-.quick-links ul {
-    list-style: none;
-    padding: 0;
-}
-
-.quick-links ul li {
-    margin-bottom: 5px;
-}
-
-.social-icon {
-    display: block;
-    margin-top: 10px;
-    color: #fff;
-    text-decoration: none;
-}
 
 /* Další styly podle vašich potřeb */
 
