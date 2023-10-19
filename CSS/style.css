@@ -14,6 +14,11 @@ body {
     margin: 0;
 }
 
+
+/*****************************/
+/* Zacatek stylu pro header  */
+/*****************************/
+
 /* Styl pro záhlaví stránky */
 header {
     display: flex;
@@ -50,49 +55,6 @@ header #name_E_shop h1{
     flex: 5;
     justify-content: space-between;
 }
-
-/* Zacatek stylu pro footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-}
-
-.contact-info, .quick-links, .social-media {
-    flex: 1;
-    padding: 0 20px;
-}
-
-.contact-info p {
-    margin: 5px 0;
-}
-
-.quick-links ul {
-    list-style: none;
-    padding: 0;
-}
-
-.quick-links ul li {
-    margin-bottom: 5px;
-}
-
-.social-icon {
-    display: block;
-    margin-top: 10px;
-    color: #fff;
-    text-decoration: none;
-}
-/* konec stylu pro footer */
-
-
-
-
-
 
 .search {
     display: flex;
@@ -138,7 +100,7 @@ footer {
     
 }
 
-/* Styly pro položky v rozevíracím okně */
+/* Zacatek stylu search */
 .search-dropdown ul, .list_catalog ul{
     list-style: none;
     padding: 0;
@@ -164,6 +126,9 @@ footer {
     /*height: auto;*/
     max-height: 1000px; 
 }
+/* konec stylu search */
+
+
 .right-header{
     display: flex;
     width: 20%;
@@ -174,7 +139,10 @@ footer {
     height: 30px;
 }
 
-/* Základní styly pro obsah stránky */
+
+/********************************/
+/* Zacatek stylu pro CONTAINER  */
+/********************************/
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -184,7 +152,55 @@ footer {
     height: 100%;
 }
 
-.list_catalog {
+/****************************/
+/* Zacatek stylu pro FOOTER */
+/****************************/
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info, .quick-links, .social-media {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links ul li {
+    margin-bottom: 5px;
+}
+
+.social-icon {
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+/* konec stylu pro footer */
+
+
+/*>> Nize jsou konkretni stylovani <<**/
+
+/******************************/
+/* Zacatek stylu pro Homepage */
+/******************************/
+
+.Homepage-list-catalog {
     display: flex;
     flex: 1;
     background-color: #fff;
@@ -193,21 +209,21 @@ footer {
     margin-right: 0px;
     border: 1px solid #ddd;
 }
-.list_catalog ul{
+.Homepage-list-catalog ul{
     width: 100%;
     display: flex;
     flex-direction:column;
 }
-.list_catalog li{
+.Homepage-list-catalog li{
     margin: 0px;
     padding: 0px;
     width: 100%;
     display: flex;
 }
-.list_catalog li:hover{
+.Homepage-list-catalog li:hover{
     border: 1px solid #706b6b;
 }
-.list_catalog li a{
+.Homepage-list-catalog li a{
 
     margin-top: 5px;
     margin-bottom: 5px;
@@ -216,7 +232,7 @@ footer {
     display: flex;
 }
 
-.catalog{
+.Homepage-catalog{
     flex: 5;
     height: 100%;
     background-color: #fff;
@@ -225,11 +241,11 @@ footer {
     margin-left: 0;
     overflow: hidden;
 }
-.catalog h2{
+.Homepage-catalog h2{
     margin-left: 10px;
 }
 
-.recommended {
+.Homepage-recommended {
     display: grid;
     grid-template-columns: 1fr 1fr  1fr;
     
@@ -243,7 +259,7 @@ footer {
     border-radius: 4px;
     overflow: hidden;
 }
-.product {
+.Homepage-product {
     justify-self: center;
     align-self: stretch;
     place-self: stretch stretch;
@@ -253,10 +269,10 @@ footer {
     margin: 5px;
     text-align: center;
 }
-.product:hover{
+.Homepage-product:hover{
     box-shadow: 10px 0px 15px 2px rgba(0, 0, 0, 0.2);
 }
-.product a {
+.Homepage-product a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -269,7 +285,7 @@ footer {
     padding: 10px;
 }
 
-.product img {
+.Homepage-product img {
     flex: 2;
     align-self: center;
     justify-self: center;
@@ -278,11 +294,11 @@ footer {
     background-color: #e4e0e0;
 }
 
-.product p {
+.Homepage-product p {
     margin: 10px 0;
 }
 
-.add-to-cart {
+.Homepage-add-to-cart {
     background-color: #007bff;
     color: #fff;
     padding: 5px 10px;
@@ -290,7 +306,7 @@ footer {
     cursor: pointer;
 }
 
-.add-to-cart:hover {
+.Homepage-add-to-cart:hover {
     background-color: #0056b3;
 }
 
