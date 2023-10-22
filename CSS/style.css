@@ -21,7 +21,8 @@ body {
 
 /* Styl pro záhlaví stránky */
 header {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.5fr;
     justify-content: space-between;
     align-items: center;
     background-color: #333;
@@ -30,7 +31,6 @@ header {
 }
 
 h1 {
-    display: block;
     font-size: 24px;
 }
 a {
@@ -50,17 +50,19 @@ header #name_E_shop h1{
     align-items: center;
     /*background-color: #fff;*/
 }
+/*
 .header-content{
     display: flex; 
     flex: 5;
     justify-content: space-between;
 }
+*/
 
 .search {
     display: flex;
     align-items: center;
     position: relative;
-    width: 45%;
+  
 }
 
 
@@ -131,7 +133,7 @@ header #name_E_shop h1{
 
 .right-header{
     display: flex;
-    width: 20%;
+
     justify-content: space-between;
 }
 .cart img {
@@ -310,6 +312,13 @@ footer {
     background-color: #0056b3;
 }
 
+/*
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+  */
 
 /* Další styly podle vašich potřeb */
 
