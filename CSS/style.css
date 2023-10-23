@@ -29,10 +29,13 @@ header {
     background-color: #333;
     color: #fff;
     padding: 20px;
+    row-gap: 20px;
+    position: sticky;
+    top: 0;
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 54px/*24px*/;
 }
 a {
     text-decoration: none;
@@ -58,18 +61,22 @@ header #name_E_shop h1{
     justify-content: space-between;
 }
 */
-.lupa{
-    width: 15px;
-    font-size: 55px;
-    
-}
+
+
 .search {
     display: flex;
     align-items: center;
     position: relative;
     grid-area: b;
-}
+    background-color: #fff;
+    border-radius: 4px;
 
+}
+.lupa{
+    width: 50px;
+    filter: invert(100%);
+
+}
 
 .search input {
     min-width: 50%;
@@ -79,25 +86,63 @@ header #name_E_shop h1{
     border-radius: 4px;
      /* Roztáhne se na plnou dostupnou šířku */
      width: 100%;
+     font-size: 2vh;
+    /*border: none;*/
+}
+.search input:not(:placeholder-shown)::after {
+    content: " - Remember this";
+}
+.search input:focus{
+    outline: none;
 }
 .search-button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 15px;
+    /*background-color: #007bff;*/
+    background-color: #fff ;
+    /*color: #fff;*/
+    /*padding: 10px 15px; pc*/
+    /*padding: 10px;*/ /*mobile*/
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-left: 10px; /* Mezi tlačítkem a polem pro vyhledávání bude mezera */
+    margin-left: 15px; /* Mezi tlačítkem a polem pro vyhledávání bude mezera */
+    display: none;
 }
 .search-button p {
     opacity: 0;
+    display: none;
 }
+.x-button {
+    /*display: none;*/
+    background: none;
+    text-align: center;
+    justify-self: center;
+    /*outline: none;*/
+    border: solid 2px #333;
+    border-radius: 50%;
+    content: "asf";
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+.x-button span{
+    /*display: none;*/
+    font-size: 30px;
+    content: "ss";
+    color: #333;
+    display: block;
+}
+/*
+.button:hover sptan:afer {
+    opacity: 1;
+    right: 0;
+  }*/
 .search-dropdown {
     /*display: none;*/
     position: absolute;
-    width: 80%;
+    width: 95%;
     max-height: 0;
     color: #333;
+    font-size: 2vb; /*mobile*/
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -128,8 +173,11 @@ header #name_E_shop h1{
 .search-dropdown ul li:last-child {
     border-bottom: none;
 }
+.search-dropdown{
+    display: none;
+}
 .search input:focus + .search-dropdown {
-    /*display: block;*/
+    display: block;
     position: absolute;
     top: 100%;
     opacity: 1;
@@ -137,7 +185,15 @@ header #name_E_shop h1{
     /*height: auto;*/
     max-height: 1000px; 
 }
+.search input:focus ~ .search-button {
+    display: block;
+}
 /* konec stylu search */
+input:focus  .search > #name_E_shop   {
+
+    opacity: 0;
+    background-color: #0056b3;
+}
 
 
 .right-header{
@@ -146,8 +202,10 @@ header #name_E_shop h1{
     grid-area: c;
 }
 .cart img {
-    width: 30px;
-    height: 30px;
+    
+    width: 50px;
+    height: 50px;
+    /*width: 2vh;*/
 }
 
 
@@ -161,6 +219,8 @@ header #name_E_shop h1{
     flex-wrap: wrap;
     padding: 20px;
     height: 100%;
+    /*monile*/
+    flex-direction: column;
 }
 
 /****************************/
@@ -258,7 +318,7 @@ footer {
 
 .Homepage-recommended {
     display: grid;
-    grid-template-columns: 1fr 1fr  1fr;
+    grid-template-columns: 1fr 1fr; /*mobile*/
     
     justify-items: start;
     align-items: start;
@@ -273,12 +333,15 @@ footer {
 .Homepage-product {
     justify-self: center;
     align-self: stretch;
-    place-self: stretch stretch;
+    /*place-self: stretch stretch;*/
     justify-self: stretch;
-    width: 45%;
-    min-width: 45%; /* Každý produkt bude mít 30% šířky, aby se vešly 3 vedle sebe */
+    min-width: 55%; /* Každý produkt bude mít 30% šířky, aby se vešly 3 vedle sebe */
     margin: 5px;
     text-align: center;
+    border: solid 2px #333;
+    background-color: #706b6b;
+    overflow: hidden;
+    border-radius: 15px;
 }
 .Homepage-product:hover{
     box-shadow: 10px 0px 15px 2px rgba(0, 0, 0, 0.2);
@@ -287,22 +350,24 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%;
+    width: 99.9%;
+
     /*min-width: 200px;*/
-    min-height: 175px;
+    min-height: 350px;
     background-color: #fff;
-    border: 1px solid #ddd;
+    height: 550px;
     margin: 0;
-    padding: 10px;
+    /*padding: 10px;*/
 }
 
 .Homepage-product img {
     flex: 2;
     align-self: center;
     justify-self: center;
-    width: 100%;
+    width: 70%;
     height: auto;
-    background-color: #e4e0e0;
+    /*width: 150px;*/
+    object-fit: contain;
 }
 
 .Homepage-product p {
@@ -312,9 +377,12 @@ footer {
 .Homepage-add-to-cart {
     background-color: #007bff;
     color: #fff;
-    padding: 5px 10px;
+    padding: 15px;
+    font-size: 1vh;
     border: none;
     cursor: pointer;
+    width: 100%;
+
 }
 
 .Homepage-add-to-cart:hover {
