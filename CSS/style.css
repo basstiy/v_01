@@ -309,14 +309,13 @@ footer {
 /******************************/
 /* Zacatek stylu pro Homepage */
 /******************************/
-#home-page{
-    /*display: flex;*/
-}
+
 .menu{
     width: 100%;
     height: 60px;
     border: solid 1px #333;
     cursor: pointer;
+    background-color: #fff;
     
 }
 .menu:hover{
@@ -334,7 +333,7 @@ footer {
 }
 
 .Homepage-list-catalog {
-    display: flex;
+    display: none;
     flex-direction: column;
     /*flex: 1;*/
     font-size: 2vb;
@@ -374,10 +373,14 @@ footer {
 .Homepage-list-catalog li a:hover{
     background-color: #ddd;
 }
-/*.menu:active  ~*/ .Homepage-list-catalog[style *= "display: flex;"] {
-    display: none;
-    background-color: #007bff;
+.menu:hover  ~ .Homepage-list-catalog/*[style *= "display: flex;"]*/ {
+    display: flex;
+    /*background-color: #007bff;*/
 } /*nefunguje*/
+.Homepage-list-catalog:hover{
+    display: flex;
+}
+
 
 .Homepage-catalog{
     /*flex: 5;*/
@@ -409,16 +412,19 @@ footer {
  
 }
 .Homepage-product {
-    /*justify-self: center;
-    align-self: stretch;*/
-    /*place-self: stretch stretch;*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     justify-self: stretch;
     /*min-width: 55%; /* Každý produkt bude mít 30% šířky, aby se vešly 3 vedle sebe */
     margin: 5px;
     text-align: center;
-    height: 640px;
-    /*background-color: #706b6b;*/
+    height: 630px;
+
     overflow: hidden;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
     
 }
 .Homepage-product:hover{
@@ -477,6 +483,7 @@ footer {
     cursor: pointer;
     width: 100%;
     font-size: 1vb;
+
 }
 
 .Homepage-add-to-cart:hover {
