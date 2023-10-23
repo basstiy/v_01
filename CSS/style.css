@@ -211,15 +211,15 @@ input:focus  .search > #name_E_shop   {
     right: 0;
     bottom: 0;
     width: 100%;
-    background-color: #007bff;
     font-size: 2vb;
     padding: 15px;
     background-color: #ffffff;
+    
 }
 .search-icon button{
     width: 90%;
     position: relative;
-    
+    cursor: pointer;
     margin: 5px;
     background-color: #007bff;
     border-radius: 15PX;
@@ -469,12 +469,12 @@ footer {
 .Homepage-add-to-cart {
     background-color: #007bff;
     color: #fff;
-    padding: 15px;
+    padding: 30px;
     font-size: 1vh;
     border: none;
     cursor: pointer;
     width: 100%;
-
+    font-size: 1vb;
 }
 
 .Homepage-add-to-cart:hover {
