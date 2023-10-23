@@ -396,11 +396,11 @@ footer {
 .Homepage-recommended {
     display: grid;
     grid-template-columns: 1fr 1fr; /*mobile*/
-    height: 2500px;/***/
+    min-height: 2500px;/***/
     justify-items: start;
     align-items: start;
-    column-gap: 0px;
-    row-gap: 0px;
+    column-gap: 5px;
+    row-gap: 5px;
     background-color: #fff;
     padding: 10px;
     margin: 10px;
@@ -409,18 +409,17 @@ footer {
  
 }
 .Homepage-product {
-    justify-self: center;
-    align-self: stretch;
+    /*justify-self: center;
+    align-self: stretch;*/
     /*place-self: stretch stretch;*/
     justify-self: stretch;
-    min-width: 55%; /* Každý produkt bude mít 30% šířky, aby se vešly 3 vedle sebe */
+    /*min-width: 55%; /* Každý produkt bude mít 30% šířky, aby se vešly 3 vedle sebe */
     margin: 5px;
     text-align: center;
-    border: solid 2px #333;
-    background-color: #706b6b;
+    height: 640px;
+    /*background-color: #706b6b;*/
     overflow: hidden;
-    border-radius: 15px;
-    height: 550px;
+    
 }
 .Homepage-product:hover{
     box-shadow: 10px 0px 15px 2px rgba(0, 0, 0, 0.2);
@@ -429,13 +428,16 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 99.9%;
+    width: auto;
     font-size: 1vh;
     /*min-width: 200px;*/
     min-height: 350px;
     background-color: #fff;
     height: 550px;
     margin: 0;
+    border: solid 3px #333;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
     /*padding: 10px;*/
 }
 
