@@ -15,10 +15,10 @@
 
  
  
-      <div class="search">
+     
         <!--<input type="text" placeholder="Vyhledat"> -->
-       
-        <input type="text" placeholder="Vyhledat"/>
+        <form class="search">
+        <input type="text" class="search-box" required placeholder="Vyhledat"/>
         <div class="search-dropdown">
           <ul>
             <a href="/"><li>První položka</li></a>
@@ -28,11 +28,11 @@
             <a href="/"><li>Položka</li></a>
           </ul>
         </div>
-        <button class="x-button"> <span ></span>
+        <button class="x-button" type="reset"><span></span> </button>
         <button class="search-button"> <img src="svg/find_manager_w.svg" class="lupa" alt="Přihlšení" /> <p> Hledat </p>
-
         </button>
-      </div><!-- search --><!--2-->
+        </form>
+      <!-- search --><!--2-->
 
 
       <div class = "right-header">
@@ -61,6 +61,11 @@
     </header>
 
     <div class="container">
+      
+      <div id="homepage">
+        
+        <div class="main">
+        <div class="menu"><img src="/v_01/svg/menu_lines.svg"></div>
 
         <div class="Homepage-list-catalog">
             <!-- Obsah katalogu zboží zde -->
@@ -74,56 +79,105 @@
         </div>
         
       <div class="Homepage-catalog">
-        <h2>Catalog</h2>
+        <h2>Nabidky zbozi</h2>
         <div class="Homepage-recommended">
           <!-- Doporucene zbozi zde -->
 
             <div class="Homepage-product">
                 <a href="Homepage-detail_product.html">
-                    <img src="/v_01/img/RI048b2.webp" alt="Produkt 1" />
+                    <img src="/v_01/img/RI048b2.webp" alt="Produkt 1"  class="product_photo" />
                     <h3>Nazev</h3>
+                    <span class="Homepage-recenze">
+                      <img src="/v_01/svg/star.svg" class="star">
+                      <img src="/v_01/svg/star.svg" class="star">
+                      <img src="/v_01/svg/star.svg" class="star">
+                      <img src="/v_01/svg/star.svg" class="star">
+                      <img src="/v_01/svg/star.svg" class="star">
+                    </span>
                     <button class="Homepage-add-to-cart">Do košíku</button>
                 </a>
             </div>
             <div class="Homepage-product">
               <a href="Homepage-detail_product.html">
-                  <img src="img/RI047b4.webp" alt="Produkt 1" />
+                  <img src="img/RI047b4.webp" alt="Produkt 1" class="product_photo" />
                   <h3>Nazev</h3>
+                  <span class="Homepage-recenze">
+                    <img src="/v_01/svg/star.svg" class="star">
+                    <img src="/v_01/svg/star.svg" class="star">
+                    <img src="/v_01/svg/star.svg" class="star">
+                    <img src="/v_01/svg/star.svg" class="star">
+                    <img src="/v_01/svg/star.svg" class="star">
+                  </span>
                   <button class="Homepage-add-to-cart">Do košíku</button>
               </a>
           </div>
           <div class="Homepage-product">
             <a href="Homepage-detail_product.html">
-                <img src="img/XITAB013c2.webp" alt="Produkt 1" />
+                <img src="img/XITAB013c2.webp" alt="Produkt 1" class="product_photo" />
                 <h3>Nazev</h3>
+                <span class="Homepage-recenze">
+                  <img src="/v_01/svg/star.svg" class="star">
+                  <img src="/v_01/svg/star.svg" class="star">
+                  <img src="/v_01/svg/star.svg" class="star">
+                  <img src="/v_01/svg/star.svg" class="star">
+                  <img src="/v_01/svg/star.svg" class="star">
+                </span>
                 <button class="Homepage-add-to-cart">Do košíku</button>
             </a>
         </div>
         <div class="Homepage-product">
           <a href="Homepage-detail_product.html">
-              <img src="Homepage-produkt1.jpg" alt="Produkt 1" />
+              <img src="Homepage-produkt1.jpg" alt="Produkt 1" class="product_photo" />
               <h3>Nazev</h3>
+              <span class="Homepage-recenze">
+                <img src="/v_01/svg/star.svg" class="star">
+                <img src="/v_01/svg/star.svg" class="star">
+                <img src="/v_01/svg/star.svg" class="star">
+                <img src="/v_01/svg/star.svg" class="star">
+                <img src="/v_01/svg/star.svg" class="star">
+              </span>
               <button class="Homepage-add-to-cart">Do košíku</button>
           </a>
       </div>
       <div class="Homepage-product">
         <a href="Homepage-detail_product.html">
-            <img src="Homepage-produkt1.jpg" alt="Produkt 1" />
+            <img src="Homepage-produkt1.jpg" alt="Produkt 1" class="product_photo" />
             <h3>Nazev</h3>
+            <span class="Homepage-recenze">
+              <img src="/v_01/svg/star.svg" class="star">
+              <img src="/v_01/svg/star.svg" class="star">
+              <img src="/v_01/svg/star.svg" class="star">
+              <img src="/v_01/svg/star.svg" class="star">
+              <img src="/v_01/svg/star.svg" class="star">
+            </span>
             <button class="Homepage-add-to-cart">Do košíku</button>
         </a>
     </div>
     <div class="Homepage-product">
       <a href="Homepage-detail_product.html">
-          <img src="Homepage-produkt1.jpg" alt="Produkt 1" />
+          <img src="Homepage-produkt1.jpg" alt="Produkt 1" class="product_photo" />
           <h3>Nazev</h3>
+          <span class="Homepage-recenze">
+            <img src="/v_01/svg/star.svg" class="star">
+            <img src="/v_01/svg/star.svg" class="star">
+            <img src="/v_01/svg/star.svg" class="star">
+            <img src="/v_01/svg/star.svg" class="star">
+            <img src="/v_01/svg/star.svg" class="star">
+          </span>
           <button class="Homepage-add-to-cart">Do košíku</button>
       </a>
   </div>
   <div class="Homepage-product">
     <a href="Homepage-detail_product.html">
-        <img src="Homepage-produkt1.jpg" alt="Produkt 1" />
+        <img src="Homepage-produkt1.jpg" alt="Produkt 1" class="product_photo" />
         <h3>Nazev</h3>
+        <span class="Homepage-recenze">
+          <img src="/v_01/svg/star.svg" class="star">
+          <img src="/v_01/svg/star.svg" class="star">
+          <img src="/v_01/svg/star.svg" class="star">
+          <img src="/v_01/svg/star.svg" class="star">
+          <img src="/v_01/svg/star.svg" class="star">
+        </span>
         <button class="Homepage-add-to-cart">Do košíku</button>
     </a>
 </div>           
@@ -132,6 +186,8 @@
         
         </div>
       </div>
+    </div><!--main-->
+    </div> <!--homepage-->
     </div> <!--container-->
 
     <footer>
