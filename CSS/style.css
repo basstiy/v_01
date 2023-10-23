@@ -3,6 +3,9 @@ html,body, h1, p, ul, li {
     margin: 0;
     padding: 0;
 }
+h3{
+    font-size: 20px;
+}
 
 /* Základní styly pro tělo stránky */
 body {
@@ -382,6 +385,7 @@ footer {
     display: flex;
     /*background-color: #007bff;*/
 } /*nefunguje*/
+
 .Homepage-list-catalog:hover{
     display: flex;
 }
@@ -423,7 +427,7 @@ footer {
     /*min-width: 55%; /* Každý produkt bude mít 30% šířky, aby se vešly 3 vedle sebe */
     margin: 5px;
     text-align: center;
-    height: 630px;
+    height: 525px;
 
     overflow: hidden;
     border-top-right-radius: 15px;
@@ -440,9 +444,9 @@ footer {
     width: auto;
     font-size: 1vh;
     /*min-width: 200px;*/
-    min-height: 350px;
+ 
     background-color: #fff;
-    height: 550px;
+    height: 450px;
     margin: 0;
     border: solid 3px #333;
     border-top-right-radius: 15px;
@@ -467,13 +471,13 @@ footer {
 }
 .Homepage-product .Homepage-recenze{
     display: flex;
-    justify-content: space-around;
-    width: 80%;
+    justify-content: center;
+    width: 70%;
 
 }
 .Homepage-product .Homepage-recenze .star{
-    width: 100%;
-    height: 55px;
+    width: auto;
+    height: 30px;
     margin: 5px;
 }
 
@@ -496,13 +500,60 @@ footer {
 /****/
 /*PC*/
 /****/
-@media screen and (max-width: 480px) {
+@media (min-width:320px) {
+    
     header {
         grid-template-areas: "a c c" "b b b";
     }
+    .Homepage-recommended {
+        grid-template-columns: 1fr 1fr;
+      }
+      
   }
-
+  /*tablet*/
 @media screen and (min-width: 801px)  {
+    header {
+        grid-template-areas: "a b b b c c";
+    }
+    .Homepage-recommended {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+    .search input:focus ~ .search-button {
+     display: block;
+    }
+
+    .main{
+    flex-direction: row;
+   }  
+   .Homepage-list-catalog {
+    display: flex; 
+   }
+   .menu{
+    display: none;
+   }
+   .Homepage-product {
+    border-radius: 0px;
+    height: 325px;
+   }
+   .Homepage-product a{
+    border-radius: 0px;
+    height: 250px;
+   }
+   .Homepage-product .Homepage-recenze{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+
+}
+    .Homepage-product .Homepage-recenze .star{
+    width: auto;
+    height: 15px;
+    margin: 2px;
+}
+
+  }
+  @media screen and (min-width: 1025px)  {
     header {
         grid-template-areas: "a b b b c c";
     }
@@ -523,8 +574,15 @@ footer {
    .menu{
     display: none;
    }
+   .Homepage-product {
+    border-radius: 0px;
+   }
+   .Homepage-product a{
+    border-radius: 0px;
+   }
 
   }
+  
 
 
 /* Další styly podle vašich potřeb */
