@@ -35,7 +35,8 @@ header {
 }
 
 h1 {
-    font-size: 54px/*24px*/;
+    font-size: 30px/*24px*/;
+    white-space: nowrap; 
 }
 a {
     text-decoration: none;
@@ -69,24 +70,24 @@ header #name_E_shop h1{
     position: relative;
     grid-area: b;
     background-color: #fff;
-    border-radius: 15px;
-
+    border-radius: 4px;
+    gap: 10px;
+    padding: 5px;
 }
 .lupa{
-    width: 50px;
+    width: 35px;
     filter: invert(100%);
-    margin: 0 30px;
-
 }
 
 .search input {
-    min-width: 50%;
+    /*min-width: 50%;*/
+    flex-grow: 5; 
     margin-right: 0px;
-    padding: 20px;
+    padding: 20px 0;
     border: none;
     border-radius: 4px;
      /* Roztáhne se na plnou dostupnou šířku */
-     width: 100%;
+     /*width: 100%;*/
      font-size: 2vh;
     /*border: none;*/
 }
@@ -102,8 +103,10 @@ header #name_E_shop h1{
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-left: 15px; /* Mezi tlačítkem a polem pro vyhledávání bude mezera */
-    display: none;
+    /*margin-left: 15px; /* Mezi tlačítkem a polem pro vyhledávání bude mezera */
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 .search-button p {
     opacity: 0;
@@ -115,20 +118,20 @@ header #name_E_shop h1{
     /*outline: none;*/
     border: solid 2px #333;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    min-width: 50px;
-    min-height: 50px;
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+    min-height: 35px;
     outline: 0;
     vertical-align: middle;
     display: inline-block;
     transition: opacity 0.5s;
-    margin-right: 15px;
+   
 }
 
 .x-button:after{
     content: "X";
-    font-size: 35px;
+    font-size: 25px;
 	display: block; 
 	z-index:1;
 	text-align: center;
@@ -247,8 +250,8 @@ input:focus  .search > #name_E_shop   {
 }
 .cart img {
     
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     /*width: 2vh;*/
 }
 
@@ -268,6 +271,9 @@ input:focus  .search > #name_E_shop   {
 /****************************/
 
 footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     background-color: #333;
     color: #fff;
     padding: 20px 0;
@@ -500,7 +506,7 @@ footer {
 /****/
 /*PC*/
 /****/
-@media (min-width:320px) {
+@media screen and (min-width:320px) and (max-width: 480px ) {
     
     header {
         grid-template-areas: "a c c" "b b b";
@@ -510,8 +516,9 @@ footer {
       }
       
   }
-  /*tablet*/
-@media screen and (min-width: 801px)  {
+  /*481px — 768 px: iPads, Tablets
+    769px — 1024px: Small screens, laptops*/
+@media screen and (min-width: 480px) and (max-width: 1024px) {
     header {
         grid-template-areas: "a b b b c c";
     }
@@ -561,7 +568,7 @@ footer {
       grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     
-    .search input:focus ~ .search-button {
+    .search input:focus ~ .search-button p{
      display: block;
     }
 /*PC*/
