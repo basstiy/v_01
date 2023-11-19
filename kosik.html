@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Název E-Shopu</title>
-    <meta name="viewport" content="width=500, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="CSS/style.css" />
   </head>
   <body>
@@ -32,7 +32,7 @@
         </button>
         <div class="search-icon">
           <button>
-            <img src="/v_01/svg/find_manager_w.svg" /> Zobrazit všechny výsledky
+            <img src="/find_manager_w.svg" /> Zobrazit všechny výsledky
           </button>
         </div>
       </form>
@@ -42,7 +42,7 @@
       <div class="right-header">
         <div class="cart">
           <a href="/Přihlšení">
-            <img src="/v_01/svg/user_w.svg" alt="Přihlášení" />
+            <img src="/user_w.svg" alt="Přihlášení" />
           </a>
         </div>
 
@@ -54,7 +54,7 @@
 
         <div class="cart">
           <a href="/kosik.html">
-            <img src="/v_01/svg/basket_Wight.svg" alt="Nákupní košík" />
+            <img src="/basket_Wight.svg" alt="Nákupní košík" />
           </a>
         </div>
       </div>
@@ -63,54 +63,54 @@
 
     <div class="container">
       <div id="">
+      <!-- KOSIK-ZACATEK -->
+      <div class="kosik-header">Košík</div>
+    
+      <div class="kosik-container">
+        <table class="product-list">
+            <thead>
+                <tr>
+                    <th>Název produktu</th>
+                    <th>Počet</th>
+                    <th>Cena</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>iFong 7S Plus</td>
+                    <td>1</td>
+                    <td>2 990 Kč</td>
+                    <td><button type="button" class="btn-remove-product">Odebrat</button></td>
+                </tr>
+                <tr>
+                    <td>Fucci iFong 7S Plus kryt</td>
+                    <td>1</td>
+                    <td>390 Kč</td>
+                    <td><button type="button" class="btn-remove-product">Odebrat</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="total-price">Celková cena objednávky: <strong>3 380 Kč</strong></p>
+        <div class="delivery-options">
+            <p class="delivery-option">Způsob dopravy:</p>
+            <select name="delivery" id="delivery">
+                <option value="osobni-odber">Osobní odběr - prodejna Sapa (zdarma)</option>
+                <option value="doprava-ceskou-postaou">Balík - Česká pošta (99 Kč)</option>
+                <option value="doprava-kuryrem">Kurýr GLS (199 Kč)</option>
+            </select>
+        </div>
+        <button type="button" onclick="window.location.href='/checkout.html'" style="margin-top: 20px; width: 50%;">Přejít k souhrnu objednávky</button>
   
+    </div>
+  
+      <!-- KOSIK-KONEC -->
       </div>
       <!-- -->
     </div>
     <!--container-->
 
-    <!-- KOSIK-ZACATEK -->
-    <div class="kosik-header">Košík</div>
-    
-    <div class="kosik-container">
-      <table class="product-list">
-          <thead>
-              <tr>
-                  <th>Název produktu</th>
-                  <th>Počet</th>
-                  <th>Cena</th>
-                  <th></th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>iFong 7S Plus</td>
-                  <td>1</td>
-                  <td>2 990 Kč</td>
-                  <td><button type="button" class="btn-remove-product">Odebrat</button></td>
-              </tr>
-              <tr>
-                  <td>Fucci iFong 7S Plus kryt</td>
-                  <td>1</td>
-                  <td>390 Kč</td>
-                  <td><button type="button" class="btn-remove-product">Odebrat</button></td>
-              </tr>
-          </tbody>
-      </table>
-      <p class="total-price">Celková cena objednávky: <strong>3 380 Kč</strong></p>
-      <div class="delivery-options">
-          <p class="delivery-option">Způsob dopravy:</p>
-          <select name="delivery" id="delivery">
-              <option value="osobni-odber">Osobní odběr - prodejna Sapa (zdarma)</option>
-              <option value="doprava-ceskou-postaou">Balík - Česká pošta (99 Kč)</option>
-              <option value="doprava-kuryrem">Kurýr GLS (199 Kč)</option>
-          </select>
-      </div>
-      <button type="button" onclick="window.location.href='/checkout.html'" style="margin-top: 20px; width: 50%;">Přejít k souhrnu objednávky</button>
 
-  </div>
-
-    <!-- KOSIK-KONEC -->
 
     <!-- FOOTER -->
     <footer>
