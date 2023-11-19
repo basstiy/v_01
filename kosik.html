@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Název E-Shopu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="name_E_shop">
+        <a href="index.html"><h1>Název E-Shopu</h1></a>
+      </div>
+      <!--1-->
+
+      <!-- VYHLEDAVANI -->
+      <!--<input type="text" placeholder="Vyhledat"> -->
+      <form class="search">
+        <input type="text" class="search-box" required placeholder="Vyhledat" />
+        <div class="search-dropdown">
+          <ul>
+            <li><a href="/">První položka</a></li>
+            <li><a href="/">Druhá položka</a></li>
+            <li><a href="/">Třetí položka</a></li>
+            <li><a href="/">Čtvrtá položka</a></li>
+            <li><a href="/">Pátá položka</a></li>
+          </ul>
+        </div>
+        <button class="x-button" type="reset"></button>
+        <button class="search-button">
+          <img src="svg/find_manager_w.svg" class="lupa" alt="Přihlášení" />
+          <p>Hledat</p>
+        </button>
+        <div class="search-icon">
+          <button>
+            <img src="/find_manager_w.svg" /> Zobrazit všechny výsledky
+          </button>
+        </div>
+      </form>
+      <!-- search --><!--2-->
+
+      <!-- HORNI PANEL -->
+      <div class="right-header">
+        <div class="cart">
+          <a href="/Přihlšení">
+            <img src="/user_w.svg" alt="Přihlášení" />
+          </a>
+        </div>
+
+        <div class="cart">
+          <a href="/Přihlšení">
+            <img src="svg/heat_wigth.svg" alt="Oblíbené" />
+          </a>
+        </div>
+
+        <div class="cart">
+          <a href="/kosik.html">
+            <img src="/basket_Wight.svg" alt="Nákupní košík" />
+          </a>
+        </div>
+      </div>
+      <!--3-->
+    </header>
+
+    <div class="container">
+      <div id="">
+      <!-- KOSIK-ZACATEK -->
+      <div class="kosik-header">Košík</div>
+    
+      <div class="kosik-container">
+        <table class="product-list">
+            <thead>
+                <tr>
+                    <th>Název produktu</th>
+                    <th>Počet</th>
+                    <th>Cena</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>iFong 7S Plus</td>
+                    <td>1</td>
+                    <td>2 990 Kč</td>
+                    <td><button type="button" class="btn-remove-product">Odebrat</button></td>
+                </tr>
+                <tr>
+                    <td>Fucci iFong 7S Plus kryt</td>
+                    <td>1</td>
+                    <td>390 Kč</td>
+                    <td><button type="button" class="btn-remove-product">Odebrat</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="total-price">Celková cena objednávky: <strong>3 380 Kč</strong></p>
+        <div class="delivery-options">
+            <p class="delivery-option">Způsob dopravy:</p>
+            <select name="delivery" id="delivery">
+                <option value="osobni-odber">Osobní odběr - prodejna Sapa (zdarma)</option>
+                <option value="doprava-ceskou-postaou">Balík - Česká pošta (99 Kč)</option>
+                <option value="doprava-kuryrem">Kurýr GLS (199 Kč)</option>
+            </select>
+        </div>
+        <button type="button" onclick="window.location.href='/checkout.html'" style="margin-top: 20px; width: 50%;">Přejít k souhrnu objednávky</button>
+  
+    </div>
+  
+      <!-- KOSIK-KONEC -->
+      </div>
+      <!-- -->
+    </div>
+    <!--container-->
+
+
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-content">
+        <div class="contact-info">
+          <h3>Kontaktujte nás</h3>
+          <p>Telefon: +123 456 789</p>
+          <p>Email: info@e-shop.com</p>
+          <p>Adresa: Kamýcká 129, Praha, 165 00</p>
+        </div>
+        <div class="quick-links">
+          <h3>Rychlé odkazy</h3>
+          <ul>
+            <li><a href="/obchodni-podminky">Obchodní podmínky</a></li>
+            <li>
+              <a href="/ochrana-osobnich-udaju">Ochrana osobních údajů</a>
+            </li>
+            <li><a href="/o-nas">O nás</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="social-media">
+        <h3>Sociální média</h3>
+        <a href="#" class="social-icon">Facebook</a>
+        <a href="#" class="social-icon">Platforma X</a>
+        <a href="#" class="social-icon">Instagram</a>
+      </div>
+    </footer>
+  </body>
+</html>
