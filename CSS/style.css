@@ -259,10 +259,12 @@ input:focus  .search > #name_E_shop   {
 /* Zacatek stylu pro CONTAINER  */
 /********************************/
 .container {
-    max-width: 1200px;
+    max-width: 1200px; /*pc*/
     margin: 0 auto;
     padding: 20px;
     height: 100%;
+    min-height: 750px;
+
     /*monile*/
 }
 
