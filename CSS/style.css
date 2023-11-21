@@ -485,7 +485,7 @@ footer {
 }
 .Homepage-product .Homepage-recenze .star{
     width: auto;
-    height: 30px;
+    height: 20px;
     margin: 5px;
 }
 
@@ -629,11 +629,6 @@ li {
     justify-content: center;
     width: 70%;
 
-}
-    .Homepage-product .Homepage-recenze .star{
-    width: auto;
-    height: 15px;
-    margin: 2px;
 }
 
   }
