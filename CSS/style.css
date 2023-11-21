@@ -668,8 +668,8 @@ li {
 
 
 /***Honza***/
-#item-image{
-    max-width: 80%;
+.item-image{
+    max-width: 40%;
     max-height: 500px;
     margin: auto;
 }
@@ -688,15 +688,175 @@ li {
     background-color: #333;
     color: #fff;
     padding: 10px;
-    text-align: center;
     z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
+.product-prices{
+    margin-left: 3%;
+}
+.Price {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .noTaxes {
+    font-size: smaller;
+  }
+
 .add-to-cart-btn {
-    background-color: #4CAF50;
+    background-color: #007bff;
     color: #fff;
     padding: 10px 20px;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    margin-left: 10px;
+    margin-right: 5%;
 }
+
+.carousel {
+    width: 100%;
+    height: 300px; /* Set carousel height */
+    overflow: hidden; /* Hide overflowing content */
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .carousel-slides {
+    display: flex; /* Arrange slides horizontally */
+    transition: transform 0.5s ease-in-out; /* Add transition for smooth sliding */
+    position: absolute;
+    top: 0; /* Position slides at the top of the carousel */
+    left: 0; /* Position slides at the left of the carousel */
+    width: 100%; /* Make slides occupy the entire carousel width */
+    max-height: 100%; /* Make slides fill the entire carousel height */
+  }
+  
+  .carousel-slide {
+    width: 100%; /* Set slide width to 100% for full-width images */
+    height: 100%; /* Set slide height to 100% to fill the carousel height */
+    text-align: center; /* Center slide content */
+    display: flex;
+    justify-content: center; /* Center slide content horizontally */
+    align-items: center; /* Center slide content vertically */
+  }
+  
+  .carousel-controls {
+    position: absolute;
+    bottom: 0; /* Position controls at the bottom of the carousel */
+    left: 50%; /* Position controls horizontally centered */
+    transform: translateX(-50%); /* Translate controls to the left to compensate for centering */
+  }
+  
+  .carousel-controls button {
+    padding: 1px; /* Add padding to control buttons */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Make controls clickable */
+    font-size: xx-large;
+    width: 70px; /* Increase combo box width */
+    height: 30px; /* Increase combo box height */
+    font-size: 16px; /* Increase combo box font size */
+    background-color: grey;
+  }
+
+  .combos {
+    display: inline-flex;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .combo-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .combo-container select {
+    width: 200px; /* Increase combo box width */
+    height: 30px; /* Increase combo box height */
+    font-size: 16px; /* Increase combo box font size */
+  }
+  
+  .combo-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: small;
+    margin-bottom: 0%;
+  }
+  
+  .combo-container select {
+    margin-bottom: 20px;
+  }
+  .product-recenze{
+    display: inline-flex;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: small
+  }
+.product-recenze .star{
+    width: auto;
+    height: 15px;
+    margin: 5px;
+    font-size: 30px;
+}
+.product-recenze p {
+    margin-right: 5px; /* Add margin between star icons */
+  }
+
+  .tabs {
+    display: inline-flex;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  .tab {
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .tab.active {
+    background-color: #eee;
+    border-bottom: 2px solid #007bff;
+  }
+  
+  .tab-content {
+    padding: 10px;
+    display: none;
+  }
+  
+  /* Initially show the description tab content */
+  .tab-content.description {
+    display: block;
+  }
+  
+  .tab-content.description img{
+    margin-top: 3px;
+    max-width: 100%;
+    height: auto;    
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .review .star{
+    width: auto;
+    height: 20px;
+    margin: 2px;
+    margin-top: 10px;
+}
+

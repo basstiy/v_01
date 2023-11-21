@@ -1,115 +1,391 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
+  <title>Název E-Shopu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
   <link rel="stylesheet" type="text/css" href="CSS/style.css" />
 </head>
 
 <body>
   <header>
-
-
     <div id="name_E_shop">
       <a href="index.html">
         <h1>Název E-Shopu</h1>
       </a>
     </div>
-    <div class="header-content">
-      <div class="space"></div>
-      <div class="search">
-        <!--<input type="text" placeholder="Vyhledat"> -->
+    <!--1-->
 
-        <input type="text" placeholder="Vyhledat" />
-        <div class="search-dropdown">
-          <ul>
-            <a href="/">
-              <li>První položka</li>
-            </a>
-            <a href="/">
-              <li>Druhá položka</li>
-            </a>
-            <a href="/">
-              <li>Třetí položka</li>
-            </a>
-            <a href="/">
-              <li>Položka</li>
-            </a>
-            <a href="/">
-              <li>Položka</li>
-            </a>
-          </ul>
-        </div>
+    <!--<input type="text" placeholder="Vyhledat"> -->
+    <form class="search">
+      <input type="text" class="search-box" required placeholder="Vyhledat" />
+      <div class="search-dropdown">
+        <ul>
+          <li><a href="/">První položka</a></li>
+          <li><a href="/">Druhá položka</a></li>
+          <li><a href="/">Třetí položka</a></li>
+          <li><a href="/">Položka</a></li>
+          <li><a href="/">Položka</a></li>
+        </ul>
+      </div>
+      <button class="x-button" type="reset"></button>
+      <button class="search-button">
+        <img src="svg/find_manager_w.svg" class="lupa" alt="Přihlšení" />
+        <p>Hledat</p>
+      </button>
+      <div class="search-icon">
+        <button>
+          <img src="/svg/find_manager_w.svg" /> zobrazit vsechny vysledky
+        </button>
+      </div>
+    </form>
+    <!-- search --><!--2-->
 
-        <button class="search-button">Hledat</button>
-      </div><!-- search -->
-
-      <div class="right-header">
-        <div class="cart">
-          <a href="/Přihlšení">
-            <img src="kosik-ikon.png" alt="Přihlšení" />
-          </a>
-        </div>
-        <div class="cart">
-          <a href="/Přihlšení">
-            <img src="kosik-ikon.png" alt="oblivene" />
-          </a>
-        </div>
-        <div class="cart">
-          <a href="/kosik">
-            <img src="kosik-ikon.png" alt="Nákupní košík" />
-          </a>
-        </div>
+    <div class="right-header">
+      <div class="cart">
+        <a href="/Přihlšení">
+          <img src="/svg/user_w.svg" alt="Přihlšení" />
+        </a>
       </div>
 
+      <div class="cart">
+        <a href="/Přihlšení">
+          <img src="svg/heat_wigth.svg" alt="oblivene" />
+        </a>
+      </div>
 
-    </div><!-- header-content -->
+      <div class="cart">
+        <a href="/kosik.html">
+          <img src="/svg/basket_Wight.svg" alt="Nákupní košík" />
+        </a>
+      </div>
+    </div>
+    <!--3-->
   </header>
 
   <div class="container">
 
     <div id="product-details">
-      <h1 id="item-name"></h1>
-      <img id="item-image" />
-      <div id="item-description">
-        <!-- Product details will be displayed here -->
+      <h1 id="item-name">iPhone 12</h1>
+      <span class="product-recenze">
+        <img src="/svg/star.svg" class="star" />
+        <img src="/svg/star.svg" class="star" />
+        <img src="/svg/star.svg" class="star" />
+        <img src="/svg/star.svg" class="star" />
+        <img src="/svg/star.svg" class="star" />
+        <p>4,8</p>
+        <a href="#reviews-content" id="reviewsLink">10 hodnocení</a>
+      </span>
+      <div class="carousel">
+        <div class="carousel-slides">
+          <div class="carousel-slide">
+            <img class="item-image" src="/img/RI048b2.webp" alt="Image 1">
+          </div>
+
+          <div class="carousel-slide">
+            <img class="item-image" src="/img/RI047b4.webp" alt="Image 2">
+          </div>
+
+          <div class="carousel-slide">
+            <img class="item-image" src="img/XITAB013c2.webp" alt="Image 3">
+          </div>
+        </div>
+
+        <div class="carousel-controls">
+          <button class="prev">&#8678;</button>
+          <button class="next">&#8680;</button>
+        </div>
       </div>
-    </div>
+
+      <div class="combos">
+        <div class="combo-container">
+          <label for="combo1">Barva</label>
+
+          <select id="combo">
+            <option value="option1">Modrá</option>
+            <option value="option2">Žlutá</option>
+            <option value="option3">Černá</option>
+          </select>
+        </div>
+        <div class="combo-container">
+          <label for="combo2">Vnitřní paměť</label>
+
+          <select id="combo">
+            <option value="option1">128 GB</option>
+            <option value="option2">256 GB</option>
+            <option value="option3">512 GB</option>
+          </select>
+        </div>
+      </div>
 
 
-    <div class="fixed-container">
-      <!-- Fixed container with "Add to Cart" button -->
-      <button class="add-to-cart-btn">Přidat do košíku</button>
-    </div>
-  </div>
-  <footer>
-    <div class="footer-content">
-      <div class="contact-info">
-        <h3>Kontaktujte nás</h3>
-        <p>Telefon: +123 456 789</p>
-        <p>Email: info@example.com</p>
-        <p>Adresa: 123 Example Street, Město, PSČ</p>
-      </div>
-      <div class="quick-links">
-        <h3>Rychlé odkazy</h3>
-        <ul>
-          <li><a href="/obchodni-podminky">Obchodní podmínky</a></li>
-          <li><a href="/ochrana-osobnich-udaju">Ochrana osobních údajů</a></li>
-          <li><a href="/o-nas">O nás</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="social-media">
-      <h3>Sociální média</h3>
-      <a href="#" class="social-icon">Facebook</a>
-      <a href="#" class="social-icon">Twitter</a>
-      <a href="#" class="social-icon">Instagram</a>
-    </div>
-  </footer>
+      <div class="tabs">
+        <div class="tab active" data-target="description-content">
+          Popis produktu
+        </div>
 
-  <script src="Javascript/productDetail.js"></script>
+        <div class="tab" data-target="parameters-content">
+          Parametry
+        </div>
+
+        <div class="tab" data-target="reviews-content">
+          Recenze
+        </div>
+
+        <div class="tab" data-target="other-products-content">
+          Podobné produkty
+        </div>
+      </div>
+
+      <div id="description-content" class="tab-content description">
+        <p>Mobilní telefon - 6,1" Super Retina XDR OLED 2532&nbsp;×&nbsp;1170, operační paměť 4 GB, vnitřní paměť 128
+          GB, single
+          SIM + eSIM, procesor Apple A15 Bionic, fotoaparát: 12Mpx (f/1,6) hlavní + 12Mpx širokoúhlý, přední kamera
+          12Mpx, GPS, NFC, LTE, 5G, Lightning port, voděodolný dle IP68, rychlé nabíjení 20W, bezdrátové nabíjení 15W,
+          baterie 3240 mAh, model 2021, iOS</p>
+        <img src="/img/StockFotoWithPhone.webp" />
+        <p>I když se to zdálo prakticky nemožné, tak iPhone 13 posouvá kvalitu fotoaparátů na úplně nový level. Zcela
+          nový širokoúhlý fotoaparát má snímač s 1,7 µm pixely pro méně šumu a rychlejší závěrku potřebnou pro kvalitní
+          snímky za různých světelných podmínek. Ve spojení s clonou ƒ/1,6 nabízí širokoúhlý fotoaparát iPhone 13
+          obrovské zlepšení v situacích se slabým osvětlením, a to až 2,2× ve srovnání s iPhonem 12 Pro a téměř 1,5× ve
+          srovnání s iPhonem 12 Pro Max. Optická stabilizace obrazu (OIS) s posunem snímače je k dispozici u obou modelů
+          a stabilizuje snímač namísto objektivu, takže snímky jsou plynulé a video stabilní, i když se pohybujete.
+          Rovněž budete mít k dispozici ultraširokoúhlou kameru se 120stupňovým zorným polem.
+        </p>
+      </div>
+
+      <div id="parameters-content" class="tab-content parameters" style="display: none;">
+        <table>
+          <tr>
+            <th>Parametry</th>
+            <th></th>
+          </tr>
+          <tr>
+            <td>Display</td>
+            <td>6.1" Super Retina XDR OLED, 2532 x 1170 pixels, 460 ppi</td>
+          </tr>
+          <tr>
+            <td>Chip</td>
+            <td>A14 Bionic chip</td>
+          </tr>
+          <tr>
+            <td>CPU</td>
+            <td>Hexa-core (2x 3.1 GHz Firestorm + 4x 1.8 GHz Icestorm)</td>
+          </tr>
+          <tr>
+            <td>GPU</td>
+            <td>Apple GPU (4-core)</td>
+          </tr>
+          <tr>
+            <td>Storage</td>
+            <td>64GB, 128GB, 256GB</td>
+          </tr>
+          <tr>
+            <td>RAM</td>
+            <td>4GB</td>
+          </tr>
+          <tr>
+            <td>Rear Camera</td>
+            <td>Dual-lens system (12MP wide + 12MP ultrawide), ƒ/1.6 aperture, Night mode, Deep Fusion, Smart HDR 3, 4K
+              video recording at up to 30fps, Cinematic mode with shallow depth of field and automatic focus shift</td>
+          </tr>
+          <tr>
+            <td>Front Camera</td>
+            <td>TrueDepth camera with 12MP sensor, ƒ/2.2 aperture, Night mode, Deep Fusion, Smart HDR 3, 4K video
+              recording at up to 60fps, Cinematic mode with shallow depth of field and automatic focus shift</td>
+          </tr>
+          <tr>
+            <td>Battery</td>
+            <td>Up to 17 hours of video playback</td>
+          </tr>
+          <tr>
+            <td>Operating System</td>
+            <td>iOS 14</td>
+          </tr>
+          <tr>
+            <td>Dimensions</td>
+            <td>146.7 x 71.5 x 7.4 mm</td>
+          </tr>
+          <tr>
+            <td>Weight</td>
+            <td>164 grams</td>
+          </tr>
+          <tr>
+            <td>Price</td>
+            <td>Starting at $699</td>
+          </tr>
+        </table>
+
+      </div>
+
+      <div id="reviews-content" class="tab-content reviews" style="display: none;">
+        <div class="review">
+          <h4>Honza</h4>
+          <p>Jsem velmi spokojen s tímto telefonem. Má skvělý displej, výkonný procesor a dlouhou výdrž baterie.
+            Fotoaparát je také velmi dobrý a pořizuje krásné fotografie a videa. Doporučuji tento telefon každému, kdo
+            hledá kvalitní telefon s vynikajícími funkcemi.</p>
+          <rating-stars>
+            <img src="/svg/star.svg" class="star" />
+            <img src="/svg/star.svg" class="star" />
+            <img src="/svg/star.svg" class="star" />
+            <img src="/svg/star.svg" class="star" />
+            <img src="/svg/star.svg" class="star" />
+          </rating-stars>
+        </div>
+
+        <hr>
+
+        <div class="review">
+          <h4>Pepa</h4>
+          <p>Tento telefon je prostě úžasný! Má vše, co potřebuji, a dokonce i něco navíc. Displej je jasný a ostrý,
+            procesor je rychlý a fotoaparát je skvělý. Baterie vydrží celý den, i když telefon používám intenzivně. Jsem
+            velmi spokojený s tímto nákupem.</p>
+          <rating-stars>
+            <img src="/svg/star.svg" class="star" />
+            <img src="/svg/star.svg" class="star" />
+            <img src="/svg/star.svg" class="star" />
+            <img src="/svg/star.svg" class="star" />
+            <img src="/svg/star.svg" class="star" />
+          </rating-stars>
+        </div>
+
+        <hr>
+
+        <div class="review">
+          <h4>Igor</h4>
+          <p>Tento telefon je můj nový oblíbený. Má krásný design, skvělý výkon a dlouhou výdrž baterie. Fotoaparát je
+            také velmi dobrý a pořizuje krásné fotografie a videa. Doporučuji tento telefon každému, kdo hledá prémiový
+            telefon s vynikajícími funkcemi.</p>
+          <rating-stars>
+            <img src="/svg/star.svg" class="star" />
+            <img src="/svg/star.svg" class="star" />
+            <img src="/svg/star.svg" class="star" />
+            <img src="/svg/star.svg" class="star" />
+            <img src="/svg/star.svg" class="star" />
+          </rating-stars>
+        </div>
+
+        <hr>
+
+        <div class="review">
+          <h4>Unknown</h4>
+          <p>Telefon je celkově velmi dobrý, ale má pár nedostatků. Displej je trochu tmavý, fotoaparát v noci není tak
+            dobrý jako v denním světle a baterie by mohla vydržet o něco déle. I přes tyto nedostatky je telefon stále
+            skvělou volbou pro většinu lidí.</p>
+          <rating-stars>
+            <img src="/svg/star.svg" class="star" />
+            <img src="/svg/star.svg" class="star" />
+            <img src="/svg/star.svg" class="star" />
+            <img src="/svg/star.svg" class="star" />
+            <img src="/svg/star_blank.svg" class="star" />
+          </rating-stars>
+        </div>
+      </div>
+
+      <div id="other-products-content" class="tab-content other-products" style="display: none;">
+        <div class="Homepage-recommended">
+          <!-- Doporucene zbozi zde -->
+
+          <div class="Homepage-product">
+            <a href="detail_product.html">
+              <img src="/img/RI048b2.webp" alt="Produkt 1" class="product_photo" />
+
+              <span class="Homepage-recenze">
+                <img src="/svg/star.svg" class="star" />
+                <img src="/svg/star.svg" class="star" />
+                <img src="/svg/star.svg" class="star" />
+                <img src="/svg/star.svg" class="star" />
+                <img src="/svg/star.svg" class="star" />
+              </span>
+              <h3>Nazev</h3>
+            </a>
+            <button class="Homepage-add-to-cart">Do košíku</button>
+          </div>
+          <div class="Homepage-product">
+            <a href="detail_product.html">
+              <img src="img/RI047b4.webp" alt="Produkt 1" class="product_photo" />
+
+              <span class="Homepage-recenze">
+                <img src="/svg/star.svg" class="star" />
+                <img src="/svg/star.svg" class="star" />
+                <img src="/svg/star.svg" class="star" />
+                <img src="/svg/star.svg" class="star" />
+                <img src="/svg/star.svg" class="star" />
+              </span>
+              <h3>Nazev</h3>
+            </a>
+            <button class="Homepage-add-to-cart">Do košíku</button>
+          </div>
+          <div class="Homepage-product">
+            <a href="detail_product.html">
+              <img src="img/XITAB013c2.webp" alt="Produkt 1" class="product_photo" />
+
+              <span class="Homepage-recenze">
+                <img src="/svg/star.svg" class="star" />
+                <img src="/svg/star.svg" class="star" />
+                <img src="/svg/star.svg" class="star" />
+                <img src="/svg/star.svg" class="star" />
+                <img src="/svg/star.svg" class="star" />
+              </span>
+              <h3>Nazev</h3>
+            </a>
+            <button class="Homepage-add-to-cart">Do košíku</button>
+          </div>
+          <div class="Homepage-product">
+            <a href="detail_product.html">
+              <img src="/img/RI048b2.webp" alt="Produkt 1" class="product_photo" />
+
+              <span class="Homepage-recenze">
+                <img src="/svg/star.svg" class="star" />
+                <img src="/svg/star.svg" class="star" />
+                <img src="/svg/star.svg" class="star" />
+                <img src="/svg/star.svg" class="star" />
+                <img src="/svg/star.svg" class="star" />
+              </span>
+              <h3>Nazev</h3>
+            </a>
+            <button class="Homepage-add-to-cart">Do košíku</button>
+          </div>
+        </div>
+      </div>
+      <div class="fixed-container">
+        <!-- Fixed container with "Add to Cart" button -->
+        <div class="product-prices">
+          <p class="Price">26 999,-</p>
+          <p class="noTaxes">bez DPH 13 000,-</p>
+        </div>
+        <button class="add-to-cart-btn">Přidat do košíku</button>
+      </div>
+      <footer>
+        <div class="footer-content">
+          <div class="contact-info">
+            <h3>Kontaktujte nás</h3>
+            <p>Telefon: +123 456 789</p>
+            <p>Email: info@example.com</p>
+            <p>Adresa: 123 Example Street, Město, PSČ</p>
+          </div>
+          <div class="quick-links">
+            <h3>Rychlé odkazy</h3>
+            <ul>
+              <li><a href="/obchodni-podminky">Obchodní podmínky</a></li>
+              <li><a href="/ochrana-osobnich-udaju">Ochrana osobních údajů</a></li>
+              <li><a href="/o-nas">O nás</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="social-media">
+          <h3>Sociální média</h3>
+          <a href="#" class="social-icon">Facebook</a>
+          <a href="#" class="social-icon">Twitter</a>
+          <a href="#" class="social-icon">Instagram</a>
+        </div>
+      </footer>
+
+
+      <script src="Javascript/productDetail.js">
+
+      </script>
 </body>
+
 
 </html>
