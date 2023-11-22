@@ -1,21 +1,74 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Název E-Shopu</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
-  </head>
-  <body>
-    <header>
-      <div id="name_E_shop">
-        <a href="index.html"><h1>Název E-Shopu</h1></a>
-      </div>
-      <!--1-->
 
-      <!--<input type="text" placeholder="Vyhledat"> -->
-      <form class="search">
-        <input type="text" class="search-box" required placeholder="Vyhledat" />
-        <div class="search-dropdown">
+<head>
+  <title>Název E-Shopu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+</head>
+
+<body>
+  <header>
+    <div id="name_E_shop">
+      <a href="index.html">
+        <h1>Název E-Shopu</h1>
+      </a>
+    </div>
+    <!--1-->
+
+    <!--<input type="text" placeholder="Vyhledat"> -->
+    <form class="search">
+      <input type="text" class="search-box" required placeholder="Vyhledat" />
+      <div class="search-dropdown">
+        <ul>
+          <li><a href="/">První položka</a></li>
+          <li><a href="/">Druhá položka</a></li>
+          <li><a href="/">Třetí položka</a></li>
+          <li><a href="/">Položka</a></li>
+          <li><a href="/">Položka</a></li>
+        </ul>
+      </div>
+      <button class="x-button" type="reset"></button>
+      <button class="search-button">
+        <img src="svg/find_manager_w.svg" class="lupa" alt="Přihlšení" />
+        <p>Hledat</p>
+      </button>
+      <div class="search-icon">
+        <button>
+          <img src="/svg/find_manager_w.svg" /> zobrazit vsechny vysledky
+        </button>
+      </div>
+    </form>
+    <!-- search --><!--2-->
+
+    <div class="right-header">
+      <div class="cart">
+        <a href="/Přihlšení">
+          <img src="/svg/user_w.svg" alt="Přihlšení" />
+        </a>
+      </div>
+
+      <div class="cart">
+        <a href="/Přihlšení">
+          <img src="svg/heat_wigth.svg" alt="oblivene" />
+        </a>
+      </div>
+
+      <div class="cart">
+        <a href="/kosik.html">
+          <img src="/svg/basket_Wight.svg" alt="Nákupní košík" />
+        </a>
+      </div>
+    </div>
+    <!--3-->
+  </header>
+
+  <div class="container">
+    <div id="homepage">
+      <div class="menu"><img src="/svg/menu_lines.svg" /></div>
+      <div class="main">
+        <div class="Homepage-list-catalog">
+          <!-- Obsah katalogu zboží zde -->
           <ul>
             <li><a href="/">První položka</a></li>
             <li><a href="/">Druhá položka</a></li>
@@ -24,68 +77,75 @@
             <li><a href="/">Položka</a></li>
           </ul>
         </div>
-        <button class="x-button" type="reset"></button>
-        <button class="search-button">
-          <img src="svg/find_manager_w.svg" class="lupa" alt="Přihlšení" />
-          <p>Hledat</p>
-        </button>
-        <div class="search-icon">
-          <button>
-            <img src="/svg/find_manager_w.svg" /> zobrazit vsechny vysledky
-          </button>
-        </div>
-      </form>
-      <!-- search --><!--2-->
 
-      <div class="right-header">
-        <div class="cart">
-          <a href="/Přihlšení">
-            <img src="/svg/user_w.svg" alt="Přihlšení" />
-          </a>
-        </div>
+        <div class="Homepage-catalog">
+          <h2>Nabidky zbozi</h2>
+          <div class="Homepage-recommended">
+            <!-- Doporucene zbozi zde -->
 
-        <div class="cart">
-          <a href="/Přihlšení">
-            <img src="svg/heat_wigth.svg" alt="oblivene" />
-          </a>
-        </div>
+            <div class="Homepage-product">
+              <a href="detail_product.html">
+                <img src="/img/RI048b2.webp" alt="Produkt 1" class="product_photo" />
 
-        <div class="cart">
-          <a href="/kosik.html">
-            <img src="/svg/basket_Wight.svg" alt="Nákupní košík" />
-          </a>
-        </div>
-      </div>
-      <!--3-->
-    </header>
+                <span class="Homepage-recenze">
+                  <img src="/svg/star.svg" class="star" />
+                  <img src="/svg/star.svg" class="star" />
+                  <img src="/svg/star.svg" class="star" />
+                  <img src="/svg/star.svg" class="star" />
+                  <img src="/svg/star.svg" class="star" />
+                </span>
+                <h3>Nazev</h3>
+              </a>
+              <button class="Homepage-add-to-cart">Do košíku</button>
+            </div>
+            <div class="Homepage-product">
+              <a href="detail_product.html">
+                <img src="img/RI047b4.webp" alt="Produkt 1" class="product_photo" />
 
-    <div class="container">
-      <div id="homepage">
-        <div class="menu"><img src="/svg/menu_lines.svg" /></div>
-        <div class="main">
-          <div class="Homepage-list-catalog">
-            <!-- Obsah katalogu zboží zde -->
-            <ul>
-              <li><a href="/">První položka</a></li>
-              <li><a href="/">Druhá položka</a></li>
-              <li><a href="/">Třetí položka</a></li>
-              <li><a href="/">Položka</a></li>
-              <li><a href="/">Položka</a></li>
-            </ul>
-          </div>
+                <span class="Homepage-recenze">
+                  <img src="/svg/star.svg" class="star" />
+                  <img src="/svg/star.svg" class="star" />
+                  <img src="/svg/star.svg" class="star" />
+                  <img src="/svg/star.svg" class="star" />
+                  <img src="/svg/star.svg" class="star" />
+                </span>
+                <h3>Nazev</h3>
+              </a>
+              <button class="Homepage-add-to-cart">Do košíku</button>
+            </div>
+            <div class="Homepage-product">
+              <a href="detail_product.html">
+                <img src="img/XITAB013c2.webp" alt="Produkt 1" class="product_photo" />
 
-          <div class="Homepage-catalog">
-            <h2>Nabidky zbozi</h2>
-            <div class="Homepage-recommended">
-              <!-- Doporucene zbozi zde -->
+                <span class="Homepage-recenze">
+                  <img src="/svg/star.svg" class="star" />
+                  <img src="/svg/star.svg" class="star" />
+                  <img src="/svg/star.svg" class="star" />
+                  <img src="/svg/star.svg" class="star" />
+                  <img src="/svg/star.svg" class="star" />
+                </span>
+                <h3>Nazev</h3>
+              </a>
+              <button class="Homepage-add-to-cart">Do košíku</button>
+            </div>
+            <div class="Homepage-product">
+              <a href="detail_product.html">
+                <img src="/img/RI048b2.webp" alt="Produkt 1" class="product_photo" />
 
-              <div class="Homepage-product">
-                <a href="detail_product.html">
-                  <img
-                    src="/img/RI048b2.webp"
-                    alt="Produkt 1"
-                    class="product_photo"
-                  />
+                <span class="Homepage-recenze">
+                  <img src="/svg/star.svg" class="star" />
+                  <img src="/svg/star.svg" class="star" />
+                  <img src="/svg/star.svg" class="star" />
+                  <img src="/svg/star.svg" class="star" />
+                  <img src="/svg/star.svg" class="star" />
+                </span>
+                <h3>Nazev</h3>
+              </a>
+              <button class="Homepage-add-to-cart">Do košíku</button>
+            </div>
+            <div class="Homepage-product">
+              <a href="detail_product.html">
+                <img src="img/RI047b4.webp" alt="Produkt 1" class="product_photo" />
 
                   <span class="Homepage-recenze">
                     <img src="/svg/star.svg" class="star" />
@@ -140,7 +200,7 @@
               <div class="Homepage-product">
                 <a href="detail_product.html">
                   <img
-                    src="Homepage-produkt1.jpg"
+                  src="img/XITAB013c2.webp"
                     alt="Produkt 1"
                     class="product_photo"
                   />
@@ -159,7 +219,7 @@
               <div class="Homepage-product">
                 <a href="detail_product.html">
                   <img
-                    src="Homepage-produkt1.jpg"
+                  src="img/XITAB013c2.webp"
                     alt="Produkt 1"
                     class="product_photo"
                   />
@@ -178,7 +238,7 @@
               <div class="Homepage-product">
                 <a href="detail_product.html">
                   <img
-                    src="Homepage-produkt1.jpg"
+                  src="img/XITAB013c2.webp"
                     alt="Produkt 1"
                     class="product_photo"
                   />
@@ -196,7 +256,7 @@
               <div class="Homepage-product">
                 <a href="detail_product.html">
                   <img
-                    src="Homepage-produkt1.jpg"
+                    src="img/XITAB013c2.webp"
                     alt="Produkt 1"
                     class="product_photo"
                   />
@@ -214,38 +274,51 @@
             </div>
           </div>
         </div>
-        <!--main-->
       </div>
-      <!--homepage-->
+      <!--main-->
     </div>
-    <!--container-->
+    <!--homepage-->
+  </div>
+  <!--container-->
 
-    <footer>
-      <div class="footer-content">
-        <div class="contact-info">
-          <h3>Kontaktujte nás</h3>
-          <p>Telefon: +123 456 789</p>
-          <p>Email: info@example.com</p>
-          <p>Adresa: 123 Example Street, Město, PSČ</p>
-        </div>
-        <div class="quick-links">
-          <h3>Rychlé odkazy</h3>
-          <ul>
-            <li><a href="/obchodni-podminky">Obchodní podmínky</a></li>
-            <li>
-              <a href="/ochrana-osobnich-udaju">Ochrana osobních údajů</a>
-            </li>
-            <li><a href="/o-nas">O nás</a></li>
-          </ul>
-        </div>
+  <footer>
+    <div class="footer-content">
+      <div class="contact-info">
+        <h3>Kontaktujte nás</h3>
+        <p>Telefon: +123 456 789</p>
+        <p>Email: info@example.com</p>
+        <p>Adresa: 123 Example Street, Město, PSČ</p>
       </div>
-      <div class="social-media">
-        <h3>Sociální média</h3>
-        <a href="#" class="social-icon">Facebook</a>
-        <a href="#" class="social-icon">Twitter</a>
-        <a href="#" class="social-icon">Instagram</a>
-        <a href="/kostra.html" class="social-icon">Kostra</a>
+      <div class="quick-links">
+        <h3>Rychlé odkazy</h3>
+        <ul>
+          <li><a href="/obchodni-podminky">Obchodní podmínky</a></li>
+          <li>
+            <a href="/ochrana-osobnich-udaju">Ochrana osobních údajů</a>
+          </li>
+          <li><a href="/o-nas">O nás</a></li>
+        </ul>
       </div>
-    </footer>
-  </body>
+    </div>
+    <div class="social-media">
+      <h3>Sociální média</h3>
+      <a href="#" class="social-icon">Facebook</a>
+      <a href="#" class="social-icon">Twitter</a>
+      <a href="#" class="social-icon">Instagram</a>
+      <a href="/kostra.html" class="social-icon">Kostra</a>
+    </div>
+  </footer>
+
+  <script>
+
+const addToCartButtons = document.querySelectorAll('.Homepage-product button.Homepage-add-to-cart');
+
+addToCartButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    window.location.href = '/kosik.html';
+  });
+});
+  </script>
+</body>
+
 </html>
