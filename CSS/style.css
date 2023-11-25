@@ -247,6 +247,7 @@ input:focus  .search > #name_E_shop   {
     display: flex;
     justify-content: space-between;
     grid-area: c;
+    max-width: 150px;
 }
 .cart img {
     
@@ -559,7 +560,7 @@ footer {
     cursor: pointer;
 }
 
-.delivery-options {
+.kosik-margin {
     margin-top: 20px;
 }
 /*---Vyber dopravy-konec---*/
