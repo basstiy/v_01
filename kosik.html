@@ -16,52 +16,52 @@
     </div>
     <!--1-->
 
-    <!--<input type="text" placeholder="Vyhledat"> -->
-    <form class="search">
-      <input type="text" class="search-box" required placeholder="Vyhledat" />
-      <div class="search-dropdown">
-        <ul>
-          <li><a href="/">První položka</a></li>
-          <li><a href="/">Druhá položka</a></li>
-          <li><a href="/">Třetí položka</a></li>
-          <li><a href="/">Položka</a></li>
-          <li><a href="/">Položka</a></li>
-        </ul>
-      </div>
-      <button class="x-button" type="reset"></button>
-      <button class="search-button">
-        <img src="svg/find_manager_w.svg" class="lupa" alt="Přihlšení" />
-        <p>Hledat</p>
-      </button>
-      <div class="search-icon">
-        <button>
-          <img src="/svg/find_manager_w.svg" /> zobrazit vsechny vysledky
-        </button>
-      </div>
-    </form>
-    <!-- search --><!--2-->
-
-    <div class="right-header">
-      <div class="cart">
-        <a href="/Přihlšení">
-          <img src="/svg/user_w.svg" alt="Přihlšení" />
-        </a>
-      </div>
-
-      <div class="cart">
-        <a href="/Přihlšení">
-          <img src="svg/heat_wigth.svg" alt="oblivene" />
-        </a>
-      </div>
-
-      <div class="cart">
-        <a href="/kosik.html">
-          <img src="/svg/basket_Wight.svg" alt="Nákupní košík" />
-        </a>
-      </div>
+   <!--<input type="text" placeholder="Vyhledat"> -->
+   <form class="search">
+    <input type="text" class="search-box" required placeholder="Vyhledávání" />
+    <div class="search-dropdown">
+      <ul>
+        <li><a href="/">První položka</a></li>
+        <li><a href="/">Druhá položka</a></li>
+        <li><a href="/">Třetí položka</a></li>
+        <li><a href="/">Čtvrtá položka</a></li>
+        <li><a href="/">Pátá položka</a></li>
+      </ul>
     </div>
-    <!--3-->
-  </header>
+    <button class="x-button" type="reset"></button>
+    <button class="search-button">
+      <img src="svg/find_manager_w.svg" class="lupa" alt="Vyhledat" />
+      <p>Hledat</p>
+    </button>
+    <div class="search-icon">
+      <button>
+        <img src="/svg/find_manager_w.svg" /> zobrazit vsechny vysledky
+      </button>
+    </div>
+  </form>
+  <!-- search --><!--2-->
+
+  <div class="right-header">
+    <div class="cart">
+      <a href="/Přihlšení">
+        <img src="/svg/user_w.svg" alt="Přihlášení" />
+      </a>
+    </div>
+
+    <div class="cart">
+      <a href="/Přihlšení">
+        <img src="svg/heat_wigth.svg" alt="Oblíbené" />
+      </a>
+    </div>
+
+    <div class="cart">
+      <a href="/kosik.html">
+        <img src="/svg/basket_Wight.svg" alt="Nákupní košík" />
+      </a>
+    </div>
+  </div>
+  <!--3-->
+</header>
 
     <div class="container">
       <div id="">
@@ -94,15 +94,15 @@
             </tbody>
         </table>
         <p class="total-price">Celková cena objednávky: <strong>3 380 Kč</strong></p>
-        <div class="delivery-options">
-            <p class="delivery-option">Způsob dopravy:</p>
-            <select name="delivery" id="delivery">
+        <div class="kosik-margin">
+            <p>Způsob dopravy:</p>
+            <select name="delivery" id="delivery" style="font-size: 1rem;">
                 <option value="osobni-odber">Osobní odběr - prodejna Sapa (zdarma)</option>
                 <option value="doprava-ceskou-postaou">Balík - Česká pošta (99 Kč)</option>
                 <option value="doprava-kuryrem">Kurýr GLS (199 Kč)</option>
             </select>
         </div>
-        <button type="button" onclick="window.location.href='/checkout.html'" style="margin-top: 20px; width: 50%;">Přejít k souhrnu objednávky</button>
+        <button type="button" class="btn-remove-product kosik-margin" onclick="window.location.href='/checkout.html'">Přejít k souhrnu objednávky</button>
   
     </div>
   
