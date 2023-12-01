@@ -1,19 +1,22 @@
 /* Resetování výchozích stylů prohlížeče */
-html,body, h1, p, ul, li {
-    margin: 0;
-    padding: 0;
+html,
+body,
+h1,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
 }
-h3{
-    font-size: 20px;
+h3 {
+  font-size: 20px;
 }
 
 /* Základní styly pro tělo stránky */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
 }
-
 
 /*****************************/
 /* Zacatek stylu pro header  */
@@ -21,39 +24,38 @@ body {
 
 /* Styl pro záhlaví stránky */
 header {
-    display: grid;
-    grid-template-areas: "a right-header right-header" "b b b";
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    row-gap: 20px;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+  display: grid;
+  grid-template-areas: "a right-header right-header" "b b b";
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  row-gap: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 h1 {
-    font-size: 30px/*24px*/;
-    white-space: nowrap; 
+  font-size: 30px /*24px*/;
+  white-space: nowrap;
 }
 a {
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-    align-items: center;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  align-items: center;
 }
-#name_E_shop{
-    grid-area: a;
+#name_E_shop {
+  grid-area: a;
 }
 
-
-header #name_E_shop h1{
-    padding: 0;
-    margin:  0 10px;
-    align-items: center;
-    /*background-color: #fff;*/
+header #name_E_shop h1 {
+  padding: 0;
+  margin: 0 10px;
+  align-items: center;
+  /*background-color: #fff;*/
 }
 /*
 .header-content{
@@ -63,86 +65,82 @@ header #name_E_shop h1{
 }
 */
 
-
 .search {
-    display: flex;
-    align-items: center;
-    position: relative;
-    grid-area: b;
-    background-color: #fff;
-    border-radius: 4px;
-    gap: 10px;
-    padding: 2px;
-    
-    
+  display: flex;
+  align-items: center;
+  position: relative;
+  grid-area: b;
+  background-color: #fff;
+  border-radius: 4px;
+  gap: 10px;
+  padding: 2px;
 }
-.lupa{
-    width: 35px;
-    filter: invert(100%);
+.lupa {
+  width: 35px;
+  filter: invert(100%);
 }
 
 .search input {
-    /*min-width: 50%;*/
-    flex-grow: 5; 
-    margin-left: 10px;
-    margin-right: 0px;
-    padding: 20px 0;
-    border: none;
-    border-radius: 4px;
-     /* Roztáhne se na plnou dostupnou šířku */
-     /*width: 100%;*/
-     font-size: 2vh;
-    /*border: none;*/
+  /*min-width: 50%;*/
+  flex-grow: 5;
+  margin-left: 10px;
+  margin-right: 0px;
+  padding: 20px 0;
+  border: none;
+  border-radius: 4px;
+  /* Roztáhne se na plnou dostupnou šířku */
+  /*width: 100%;*/
+  font-size: 2vh;
+  /*border: none;*/
 }
 
-.search input:focus{
-    outline: none;
+.search input:focus {
+  outline: none;
 }
 .search-button {
-    background-color: #fff ;
-    /*color: #fff;*/
-    /*padding: 10px 15px; pc*/
-    /*padding: 10px;*/ /*mobile*/
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    /*margin-left: 15px; /* Mezi tlačítkem a polem pro vyhledávání bude mezera */
-    display: block;
-    margin: 0;
-    padding: 0;
+  background-color: #fff;
+  /*color: #fff;*/
+  /*padding: 10px 15px; pc*/
+  /*padding: 10px;*/ /*mobile*/
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /*margin-left: 15px; /* Mezi tlačítkem a polem pro vyhledávání bude mezera */
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 .search-button p {
-    opacity: 0;
-    display: none;
+  opacity: 0;
+  display: none;
 }
 .x-button {
-    /*display: none;*/
-    background: none;
-    /*outline: none;*/
-    border: solid 2px #333;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    min-width: 35px;
-    min-height: 35px;
-    outline: 0;
-    vertical-align: middle;
-    display: inline-block;
-    transition: opacity 0.5s;
-   
+  /*display: none;*/
+  background: none;
+  /*outline: none;*/
+  border: solid 2px #333;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  min-width: 35px;
+  min-height: 35px;
+  outline: 0;
+  vertical-align: middle;
+  display: inline-block;
+  transition: opacity 0.5s;
 }
 
-.x-button:after{
-    content: "X";
-    font-size: 25px;
-	display: block; 
-	z-index:1;
-	text-align: center;
-	cursor: pointer;
+.x-button:after {
+  content: "X";
+  font-size: 25px;
+  display: block;
+  z-index: 1;
+  text-align: center;
+  cursor: pointer;
 }
 .search-box:not(:valid) ~ .x-button {
-	/*display: none;*/
-    opacity: 0;
+  /*display: none;*/
+  opacity: 0;
 }
 
 /*
@@ -151,51 +149,51 @@ header #name_E_shop h1{
     right: 0;
   }*/
 .search-dropdown {
-    /*display: none;*/
-    position: absolute;
-    width: 95%;
-    max-height: 0;
-    color: #333;
-    font-size: 2vb; /*mobile*/
-    border: none;
-    background: none;
-    z-index: 1;
-    opacity: 0;
-    transform: scaleY(0);
-    transform-origin: top;
-    transition: opacity 1s, transform 1s, max-height 0.1s;
-    overflow: hidden;
-    z-index: 2;
-
+  /*display: none;*/
+  position: absolute;
+  width: 95%;
+  max-height: 0;
+  color: #333;
+  font-size: 2vb; /*mobile*/
+  border: none;
+  background: none;
+  z-index: 1;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: opacity 1s, transform 1s, max-height 0.1s;
+  overflow: hidden;
+  z-index: 2;
 }
 
 /* Zacatek stylu search */
-.search-dropdown ul, .list_catalog ul{
-    list-style: none;
-    padding: 0;
+.search-dropdown ul,
+.list_catalog ul {
+  list-style: none;
+  padding: 0;
 }
 
 .search-dropdown ul li {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
 }
-.search-dropdown ul li:hover, .list_catalog li:hover {
-    background: #707070;
+.search-dropdown ul li:hover,
+.list_catalog li:hover {
+  background: #707070;
 }
-
 
 .search input:focus + .search-dropdown {
-    display: block;
-    position: absolute;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-shadow: 0 10px 5px 10px rgba(0, 0, 0, 0.1);
-    top: 100%;
-    opacity: 1;
-    transform: scaleY(1);
-    /*height: auto;*/
-   max-height: 1000px; 
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 10px 5px 10px rgba(0, 0, 0, 0.1);
+  top: 100%;
+  opacity: 1;
+  transform: scaleY(1);
+  /*height: auto;*/
+  max-height: 1000px;
 }
 /*
 .search input:focus ~ .search-button {
@@ -203,64 +201,60 @@ header #name_E_shop h1{
 }
 /*PC*/
 
-
 /* konec stylu search */
-input:focus  .search > #name_E_shop   {
-
-    opacity: 0;
-    background-color: #0056b3;
+input:focus .search > #name_E_shop {
+  opacity: 0;
+  background-color: #0056b3;
 }
-.search-icon{
-    display: flex;
-    opacity: 1;
-    transition: opacity 1s;
-    position: fixed;
-    justify-content: center;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    font-size: 2vb;
-    padding: 15px;
-    background-color: #ffffff;
-    
+.search-icon {
+  display: flex;
+  opacity: 1;
+  transition: opacity 1s;
+  position: fixed;
+  justify-content: center;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 2vb;
+  padding: 15px;
+  background-color: #ffffff;
 }
-.search-icon button{
-    width: 90%;
-    position: relative;
-    cursor: pointer;
-    margin: 5px;
-    background-color: #007bff;
-    border-radius: 15PX;
-    font-size: 2vb;
-    align-items: center;
-    justify-items: center;
-    padding: 25px;
-    box-shadow: 0px 0px 5px 5px #333;
-    color: #fff;
+.search-icon button {
+  width: 90%;
+  position: relative;
+  cursor: pointer;
+  margin: 5px;
+  background-color: #007bff;
+  border-radius: 15px;
+  font-size: 2vb;
+  align-items: center;
+  justify-items: center;
+  padding: 25px;
+  box-shadow: 0px 0px 5px 5px #333;
+  color: #fff;
 }
-.search-icon img{
-    width: 35px;
+.search-icon img {
+  width: 35px;
 }
 
 .search-box:not(:valid) ~ .search-icon {
-    display: none;
-    opacity: 0;
+  display: none;
+  opacity: 0;
 }
-.right-header{
-    display: flex;
-    justify-content: space-between;
-    grid-area: right-header;
-    max-width: 150px;
+.right-header {
+  display: flex;
+  justify-content: space-between;
+  grid-area: right-header;
+  max-width: 150px;
 }
 .cart img {
-    
-    width: 35px;
-    height: 35px;
-    /*width: 2vh;*/
-    margin: 0 5px;
+  width: 35px;
+  height: 35px;
+  /*width: 2vh;*/
+  margin: 0 5px;
 }
-.right-header .catalog{
-    filter: invert(100%);
+.right-header .catalog {
+  filter: invert(100%);
 }
 
 /* filter: invert(100%);*/
@@ -268,13 +262,13 @@ input:focus  .search > #name_E_shop   {
 /* Zacatek stylu pro CONTAINER  */
 /********************************/
 .container {
-    max-width: 1200px; /*pc*/
-    margin: 0 auto;
-    padding: 0px;
-    height: 100%;
-    min-height: 750px;
+  max-width: 1200px; /*pc*/
+  margin: 0 auto;
+  padding: 0px;
+  height: 100%;
+  min-height: 750px;
 
-    /*monile*/
+  /*monile*/
 }
 
 /****************************/
@@ -282,629 +276,665 @@ input:focus  .search > #name_E_shop   {
 /****************************/
 
 footer {
-    position: positive;
-    bottom: 0;
-    width: 100%;
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    font-size: 1vh;/*mobile*/
+  position: positive;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  font-size: 1vh; /*mobile*/
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
-.contact-info, .quick-links, .social-media {
-    flex: 1;
-    padding: 0 20px;
+.contact-info,
+.quick-links,
+.social-media {
+  flex: 1;
+  padding: 0 20px;
 }
 
 .contact-info p {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 .quick-links ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .quick-links ul li {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .social-icon {
-    display: block;
-    margin-top: 10px;
-    color: #fff;
-    text-decoration: none;
+  display: block;
+  margin-top: 10px;
+  color: #fff;
+  text-decoration: none;
 }
 /* konec stylu pro footer */
-
 
 /*>> Nize jsou konkretni stylovani <<**/
 
 /******************************/
 /* Zacatek stylu pro Homepage */
 /******************************/
-.main{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    background-color: #fff;
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #fff;
 }
-.menu{
-    width: 100%;
-    height: 40px;
-    border: solid 1px #333;
-    cursor: pointer;
-    background-color: #333;
-    
+.menu {
+  width: 100%;
+  height: 40px;
+  border: solid 1px #333;
+  cursor: pointer;
+  background-color: #333;
 }
-.menu:hover{
-    background-color: #706b6b;
+.menu:hover {
+  background-color: #706b6b;
 }
-#homepage .menu img{
- width: 35px;
- cursor: pointer;
- float: left;
- filter: invert(100%);
- position: relative;
- top: 50%;
- left: 50%;
- transform: translateY(-50%);
-
+#homepage .menu img {
+  width: 35px;
+  cursor: pointer;
+  float: left;
+  filter: invert(100%);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
 }
-.menu span{
-    float: left;
-    padding-left: 15px;
-    font-size: 2vb;
-    
+.menu span {
+  float: left;
+  padding-left: 15px;
+  font-size: 2vb;
 }
 
 .Homepage-list-catalog {
-    display: none; /**/
-    flex-direction: column;
-    /*flex: 1;*/
-    font-size: 2vb;
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    z-index: 0;
-    height: 100%;
-
+  display: none; /**/
+  flex-direction: column;
+  /*flex: 1;*/
+  font-size: 2vb;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  z-index: 0;
+  height: 100%;
 }
 
-.Homepage-list-catalog ul{
-    width: 100%;
-    display: flex; /*flex*/
-    flex-direction:column;
-    
+.Homepage-list-catalog ul {
+  width: 100%;
+  display: flex; /*flex*/
+  flex-direction: column;
 }
-.Homepage-list-catalog li{
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    display: flex;
-    /*
+.Homepage-list-catalog li {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  display: flex;
+  /*
     border-top: solid 1px #333;
     border-bottom: solid 1px #333;
     */
 }
-.Homepage-list-catalog li:hover{
-    border: 1px solid #706b6b;
+.Homepage-list-catalog li:hover {
+  border: 1px solid #706b6b;
 }
 
-.Homepage-list-catalog li a{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 5px 7px;
-    width: 100%;
+.Homepage-list-catalog li a {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px 7px;
+  width: 100%;
 }
-.Homepage-list-catalog li a:hover{
-    background-color: #ddd;
+.Homepage-list-catalog li a:hover {
+  background-color: #ddd;
 }
 .menu:hover ~ .main > .Homepage-list-catalog/*[style *= "display: flex;"]*/ {
-    display: flex;
-    /*background-color: #007bff;*/
+  display: flex;
+  /*background-color: #007bff;*/
 } /*nefunguje*/
 
-.Homepage-list-catalog:hover{
-    display: flex;
+.Homepage-list-catalog:hover {
+  display: flex;
 }
-.Homepage-catalog{
-    /*flex: 5;*/
-    height: 100%;/***/
-    background-color: #fff;
-    border: 1px solid #ddd;
-    margin-left: 0;
-    height: auto;
-    /*overflow: hidden;*/
+.Homepage-catalog {
+  /*flex: 5;*/
+  height: 100%; /***/
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-left: 0;
+  height: auto;
+  /*overflow: hidden;*/
 }
-.Homepage-catalog h2{
-    margin-left: 10px;
-    font-size: 2vh;
+.Homepage-catalog h2 {
+  margin-left: 10px;
+  font-size: 2vh;
 }
 
 .Homepage-recommended {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /*mobile*/
-    /*min-height: 2500px;/***/
-    justify-items: start;
-    align-items: start;
-    column-gap: 5px;
-    row-gap: 5px;
-    background-color: #fff;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 4px;
-    overflow: hidden;
- 
+  display: grid;
+  grid-template-columns: 1fr; /*mobile*/
+  /*min-height: 2500px;/***/
+  justify-items: start;
+  align-items: start;
+  column-gap: 5px;
+  row-gap: 5px;
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 4px;
+  overflow: hidden;
 }
 .Homepage-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-self: stretch;
+  /*min-width: 55%; /* Každý produkt bude mít 30% šířky, aby se vešly 3 vedle sebe */
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    justify-self: stretch;
-    /*min-width: 55%; /* Každý produkt bude mít 30% šířky, aby se vešly 3 vedle sebe */
-    margin: 5px;
-    text-align: center;
-    height: 425px;
-    min-width: 150px;
-    overflow: hidden;
-
-    
+  text-align: center;
+  height: 400px;
+  min-width: 150px;
+  overflow: hidden;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 20px;
 }
-.Homepage-product:hover{
-    box-shadow: 10px 0px 15px 2px rgba(0, 0, 0, 0.2);
+/*
+.Homepage-product:hover {
+  box-shadow: 10px 0px 15px 2px rgba(0, 0, 0, 0.2);
 }
+*/ /*PC*/
 .Homepage-product a {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: auto;
-    min-width: 150px;
-    font-size: 1vh;
-    /*min-width: 200px;*/
- 
-    background-color: #fff;
-    height: 350px;
-    margin: 0;
-    border: solid 3px #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 98.5%;
 
-    /*padding: 10px;*/
+  min-width: 140px;
+  font-size: 1vh;
+  /*min-width: 200px;*/
+
+  background-color: #fff;
+  height: 350px;
+  margin: 0;
+  padding: 0;
+
+  /*padding: 10px;*/
 }
 
 .Homepage-product .product_photo {
-    flex: 2;
-    align-self: center;
-    justify-self: center;
-    width: 130px;
-    height: 130px;
-    margin: 5px;
-    /*width: 150px;*/
-    object-fit: contain;
+  flex: 2;
+  align-self: center;
+  justify-self: center;
+  width: 130px;
+  height: 130px;
+  margin: 5px;
+  /*width: 150px;*/
+  object-fit: contain;
 }
 
-.Homepage-product p {
-    margin: 10px 0;
+
+.Homepage-product .popis {
+  margin: 10px 0;
+  font-size: 12px;
 }
-.Homepage-product .Homepage-recenze{
-    display: flex;
-    justify-content: center;
-    width: 70%;
+.Homepage-product .hlavni-popis{
+    
+    width: 90%;
+    margin: 0;
+    padding: 0;
+}
+.Homepage-product .hlavni-popis h3{
+ position: relative;
+ float: left;
+ -transform: translateY(-50%);
+}
+
+.Homepage-product .Homepage-recenze {
+  display: flex;
+  position: relative;
+  float: right;
+  top: 50%;
+  transform: translateY(-50%);
+  justify-content: center;
+  width: 40%;
 
 }
-.Homepage-product .Homepage-recenze .star{
-    width: auto;
-    height: 20px;
-    margin: 5px;
+.Homepage-product .Homepage-recenze .star {
+  width: auto;
+  height: 15px;
+  margin: 2px;
 }
+
+
 
 .Homepage-add-to-cart {
-    background-color: #007bff;
-    color: #fff;
-    padding: 30px;
-    font-size: 1vh;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    font-size: 1vb;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  font-size: 1vh;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+  font-size: 1.5vb;
+  float: right;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  border-radius: 3px;
+}
+
+.Homepage-recommended .cena{
+    float: left;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 25%;
+ 
+    position: relative;
+    white-space: nowrap;
+    font-size: 18px;
 
 }
 
 .Homepage-add-to-cart:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 /*zde piste vase kod*/
 
 /*---Vyber dopravy-zacatek---*/
 .kosik-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
 .kosik-header {
-    margin-left: 15%;
-    font-weight: bold;
-    font-size: 1.5rem;
-    top: 20px;
+  margin-left: 15%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  top: 20px;
 }
 
 .product-list {
-    width: 100%;
-    margin-top: 20px;
+  width: 100%;
+  margin-top: 20px;
 }
 
-.product-list th, .product-list td {
-    border: 1px solid #000000;
-    padding: 10px;
+.product-list th,
+.product-list td {
+  border: 1px solid #000000;
+  padding: 10px;
 }
 
 .product-list th {
-    text-align: left;
+  text-align: left;
 }
 
 .product-list th:last-child,
 .product-list td:last-child {
-    width: 10%;
+  width: 10%;
 }
 
 .total-price {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
 .btn-remove-product {
-    color: #ffffff;
-    background-color: #000000;
-    font-size: 1rem;
-    text-align: center;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+  color: #ffffff;
+  background-color: #000000;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
 .kosik-margin {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 /*---Vyber dopravy-konec---*/
 
 /*---Checkout-zacatek---*/
 /*---Vyuziva class z ,,kosik.html", jelikoz se jedna o podobny typ stranky---*/
 ul {
-    list-style-type: none;
-    margin-bottom: 20px;
+  list-style-type: none;
+  margin-bottom: 20px;
 }
 
 li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 /*---Checkout-konec---*/
 
-
 /***Honza***/
-#product-details{
-    padding: 10px;
-  }
-  .item-image{
-      max-width: 40%;
-      max-height: 500px;
-      margin: auto;
-  }
-  
-  #item-description{
-      max-width: 80%;
-      max-height: 500px;
-      margin: auto;
-  }
-  
-  .fixed-container {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
-      z-index: 1000;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-  }
-  
-  .product-prices{
-      margin-left: 3%;
-  }
-  .Price {
-      font-weight: bold;
-      font-size: 20px;
-    }
-    
-    .noTaxes {
-      font-size: smaller;
-    }
-  
-  .add-to-cart-btn {
-      background-color: #007bff;
-      color: #fff;
-      padding: 10px 20px;
-      font-size: 16px;
-      border: none;
-      cursor: pointer;
-      margin-left: 10px;
-      margin-right: 5%;
-  }
-  
-  .carousel {
-      width: 100%;
-      height: 300px; /* Set carousel height */
-      overflow: hidden; /* Hide overflowing content */
-      position: relative;
-      margin-bottom: 20px;
-    }
-    
-    .carousel-slides {
-      display: flex; /* Arrange slides horizontally */
-      transition: transform 0.5s ease-in-out; /* Add transition for smooth sliding */
-      position: absolute;
-      top: 0; /* Position slides at the top of the carousel */
-      left: 0; /* Position slides at the left of the carousel */
-      width: 100%; /* Make slides occupy the entire carousel width */
-      max-height: 100%; /* Make slides fill the entire carousel height */
-    }
-    
-    .carousel-slide {
-      width: 100%; /* Set slide width to 100% for full-width images */
-      height: 100%; /* Set slide height to 100% to fill the carousel height */
-      text-align: center; /* Center slide content */
-      display: flex;
-      justify-content: center; /* Center slide content horizontally */
-      align-items: center; /* Center slide content vertically */
-    }
-    
-    .carousel-controls {
-      position: absolute;
-      bottom: 0; /* Position controls at the bottom of the carousel */
-      left: 50%; /* Position controls horizontally centered */
-      transform: translateX(-50%); /* Translate controls to the left to compensate for centering */
-    }
-    
-    .carousel-controls button {
-      padding: 1px; /* Add padding to control buttons */
-      border: none; /* Remove default button border */
-      cursor: pointer; /* Make controls clickable */
-      font-size: xx-large;
-      width: 70px; /* Increase combo box width */
-      height: 30px; /* Increase combo box height */
-      font-size: 16px; /* Increase combo box font size */
-      background-color: grey;
-    }
-  
-    .combos {
-      display: inline-flex;
-      align-items: center;
-      margin: auto;
-    }
-    
-    .combo-container {
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .combo-container select {
-      width: 200px; /* Increase combo box width */
-      height: 30px; /* Increase combo box height */
-      font-size: 16px; /* Increase combo box font size */
-    }
-    
-    .combo-container label {
-      display: block;
-      margin-bottom: 10px;
-      font-size: small;
-      margin-bottom: 0%;
-    }
-    
-    .combo-container select {
-      margin-bottom: 20px;
-    }
-    .product-recenze{
-      display: inline-flex;
-      width: 100%;
-      margin-bottom: 20px;
-      font-size: small
-    }
-  .product-recenze .star{
-      width: auto;
-      height: 15px;
-      margin: 5px;
-      font-size: 30px;
-  }
-  .product-recenze p {
-      margin-right: 5px; /* Add margin between star icons */
-    }
-  
-    .tabs {
-      display: inline-flex;
-      border-bottom: 2px solid #ccc;
-    }
-    
-    .tab {
-      padding: 10px;
-      margin-right: 10px;
-      cursor: pointer;
-    }
-    
-    .tab.active {
-      background-color: #eee;
-      border-bottom: 2px solid #007bff;
-    }
-    
-    .tab-content {
-      padding: 10px;
-      display: none;
-    }
-    
-    /* Initially show the description tab content */
-    .tab-content.description {
-      display: block;
-    }
-    
-    .tab-content.description img{
-      margin-top: 3px;
-      max-width: 100%;
-      height: auto;    
-    }
-  
-    table {
-      border-collapse: collapse;
-      width: 100%;
-    }
-    
-    th, td {
-      border: 1px solid #ddd;
-      padding: 8px;
-      text-align: left;
-    }
-    
-    th {
-      background-color: #f2f2f2;
-    }
-    
-    .review .star{
-      width: auto;
-      height: 20px;
-      margin: 2px;
-      margin-top: 10px;
-  }
-  
+#product-details {
+  padding: 10px;
+}
+.item-image {
+  max-width: 40%;
+  max-height: 500px;
+  margin: auto;
+}
+
+#item-description {
+  max-width: 80%;
+  max-height: 500px;
+  margin: auto;
+}
+
+.fixed-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-prices {
+  margin-left: 3%;
+}
+.Price {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.noTaxes {
+  font-size: smaller;
+}
+
+.add-to-cart-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 5%;
+}
+
+.carousel {
+  width: 100%;
+  height: 300px; /* Set carousel height */
+  overflow: hidden; /* Hide overflowing content */
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.carousel-slides {
+  display: flex; /* Arrange slides horizontally */
+  transition: transform 0.5s ease-in-out; /* Add transition for smooth sliding */
+  position: absolute;
+  top: 0; /* Position slides at the top of the carousel */
+  left: 0; /* Position slides at the left of the carousel */
+  width: 100%; /* Make slides occupy the entire carousel width */
+  max-height: 100%; /* Make slides fill the entire carousel height */
+}
+
+.carousel-slide {
+  width: 100%; /* Set slide width to 100% for full-width images */
+  height: 100%; /* Set slide height to 100% to fill the carousel height */
+  text-align: center; /* Center slide content */
+  display: flex;
+  justify-content: center; /* Center slide content horizontally */
+  align-items: center; /* Center slide content vertically */
+}
+
+.carousel-controls {
+  position: absolute;
+  bottom: 0; /* Position controls at the bottom of the carousel */
+  left: 50%; /* Position controls horizontally centered */
+  transform: translateX(
+    -50%
+  ); /* Translate controls to the left to compensate for centering */
+}
+
+.carousel-controls button {
+  padding: 1px; /* Add padding to control buttons */
+  border: none; /* Remove default button border */
+  cursor: pointer; /* Make controls clickable */
+  font-size: xx-large;
+  width: 70px; /* Increase combo box width */
+  height: 30px; /* Increase combo box height */
+  font-size: 16px; /* Increase combo box font size */
+  background-color: grey;
+}
+
+.combos {
+  display: inline-flex;
+  align-items: center;
+  margin: auto;
+}
+
+.combo-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.combo-container select {
+  width: 200px; /* Increase combo box width */
+  height: 30px; /* Increase combo box height */
+  font-size: 16px; /* Increase combo box font size */
+}
+
+.combo-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: small;
+  margin-bottom: 0%;
+}
+
+.combo-container select {
+  margin-bottom: 20px;
+}
+.product-recenze {
+  display: inline-flex;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: small;
+}
+.product-recenze .star {
+  width: auto;
+  height: 15px;
+  margin: 5px;
+  font-size: 30px;
+}
+.product-recenze p {
+  margin-right: 5px; /* Add margin between star icons */
+}
+
+.tabs {
+  display: inline-flex;
+  border-bottom: 2px solid #ccc;
+}
+
+.tab {
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.tab.active {
+  background-color: #eee;
+  border-bottom: 2px solid #007bff;
+}
+
+.tab-content {
+  padding: 10px;
+  display: none;
+}
+
+/* Initially show the description tab content */
+.tab-content.description {
+  display: block;
+}
+
+.tab-content.description img {
+  margin-top: 3px;
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.review .star {
+  width: auto;
+  height: 20px;
+  margin: 2px;
+  margin-top: 10px;
+}
+
 /*****************/
 /*Zacatek catalog*/
 /*****************/
-#catolog .menu{
-background-color: #fff;
-width: 99.4%;
+#catolog .menu {
+  background-color: #fff;
+  width: 99.4%;
+  height: 65px;
 }
-#catolog .main{
-    position: relative;
-    background-color: #007bff;
-    width: 100%;
+#catolog .main {
+  position: relative;
+  background-color: #007bff;
+  width: 100%;
 }
 #catolog .menu img {
-    filter: invert(0%);
-    float: right;
-    display: inline;
-    width: 25px;
-    top: 50%;
-    position: relative;
-    transform: translateY(-50%);
+  filter: invert(0%);
+  float: right;
+  display: inline;
+  width: 25px;
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
 }
 
 #catolog .menu p {
-    filter: invert(0%);
-    float: left;
-    text-align: left;
-    padding-left: 15px;
-    
-    width: 80%;
-    top: 50%;
-    transform: translateY(-50%);
-    position: relative;
+  filter: invert(0%);
+  float: left;
+  text-align: left;
+  padding-left: 15px;
+
+  width: 80%;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
 }
+/*****************/
+/* Konec catalog */
+/*****************/
+
 /****/
 /*PC*/
 /****/
-@media screen and (min-width:320px) and (max-width: 480px ) {
-    
-    header {
-        grid-template-areas: "a . right-header" "b b b";
-    }
-    .Homepage-recommended {
-        grid-template-columns: 1fr 1fr;
-      }
-      
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  header {
+    grid-template-areas: "a . right-header" "b b b";
   }
-  /*481px — 768 px: iPads, Tablets
+  .Homepage-recommended {
+    grid-template-columns: 1fr;
+  }
+}
+/*481px — 768 px: iPads, Tablets
     769px — 1024px: Small screens, laptops*/
 @media screen and (min-width: 480px) and (max-width: 1024px) {
-    header {
-        grid-template-areas: "a b b b right-header right-header";
-    }
-    .Homepage-recommended {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-    
-    .search input:focus ~ .search-button {
-     display: block;
-    }
+  header {
+    grid-template-areas: "a b b b right-header right-header";
+  }
+  .Homepage-recommended {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 
-    .main{
+  .search input:focus ~ .search-button {
+    display: block;
+  }
+
+  .main {
     flex-direction: row;
-   }  
-   .Homepage-list-catalog {
-    display: flex; 
-   }
-   .menu{
+  }
+  .Homepage-list-catalog {
+    display: flex;
+  }
+  .menu {
     display: none;
-   }
-   .Homepage-product {
+  }
+  .Homepage-product {
     border-radius: 0px;
     height: 325px;
-   }
-   .Homepage-product a{
+  }
+  .Homepage-product a {
     border-radius: 0px;
     height: 250px;
-   }
-   .Homepage-product .Homepage-recenze{
+  }
+  .Homepage-product .Homepage-recenze {
     display: flex;
     justify-content: center;
     width: 70%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  header {
+    grid-template-areas: "a b b b right-header right-header";
+  }
+  .Homepage-recommended {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 
+  .search input:focus ~ .search-button p {
+    display: block;
+  }
+  /*PC*/
+  .main {
+    flex-direction: row;
+  }
+  .Homepage-list-catalog {
+    display: flex;
+  }
+  .menu {
+    display: none;
+  }
+  .Homepage-product {
+    border-radius: 0px;
+  }
+  .Homepage-product a {
+    border-radius: 0px;
+  }
 }
 
-  }
-  @media screen and (min-width: 1025px)  {
-    header {
-        grid-template-areas: "a b b b right-header right-header";
-    }
-    .Homepage-recommended {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-    
-    .search input:focus ~ .search-button p{
-     display: block;
-    }
-/*PC*/
-    .main{
-    flex-direction: row;
-   }  
-   .Homepage-list-catalog {
-    display: flex; 
-   }
-   .menu{
-    display: none;
-   }
-   .Homepage-product {
-    border-radius: 0px;
-   }
-   .Homepage-product a{
-    border-radius: 0px;
-   }
-
-  }
-  
 /* Další styly podle vašich potřeb */
-
-
-
