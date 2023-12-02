@@ -37,85 +37,54 @@
         <button>
           <img src="/svg/find_manager_w.svg" /> zobrazit vsechny vysledky
         </button>
+        <div class="search-icon">
+          <button>
+            <img src="/svg/find_manager_w.svg" /> zobrazit vsechny vysledky
+          </button>
+        </div>
+      </form>
+      <!-- search --><!--2-->
+
+      <div class="right-header">
+
       </div>
-    </form>
-    <!-- search --><!--2-->
-
-    <div class="right-header">
-
       
-    </div>
-    <!--3-->
-  </header>
-      <!-- KOSIK-ZACATEK -->
+      <!--3-->
+    </header>
+
     <div class="container">
-      <div id="kosik_2">
+      <div id="doprava">
         <nav> 
 
-          <a href="#" class="selected">Košík</a>
-          <a href="/Doprava.html">Doprava</a>
-          <a href="#">Platba</a>
+          <a href="/kosik 2.html" >Košík</a>
+          <a href="#" class="selected">Doprava</a>
+          <a href="/checkout.html">Platba</a>
 
         </nav>
 
-
-    
-      <div class="kosik-container">
-        <table class="product-list">
-
-            <tbody>
-                <tr>
-                    <td colspan="2" style="text-align: center;">iFong 7S Plus</td>
-                </tr>
-                <tr>
-                  <td>
-                    <span class="kus">
-                    <span class="input-number-decrement" >–</span>
-                    <input class="input-number" type="text" value="1" min="0" max="10">
-                    <span class="input-number-increment">+</span>
-                    </span>
-                  </td>
-                  <td class="cena">2 990 Kč</td>
-                </tr>
-             <tr>
-                  <td colspan="2" style="text-align: center;">Fucci iFong 7S Plus kryt</td>
-              </tr>
-
-              <tr>
-                <td>
-                  <span class="kus">
-                  <span class="input-number-decrement" >–</span>
-                  <input class="input-number" type="text" value="1" min="0" max="10">
-                  <span class="input-number-increment">+</span>
-                  </span>
-                </td>
-                <td class="cena">390 Kč</td>
-              </tr>
-
-
-            </tbody>
-        </table>
-        <p class="total-price">Celková cena objednávky: <strong>3 380 Kč</strong></p>
-        <button type="button" onclick="window.location.href='/Doprava.html'" style="margin-top: 20px; width: 50%;">Doprava</button>
-  
-    </div>
-  
-      <!-- KOSIK-KONEC -->
+        
+        <div class="delivery-options">
+            <p class="delivery-option">Způsob dopravy:</p>
+            <select name="delivery" id="delivery">
+                <option value="osobni-odber">Osobní odběr - prodejna Sapa (zdarma)</option>
+                <option value="doprava-ceskou-postaou">Balík - Česká pošta (99 Kč)</option>
+                <option value="doprava-kuryrem">Kurýr GLS (199 Kč)</option>
+            </select>
+        </div>
+        <button type="button" onclick="window.location.href='/checkout.html'" style="margin-top: 20px; width: 50%;">Přejít k souhrnu objednávky</button>
+        <!--zde pis svuj kod-->
       </div>
       <!-- -->
     </div>
     <!--container-->
 
-
-
-    <!-- FOOTER -->
     <footer>
       <div class="footer-content">
         <div class="contact-info">
           <h3>Kontaktujte nás</h3>
           <p>Telefon: +123 456 789</p>
-          <p>Email: info@e-shop.com</p>
-          <p>Adresa: Kamýcká 129, Praha, 165 00</p>
+          <p>Email: info@example.com</p>
+          <p>Adresa: 123 Example Street, Město, PSČ</p>
         </div>
         <div class="quick-links">
           <h3>Rychlé odkazy</h3>
@@ -131,12 +100,10 @@
       <div class="social-media">
         <h3>Sociální média</h3>
         <a href="#" class="social-icon">Facebook</a>
-        <a href="#" class="social-icon">Platforma X</a>
+        <a href="#" class="social-icon">Twitter</a>
         <a href="#" class="social-icon">Instagram</a>
+        <a href="/kostra.html" class="social-icon">Kostra</a>
       </div>
     </footer>
-
-
-
   </body>
 </html>
