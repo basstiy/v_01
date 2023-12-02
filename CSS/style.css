@@ -693,6 +693,10 @@ li {
 #checkout nav .selected{
    background-color: #555;
 }
+#doprava .col{
+  display: flex;
+  flex-direction: column;
+}
 
 /***Honza***/
 #product-details {

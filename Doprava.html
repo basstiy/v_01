@@ -71,8 +71,59 @@
                 <option value="doprava-kuryrem">Kurýr GLS (199 Kč)</option>
             </select>
         </div>
-        <button type="button" onclick="window.location.href='/checkout.html'" style="margin-top: 20px; width: 50%;">Přejít k souhrnu objednávky</button>
-        <!--zde pis svuj kod-->
+        <script src="Javascript/doprova_cheaked.js">
+
+        </script>
+        <h3>zpusob placeni</h3>
+        <p>
+          <label for="test1">online</label>
+          <input type="checkbox" id="myCheck" />
+        </p>
+        <!-- form -->
+        <div class="pay_online">
+        <form action="/">
+  
+            <div class="col">
+             
+             
+              <h3>Payment</h3>
+              <label for="fname">Accepted Cards</label>
+              
+           
+
+              <label for="cname">Name on Card</label>
+
+              <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+              <label for="ccnum">Credit card number</label>
+              <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+              <label for="expmonth">Exp Month</label>
+              <input type="text" id="expmonth" name="expmonth" placeholder="September">
+  
+              <div class="row">
+                <div class="col">
+                  <label for="expyear">Exp Year</label>
+                  <input type="text" id="expyear" name="expyear" placeholder="2018">
+                </div>
+                <div class="col">
+                  <label for="cvv">CVV</label>
+                  <input type="text" id="cvv" name="cvv" placeholder="352">
+                </div>
+              </div>
+            </div>
+
+
+          
+          <input type="submit" value="Přejít k souhrnu objednávky" class="btn">
+        
+        
+        </form>
+       </div>
+
+
+
+
+
+
       </div>
       <!-- -->
     </div>
