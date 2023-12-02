@@ -38,7 +38,7 @@ header {
 }
 
 h1 {
-  font-size: 30px /*24px*/;
+  font-size: 25px /*24px*/;
   white-space: nowrap;
 }
 a {
@@ -76,7 +76,7 @@ header #name_E_shop h1 {
   padding: 2px;
 }
 .lupa {
-  width: 35px;
+  width: 25px;
   filter: invert(100%);
 }
 
@@ -85,7 +85,7 @@ header #name_E_shop h1 {
   flex-grow: 5;
   margin-left: 10px;
   margin-right: 0px;
-  padding: 20px 0;
+  padding: 15px 0;
   border: none;
   border-radius: 4px;
   /* Roztáhne se na plnou dostupnou šířku */
@@ -120,10 +120,10 @@ header #name_E_shop h1 {
   /*outline: none;*/
   border: solid 2px #333;
   border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  min-width: 35px;
-  min-height: 35px;
+  width: 25px;
+  height: 25px;
+  min-width: 25px;
+  min-height: 25px;
   outline: 0;
   vertical-align: middle;
   display: inline-block;
@@ -132,7 +132,7 @@ header #name_E_shop h1 {
 
 .x-button:after {
   content: "X";
-  font-size: 25px;
+  font-size: 15px;
   display: block;
   z-index: 1;
   text-align: center;
@@ -331,7 +331,7 @@ footer {
 }
 .menu {
   width: 100%;
-  height: 40px;
+  height: 30px;
   border: solid 1px #333;
   cursor: pointer;
   background-color: #333;
@@ -340,7 +340,7 @@ footer {
   background-color: #706b6b;
 }
 #homepage .menu img {
-  width: 35px;
+  width: 20px;
   cursor: pointer;
   float: left;
   filter: invert(100%);
@@ -436,25 +436,20 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   justify-self: stretch;
-  /*min-width: 55%; /* Každý produkt bude mít 30% šířky, aby se vešly 3 vedle sebe */
-
   text-align: center;
   height: 400px;
   min-width: 150px;
   overflow: hidden;
   border-bottom: 1px solid #000000;
   padding-bottom: 20px;
+ 
 }
-/*
-.Homepage-product:hover {
-  box-shadow: 10px 0px 15px 2px rgba(0, 0, 0, 0.2);
-}
-*/ /*PC*/
+ /*PC*/
 .Homepage-product a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 98.5%;
+  width: 100%;
 
   min-width: 140px;
   font-size: 1vh;
@@ -539,11 +534,9 @@ footer {
     transform: translateY(-50%);
     text-align: center;
     width: 25%;
- 
     position: relative;
     white-space: nowrap;
     font-size: 18px;
-
 }
 
 .Homepage-add-to-cart:hover {
@@ -564,9 +557,9 @@ footer {
 }
 
 .kosik-header {
-  margin-left: 15%;
+  margin-left: 15px;
   font-weight: bold;
-  font-size: 1.5rem;
+  /*font-size: 1.5rem;*/
   top: 20px;
 }
 
@@ -623,6 +616,55 @@ li {
 }
 /*---Checkout-konec---*/
 
+#kosik_2 .kus{
+  display: flex;
+  margin: 0;
+ 
+}
+#kosik_2 .input-number{
+ width: 20px;
+ padding: 0 12px;
+ vertical-align: top;
+ text-align: center;
+ outline: none;
+}
+
+
+#kosik_2 .input-number,
+#kosik_2 .input-number-decrement,
+#kosik_2 .input-number-increment{
+  border: 1px solid #ccc;
+  height: 40px;
+  user-select: none;
+  margin: 0;
+}
+
+
+#kosik_2 .input-number-decrement,
+#kosik_2 .input-number-increment{
+  display: inline-block;
+  width: 30px;
+  line-height: 38px;
+  background: #f1f1f1;
+  color: #444;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+
+  }
+  
+  #kosik_2 .input-number-decrement{
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+  }
+
+  #kosik_2 .input-number-increment{
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+}
+#kosik_2 .cena{
+  white-space: nowrap;
+}
 /***Honza***/
 #product-details {
   padding: 10px;
@@ -906,6 +948,9 @@ th {
     display: flex;
     justify-content: center;
     width: 70%;
+  }
+  .Homepage-product:hover {
+    box-shadow: 10px 0px 15px 2px rgba(0, 0, 0, 0.2);
   }
 }
 @media screen and (min-width: 1025px) {
