@@ -204,10 +204,7 @@ header .search input:focus + .search-dropdown {
 /*PC*/
 
 /* konec stylu search */
-header input:focus .search > #name_E_shop {
-  opacity: 0;
-  background-color: #0056b3;
-}
+
 header .search-icon {
   display: flex;
   opacity: 1;
@@ -325,85 +322,31 @@ footer .social-icon {
 /******************************/
 /* Zacatek stylu pro Homepage */
 /******************************/
-#homepage .main {
+#catalog {
   display: flex;
   flex-direction: column;
   height: 100%;
   background-color: #fff;
 }
-#homepage .menu {
-  width: 100%;
-  height: 30px;
-  border: solid 1px #333;
-  cursor: pointer;
-  background-color: #333;
+
+/****************************/
+/* konec stylu pro Homepage */
+/****************************/
+
+/******************************/
+/* Zacatek stylu pro Homepage */
+/******************************/
+#homepage .advertising{
+  background-color: #fff;
+  border: 1px solid #000;
+  width: 99%;
+  height: 250px;
 }
-#homepage .menu:hover {
-  background-color: #706b6b;
-}
-#homepage .menu img {
-  width: 20px;
-  cursor: pointer;
-  float: left;
-  filter: invert(100%);
+#homepage .advertising img{
+  width: 86%;
   position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%);
-}
-#homepage .menu span {
-  float: left;
-  padding-left: 15px;
-  font-size: 2vb;
-}
-
-#homepage .Homepage-list-catalog {
-  display: none; /**/
-  flex-direction: column;
-  /*flex: 1;*/
-  font-size: 2vb;
-  background-color: #fff;
-  padding: 20px;
-  border: 1px solid #ddd;
-  z-index: 0;
-  height: 100%;
-}
-
-#homepage .Homepage-list-catalog ul {
-  width: 100%;
-  display: flex; /*flex*/
-  flex-direction: column;
-}
-#homepage .Homepage-list-catalog li {
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-  display: flex;
-  /*
-    border-top: solid 1px #333;
-    border-bottom: solid 1px #333;
-    */
-}
-#homepage .Homepage-list-catalog li:hover {
-  border: 1px solid #706b6b;
-}
-
-#homepage .Homepage-list-catalog li a {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding: 5px 7px;
-  width: 100%;
-}
-#homepage .Homepage-list-catalog li a:hover {
-  background-color: #ddd;
-}
-#homepage .menu:hover ~ #homepage .main > #homepage .Homepage-list-catalog/*[style *= "display: flex;"]*/ {
-  display: flex;
-  /*background-color: #007bff;*/
-} /*nefunguje*/
-
-#homepage .Homepage-list-catalog:hover {
-  display: flex;
+  left: 7%;
+  top: 5px;
 }
 #homepage .Homepage-catalog {
   /*flex: 5;*/
@@ -433,7 +376,14 @@ footer .social-icon {
   border-radius: 4px;
   overflow: hidden;
 }
-#homepage .Homepage-product {
+/******************/
+/* konec HOMEPAGE */
+/******************/
+
+/* TODO style pro produkt je obecne. Neni jen pro HOMEPAGE*/
+
+/* Product */
+.product {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -447,7 +397,7 @@ footer .social-icon {
  
 }
  /*PC*/
- #homepage .Homepage-product a {
+ .product a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -465,7 +415,7 @@ footer .social-icon {
   /*padding: 10px;*/
 }
 
-#homepage .Homepage-product .product_photo {
+.product .product_photo {
   flex: 2;
   align-self: center;
   justify-self: center;
@@ -477,23 +427,23 @@ footer .social-icon {
 }
 
 
-#homepage .Homepage-product .popis {
+.product .popis {
   margin: 10px 0;
   font-size: 12px;
 }
-#homepage .Homepage-product .hlavni-popis{
+.product .hlavni-popis{
     
     width: 95%;
     margin: 0;
     padding: 0;
 }
-#homepage .Homepage-product .hlavni-popis h3{
+.product .hlavni-popis h3{
  position: relative;
  float: left;
  -transform: translateY(-50%);
 }
 
-#homepage .Homepage-product .Homepage-recenze {
+.product .Homepage-recenze {
   display: flex;
   position: relative;
   float: right;
@@ -503,15 +453,13 @@ footer .social-icon {
   width: 40%;
 
 }
-#homepage .Homepage-product .Homepage-recenze .star {
+.product .Homepage-recenze .star {
   width: auto;
   height: 15px;
   margin: 2px;
 }
 
-
-
-#homepage .Homepage-add-to-cart {
+.Homepage-add-to-cart {
   background-color: #007bff;
   color: #fff;
   padding: 10px;
@@ -528,7 +476,7 @@ footer .social-icon {
   border-radius: 3px;
 }
 
-#homepage .Homepage-recommended .cena{
+.Homepage-recommended .cena{
     float: left;
     position: relative;
     top: 50%;
@@ -541,13 +489,95 @@ footer .social-icon {
     font-size: 18px;
 }
 
-#homepage .Homepage-add-to-cart:hover {
+.Homepage-add-to-cart:hover {
   background-color: #0056b3;
 }
 
-/*zde piste vase kod*/
 
+
+
+
+/*  POZOR STYL PRO MENU a menu-list-catalog BUDE VSUDE STEJNI*/
+ .menu {
+  width: 100%;
+  height: 30px;
+  border: solid 1px #333;
+  cursor: pointer;
+  background-color: #333;
+}
+ .menu:hover {
+  background-color: #706b6b;
+}
+ .menu img {
+  width: 20px;
+  cursor: pointer;
+  float: left;
+  filter: invert(100%);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+}
+.menu span {
+  float: left;
+  padding-left: 15px;
+  font-size: 2vb;
+}
+
+.menu-list-catalog {
+  display: none; /**/
+  flex-direction: column;
+  /*flex: 1;*/
+  font-size: 2vb;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  z-index: 0;
+  height: 100%;
+}
+
+.menu-list-catalog ul {
+  width: 100%;
+  display: flex; /*flex*/
+  flex-direction: column;
+}
+.menu-list-catalog li {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  display: flex;
+  /*
+    border-top: solid 1px #333;
+    border-bottom: solid 1px #333;
+    */
+}
+ .menu-list-catalog li:hover {
+  border: 1px solid #706b6b;
+}
+
+ .menu-list-catalog li a {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px 7px;
+  width: 100%;
+}
+ .menu-list-catalog li a:hover {
+  background-color: #ddd;
+}
+ .menu:hover ~ .menu-list-catalog/*[style *= "display: flex;"]*/ {
+  display: flex;
+  /*background-color: #007bff;*/
+} /*nefunguje*/
+
+ .menu-list-catalog:hover {
+  display: flex;
+}
+
+
+/*****************************/
 /*---Vyber dopravy-zacatek---*/
+/*****************************/
+
 .kosik-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -604,9 +634,14 @@ footer .social-icon {
 .kosik-margin {
   margin-top: 20px;
 }
+/***************************/
 /*---Vyber dopravy-konec---*/
+/***************************/
 
+/************************/
 /*---Checkout-zacatek---*/
+/************************/
+
 /*---Vyuziva class z ,,kosik.html", jelikoz se jedna o podobny typ stranky---*/
 ul {
   list-style-type: none;
@@ -616,7 +651,10 @@ ul {
 li {
   margin-bottom: 10px;
 }
+
+/**********************/
 /*---Checkout-konec---*/
+/**********************/
 
 #kosik_2 .kus{
   display: flex;
@@ -700,7 +738,11 @@ li {
   flex-direction: column;
 }
 
-/***Honza***/
+/***Honza***/ 
+
+/******************/
+/* detail-product */
+/******************/
 #product-details {
   padding: 10px;
 }
@@ -907,11 +949,7 @@ th {
   width: 99.4%;
   height: 65px;
 }
-#catolog .main {
-  position: relative;
-  background-color: #007bff;
-  width: 100%;
-}
+
 #catolog .menu img {
   filter: invert(0%);
   float: right;
@@ -962,29 +1000,29 @@ th {
     display: block;
   }
 
-  .main {
+  #catalog {
     flex-direction: row;
   }
-  .Homepage-list-catalog {
+  .menu-list-catalog {
     display: flex;
   }
   .menu {
     display: none;
   }
-  .Homepage-product {
+  .product {
     border-radius: 0px;
     height: 325px;
   }
-  .Homepage-product a {
+  .product a {
     border-radius: 0px;
     height: 250px;
   }
-  .Homepage-product .Homepage-recenze {
+  .product .Homepage-recenze {
     display: flex;
     justify-content: center;
     width: 70%;
   }
-  .Homepage-product:hover {
+  .product:hover {
     box-shadow: 10px 0px 15px 2px rgba(0, 0, 0, 0.2);
   }
 }
@@ -1000,19 +1038,19 @@ th {
     display: block;
   }
   /*PC*/
-  .main {
+  #catalog {
     flex-direction: row;
   }
-  .Homepage-list-catalog {
+  .menu-list-catalog {
     display: flex;
   }
   .menu {
     display: none;
   }
-  .Homepage-product {
+  .product {
     border-radius: 0px;
   }
-  .Homepage-product a {
+  .product a {
     border-radius: 0px;
   }
 }
