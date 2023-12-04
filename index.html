@@ -1,228 +1,238 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Název E-Shopu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+  </head>
 
-<head>
-  <title>Název E-Shopu</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="CSS/style.css" />
-</head>
-
-<body>
-  <header>
-    <div id="name_E_shop">
-      <a href="index.html">
-        <h1>Název E-Shopu</h1>
-      </a>
-    </div>
-    <!--1-->
-
-    <!--<input type="text" placeholder="Vyhledat"> -->
-    <form class="search">
-      <input type="text" class="search-box" required placeholder="Vyhledat" />
-      <div class="search-dropdown">
-        <ul>
-          <li><a href="/">První položka</a></li>
-          <li><a href="/">Druhá položka</a></li>
-          <li><a href="/">Třetí položka</a></li>
-          <li><a href="/">Položka</a></li>
-          <li><a href="/">Položka</a></li>
-        </ul>
+  <body>
+    <header>
+      <div id="name_E_shop">
+        <a href="index.html">
+          <h1>Název E-Shopu</h1>
+        </a>
       </div>
-      <button class="x-button" type="reset"></button>
-      <button class="search-button">
-        <img src="svg/find_manager_w.svg" class="lupa" alt="Přihlšení" />
-        <p>Hledat</p>
-      </button>
-      <div class="search-icon">
-        <button>
-          <img src="/svg/find_manager_w.svg" /> zobrazit vsechny vysledky
+
+      <!-- Index/Homepage header -->
+      <form class="search">
+        <input type="text" class="search-box" required placeholder="Vyhledat" />
+        <div class="search-dropdown">
+          <ul>
+            <li><a href="/">První položka</a></li>
+            <li><a href="/">Druhá položka</a></li>
+            <li><a href="/">Třetí položka</a></li>
+            <li><a href="/">Čtvrtá položka</a></li>
+            <li><a href="/">Pátá položka</a></li>
+          </ul>
+        </div>
+        <button class="x-button" type="reset"></button>
+        <button class="search-button">
+          <img src="svg/find_manager_w.svg" class="lupa" alt="Přihlášení" />
+          <p>Hledat</p>
         </button>
+        <div class="search-icon">
+          <button>
+            <img src="/svg/find_manager_w.svg" /> Zobrazit všechny výsledky
+          </button>
+        </div>
+      </form>
+
+      <div class="right-header">
+        <div class="cart">
+          <a href="/kosik 2.html">
+            <img src="/svg/basket_Wight.svg" alt="Nákupní košík" />
+          </a>
+        </div>
+        <div class="cart catalog">
+          <a href="/category.html">
+            <img src="/svg/menu_lines.svg" alt="Kategorie" />
+          </a>
+        </div>
       </div>
-    </form>
-    <!-- search --><!--2-->
+    </header>
 
-    <div class="right-header">
-      <div class="cart">
-        <a href="/kosik 2.html">
-          <img src="/svg/basket_Wight.svg" alt="Nákupní košík" />
-        </a>
-      </div>
-      <div class="cart catalog">
-        <a href="/category.html">
-          <img src="/svg/menu_lines.svg" alt="Nákupní košík" />
-        </a>
-      </div>
-
-
-    </div>
-    <!--3-->
-  </header>
-
-  <div class="container">
-    <div id="homepage">
-
-      <div class="advertising">
-        <a href="catalog.html">
-        <img src="/img/obrazek.webp" alt="reklama" />
-      </a>
-
-      </div>
-
+    <!-- Index/Homepage obsah -->
+    <div class="container">
+      <div id="homepage">
         <div class="Homepage-catalog">
-          <h2>Dnesni nabytky</h2>
+          <p style="margin-left: 8px">
+            <i
+              >Tento web není plně funkční e-shop, jedná se o studentský
+              projekt.</i
+            >
+          </p>
+          <h2 class="trhak-dne">SLEVY DNE:</h2>
 
-
-          <div class="Homepage-recommended">
+          <div class="Homepage-recommended-p3">
             <!-- Doporucene zbozi zde -->
 
-            
             <div class="product">
-             
               <a href="detail_product.html">
-                <img src="/img/RI048b2.webp" alt="Produkt 1" class="product_photo" />
-                
+                <img
+                  src="/img/RI048b2.webp"
+                  alt="Produkt"
+                  class="product_photo"
+                />
                 <span class="hlavni-popis">
-                <h3>Nazev</h3>
-                <span class="Homepage-recenze">
-                  <img src="/svg/star.svg" class="star" />
-                  <img src="/svg/star.svg" class="star" />
-                  <img src="/svg/star.svg" class="star" />
-                  <img src="/svg/star.svg" class="star" />
-                  <img src="/svg/star.svg" class="star" />
-                </span>
-                </span>
-                <p class="popis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, cupiditate. A ducimus voluptas minus obcaecati saepe nostrum aliquam tempore sit corporis voluptatum molestias, consectetur ipsa.</p>
-              </a>
-            
-              <span> 
-                <p class="cena">25000 kc</p>
-                <button class="Homepage-add-to-cart">Do košíku</button>
-              </span>
-            </div><!-- Produkt -->
-            
+                  <h3>iPhone 12</h3>
 
-            <div class="product">
-             
-              <a href="detail_product.html">
-                <img src="/img/RI047b4.webp" alt="Produkt 1" class="product_photo" />
-                
-                <span class="hlavni-popis">
-                <h3>Nazev</h3>
-                <span class="Homepage-recenze">
-                  <img src="/svg/star.svg" class="star" />
-                  <img src="/svg/star.svg" class="star" />
-                  <img src="/svg/star.svg" class="star" />
-                  <img src="/svg/star.svg" class="star" />
-                  <img src="/svg/star.svg" class="star" />
+                  <span class="Homepage-recenze">
+                    <img src="/svg/star.svg" class="star" />
+                    <img src="/svg/star.svg" class="star" />
+                    <img src="/svg/star.svg" class="star" />
+                    <img src="/svg/star.svg" class="star" />
+                    <img src="/svg/star.svg" class="star" />
+                  </span>
                 </span>
-                </span>
-                <p class="popis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, cupiditate. A ducimus voluptas minus obcaecati saepe nostrum aliquam tempore sit corporis voluptatum molestias, consectetur ipsa.</p>
+                <p class="popis red-text">
+                  Zbývají poslední kusy za zvýhodněnou cenu!
+                </p>
               </a>
-              <span> 
-                <p class="cena">25000 kc</p>
-                <button class="Homepage-add-to-cart">Do košíku</button>
-              </span>
-            </div><!-- Produkt -->
-            
 
-            <div class="product">
-             
-              <a href="detail_product.html">
-                <img src="/img/RI048b2.webp" alt="Produkt 1" class="product_photo" />
-                
-                <span class="hlavni-popis">
-                <h3>Nazev</h3>
-                <span class="Homepage-recenze">
-                  <img src="/svg/star.svg" class="star" />
-                  <img src="/svg/star.svg" class="star" />
-                  <img src="/svg/star.svg" class="star" />
-                  <img src="/svg/star.svg" class="star" />
-                  <img src="/svg/star.svg" class="star" />
-                </span>
-                </span>
-                <p class="popis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, cupiditate. A ducimus voluptas minus obcaecati saepe nostrum aliquam tempore sit corporis voluptatum molestias, consectetur ipsa.</p>
-              </a>
-            
-              <span> 
-                <p class="cena">25000 kc</p>
+              <span>
+                <p class="cena">24.999,- Kč</p>
                 <button class="Homepage-add-to-cart">Do košíku</button>
               </span>
-            </div><!-- Produkt -->
-           
-            
-            <div class="product">
-             
-              <a href="detail_product.html">
-                <img src="/img/RI047b4.webp" alt="Produkt 1" class="product_photo" />
-                
-                <span class="hlavni-popis">
-                <h3>Nazev</h3>
-                <span class="Homepage-recenze">
-                  <img src="/svg/star.svg" class="star" />
-                  <img src="/svg/star.svg" class="star" />
-                  <img src="/svg/star.svg" class="star" />
-                  <img src="/svg/star.svg" class="star" />
-                  <img src="/svg/star.svg" class="star" />
-                </span>
-                </span>
-                <p class="popis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, cupiditate. A ducimus voluptas minus obcaecati saepe nostrum aliquam tempore sit corporis voluptatum molestias, consectetur ipsa.</p>
-              </a>
-              <span> 
-                <p class="cena">25000 kc</p>
-                <button class="Homepage-add-to-cart">Do košíku</button>
-              </span>
-            </div><!-- Produkt -->
-            
-            
-            
-
             </div>
+            <!--product-->
+
+            <div class="product">
+              <a href="detail_product.html">
+                <img
+                  src="/img/RI048b2.webp"
+                  alt="Produkt"
+                  class="product_photo"
+                />
+                <span class="hlavni-popis">
+                  <h3>iPhone 12</h3>
+
+                  <span class="Homepage-recenze">
+                    <img src="/svg/star.svg" class="star" alt="*" />
+                    <img src="/svg/star.svg" class="star" alt="*" />
+                    <img src="/svg/star.svg" class="star" alt="*" />
+                    <img src="/svg/star.svg" class="star" alt="*" />
+                    <img src="/svg/star.svg" class="star" alt="*" />
+                  </span>
+                </span>
+                <p class="popis red-text">
+                  Zbývají poslední kusy za zvýhodněnou cenu!
+                </p>
+              </a>
+
+              <span>
+                <p class="cena">24.999,- Kč</p>
+                <button class="Homepage-add-to-cart">Do košíku</button>
+              </span>
+            </div>
+            <!--product-->
+
+            <div class="product">
+              <a href="detail_product.html">
+                <img
+                  src="/img/RI048b2.webp"
+                  alt="Produkt"
+                  class="product_photo"
+                />
+                <span class="hlavni-popis">
+                  <h3>iPhone 12</h3>
+
+                  <span class="Homepage-recenze">
+                    <img src="/svg/star.svg" class="star" />
+                    <img src="/svg/star.svg" class="star" />
+                    <img src="/svg/star.svg" class="star" />
+                    <img src="/svg/star.svg" class="star" />
+                    <img src="/svg/star.svg" class="star" />
+                  </span>
+                </span>
+                <p class="popis red-text">
+                  Zbývají poslední kusy za zvýhodněnou cenu!
+                </p>
+              </a>
+
+              <span>
+                <p class="cena">24.999,- Kč</p>
+                <button class="Homepage-add-to-cart">Do košíku</button>
+              </span>
+            </div>
+            <!--product-->
           </div>
+          <span class="dolni-c">
+            <button
+              type="button"
+              class="btn-go-to-catalog"
+              onclick="window.location.href='/catalog.html'"
+            >
+              Zobrazit úplný katalog
+            </button>
+          </span>
         </div>
-    
-    </div>
-    <!--homepage-->
-  </div>
-  <!--container-->
-
-  <footer>
-    <div class="footer-content">
-      <div class="contact-info">
-        <h3>Kontaktujte nás</h3>
-        <p>Telefon: +123 456 789</p>
-        <p>Email: info@example.com</p>
-        <p>Adresa: 123 Example Street, Město, PSČ</p>
+        <div class="o_nas">
+          <h3>O nás:</h3>
+          <ul>
+            <li>
+              Zabýváme se prodejem mobilních telefonů již od roku 18 před naším
+              letopočtem.
+            </li>
+            <li>Prodej pouze bez faktury.</li>
+            <li>Nejsme plátci DPH, firma je registrována v Albánii.</li>
+            <li>
+              Záruku na zboží neposkytujeme, naše produkty jsou určené na
+              náhradní díly.
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="quick-links">
-        <h3>Rychlé odkazy</h3>
-        <ul>
-          <li><a href="/obchodni-podminky">Obchodní podmínky</a></li>
-          <li>
-            <a href="/ochrana-osobnich-udaju">Ochrana osobních údajů</a>
-          </li>
-          <li><a href="/o-nas">O nás</a></li>
-        </ul>
+      <!--homepage-->
+    </div>
+
+    <footer>
+      <div class="footer-content">
+
+        <div class="contact-info">
+          <h3>Kontaktujte nás</h3>
+          <p>Telefon: +123 456 789</p>
+          <p>Email nemáme, použijte fax.</p>
+          <p>Adresa: Kamýcká 129, Praha, 165 00</p>
+        </div>
+        <div class="quick-links">
+          <h3>Rychlé odkazy</h3>
+          <ul>
+            <li><a href="https://cat-bounce.com/">Obchodní podmínky</a></li>
+            <li>
+              <a
+                href="https://lh4.googleusercontent.com/DVb-o1HfuVaUjEn6_o0fkzID2l6YVBabDgvUUyjwCJgr9--wQI7Rx2O5lLYn802yrCD0j7d4OUleZoQf4BRTkrvwh-7O71xInbHzNvFHRsT6bpg4B_9KsOm7pFx1aEQxNd-h0uNx"
+                >Ochrana osobních údajů</a
+              >
+            </li>
+            <li><a href="/index.html">O nás</a></li>
+          </ul>
+        </div>
+        
       </div>
-    </div>
-    <div class="social-media">
-      <h3>Sociální média</h3>
-      <a href="#" class="social-icon">Facebook</a>
-      <a href="#" class="social-icon">Twitter</a>
-      <a href="#" class="social-icon">Instagram</a>
-      <a href="/kostra.html" class="social-icon">Kostra</a>
-    </div>
-  </footer>
+      <div class="social-media">
+        <h3>Sociální média</h3>
+        <a href="https://twitter.com/tweetingtoaster" class="social-icon"
+          >Platforma X</a
+        >
+        <a
+          href="https://www.instagram.com/world_record_egg/?hl=cs"
+          class="social-icon"
+          >Instagram</a
+        >
+      </div>
+    </footer>
 
-  <script>
+    <script>
+      const addToCartButtons = document.querySelectorAll(
+        ".product button.Homepage-add-to-cart"
+      );
 
-const addToCartButtons = document.querySelectorAll('.product button.Homepage-add-to-cart');
-
-addToCartButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    window.location.href = '/kosik.html';
-  });
-});
-  </script>
-</body>
-
+      addToCartButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          window.location.href = "/kosik.html";
+        });
+      });
+    </script>
+  </body>
 </html>
