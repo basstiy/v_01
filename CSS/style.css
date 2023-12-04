@@ -78,6 +78,7 @@ header .search {
 header .lupa {
   width: 25px;
   filter: invert(100%);
+  padding-right: 10px;
 }
 
 header .search input {
@@ -273,25 +274,36 @@ header .right-header .catalog {
 /****************************/
 
 footer {
-  position: positive;
+  position: relative;
   bottom: 0;
   width: 100%;
   background-color: #333;
   color: #fff;
   padding: 20px 0;
   font-size: 1vh; /*mobile*/
+
+
+  -justify-content: center;
+  -flex-direction: column;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
+  width: 90%;
+  margin-left: 5%;
+
 }
 
 footer .contact-info,
 footer .quick-links,
 footer .social-media {
   flex: 1;
-  padding: 0 20px;
+
+}
+footer .social-media {
+  width: 90%;
+  margin-left: 5%;
 }
 
 footer .contact-info p {
@@ -336,7 +348,7 @@ footer .social-icon {
 /******************************/
  .red-text {
   color: red;
-  font-size: 1rem;
+
   text-align: center;
 }
 
@@ -354,11 +366,11 @@ footer .social-icon {
   border: none;
   padding: 10px 20px;
   cursor: pointer;
-  position: relative;
-  left: 35%;
-  -transform: translateX(-50%);
-}
 
+}
+#homepage .o_nas{
+  padding: 15px;
+}
 #homepage .Homepage-catalog {
   /*flex: 5;*/
   height: 100%; /***/
@@ -388,6 +400,12 @@ footer .social-icon {
   margin: 10px;
   border-radius: 4px;
   overflow: hidden;
+}
+.Homepage-catalog .dolni-c{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
 }
 
 
@@ -438,7 +456,8 @@ footer .social-icon {
 
 .product .popis {
   margin: 10px 0;
-  font-size: 12px;
+  font-size: 1rem;
+  max-width: 250px;
 }
 .product .hlavni-popis{
     display: flex;
@@ -1011,19 +1030,23 @@ th {
 @media screen and (min-width: 480px) {
   
   header {
-    grid-template-areas: "a b b b right-header right-header";
+    grid-template-areas: "a . right-header" "b b b";
   }
   .Homepage-recommended {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
   }
   .Homepage-recommended-p3{
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    
 
   }
   #homepage .Homepage-catalog{
     min-height: 530px;
   }
-
+  #homepage .o_nas{
+    padding: 15px;
+  }
   .search input:focus ~ .search-button {
     display: block;
   }
@@ -1039,11 +1062,11 @@ th {
   }
   .product {
     border: none;
-    height: 325px;
+    height: 365px;
   }
   .product a {
   
-    height: 250px;
+    min-height: 250px;
   }
   .product .Homepage-recenze {
     display: flex;
@@ -1065,7 +1088,12 @@ th {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .Homepage-recommended-p3 {
-    grid-template-columns: 1fr 1fr 1fr ;
+    display: flex;
+    justify-content: space-around;
+   
+  }
+  #homepage .o_nas{
+    padding: 0;
   }
   .search input:focus ~ .search-button p {
     display: block;
