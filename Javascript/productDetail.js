@@ -94,13 +94,13 @@ reviewsLink.addEventListener('click', (event) => {
 const addToCartButtonProduct = document.querySelector('.add-to-cart-btn');
 
 addToCartButtonProduct.addEventListener('click', () => {
-  window.location.href = '/kosik.html';
+  window.location.href = '/kosik 2.html';
 });
 
 const addToCartButtons = document.querySelectorAll('.Homepage-product button.Homepage-add-to-cart');
 
 addToCartButtons.forEach(button => {
   button.addEventListener('click', () => {
-    window.location.href = '/kosik.html';
+    window.location.href = '//kosik 2.html';
   });
 });
