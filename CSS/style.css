@@ -911,13 +911,14 @@ li {
   display: none;
 }
 
-#description-content p{
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5em;
-    color: #333;
-    margin: 20px 0;
-    text-align: justify;
+
+
+#description-content p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #333;
+  margin: 20px 0;
 }
 
 /* Initially show the description tab content */
@@ -1100,6 +1101,13 @@ th {
   .payment {
     display: inline-flex;
     justify-content: space-between;
+  }
+
+  #description-content img {
+    width: 40%; /* Set a fixed width for the image */
+    max-width: 300px;
+    margin-right: 20px;
+    float: right;
   }
   
   .Recommended-products {
