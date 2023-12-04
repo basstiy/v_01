@@ -318,7 +318,7 @@ footer .social-icon {
 /*>> Nize jsou konkretni stylovani <<**/
 
 /******************************/
-/* Zacatek stylu pro Homepage */
+/* Zacatek stylu pro Catalog */
 /******************************/
 #catalog {
   display: flex;
@@ -327,25 +327,38 @@ footer .social-icon {
   background-color: #fff;
 }
 
-/****************************/
-/* konec stylu pro Homepage */
-/****************************/
+/***************************/
+/* konec stylu pro Catalog */
+/***************************/
 
 /******************************/
 /* Zacatek stylu pro Homepage */
 /******************************/
-#homepage .advertising{
-  background-color: #fff;
-  border: 1px solid #000;
-  width: 99%;
-  height: 250px;
+ .red-text {
+  color: red;
+  font-size: 1rem;
+  text-align: center;
 }
-#homepage .advertising img{
-  width: 86%;
+
+ .trhak-dne {
+  color: red;
+  font-size: 2.5rem;
+  margin-left: 5%;
+}
+
+ .btn-go-to-catalog {
+  color: #ffffff;
+  background-color: #000000;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
   position: relative;
-  left: 7%;
-  top: 5px;
+  left: 35%;
+  -transform: translateX(-50%);
 }
+
 #homepage .Homepage-catalog {
   /*flex: 5;*/
   height: 100%; /***/
@@ -353,6 +366,7 @@ footer .social-icon {
   border: 1px solid #ddd;
   margin-left: 0;
   height: auto;
+  min-height: 1450px;
   /*overflow: hidden;*/
 }
 #homepage .Homepage-catalog h2 {
@@ -360,7 +374,8 @@ footer .social-icon {
   font-size: 2vh;
 }
 
-#homepage .Homepage-recommended {
+ .Homepage-recommended,
+ .Homepage-recommended-p3 {
   display: grid;
   grid-template-columns: 1fr; /*mobile*/
   /*min-height: 2500px;/***/
@@ -374,6 +389,8 @@ footer .social-icon {
   border-radius: 4px;
   overflow: hidden;
 }
+
+
 /******************/
 /* konec HOMEPAGE */
 /******************/
@@ -399,17 +416,12 @@ footer .social-icon {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-
   min-width: 140px;
   font-size: 1vh;
-  /*min-width: 200px;*/
-
   background-color: #fff;
   height: 350px;
   margin: 0;
   padding: 0;
-
-  /*padding: 10px;*/
 }
 
 .product .product_photo {
@@ -429,25 +441,21 @@ footer .social-icon {
   font-size: 12px;
 }
 .product .hlavni-popis{
-    
+    display: flex;
+    justify-content: space-around;
     width: 95%;
     margin: 0;
     padding: 0;
 }
 .product .hlavni-popis h3{
- position: relative;
- float: left;
- -transform: translateY(-50%);
+ white-space: nowrap;
 }
 
 .product .Homepage-recenze {
   display: flex;
-  position: relative;
-  float: right;
-  top: 50%;
-  transform: translateY(-50%);
   justify-content: center;
-  width: 40%;
+  align-items: center;
+  
 
 }
 .product .Homepage-recenze .star {
@@ -517,7 +525,7 @@ footer .social-icon {
   /*flex: 1;*/
   font-size: 2vb;
   background-color: #fff;
-  padding: 20px;
+  padding: 0px;
   border: 1px solid #ddd;
   z-index: 0;
   height: 100%;
@@ -988,14 +996,13 @@ th {
 /* Konec catalog */
 /*****************/
 
-/****/
-/*PC*/
-/****/
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
   header {
     grid-template-areas: "a . right-header" "b b b";
   }
-  .Homepage-recommended {
+  .Homepage-recommended,
+  .Homepage-recommended-p3 {
     grid-template-columns: 1fr;
   }
 }
@@ -1008,6 +1015,13 @@ th {
   }
   .Homepage-recommended {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .Homepage-recommended-p3{
+    grid-template-columns: 1fr 1fr 1fr;
+
+  }
+  #homepage .Homepage-catalog{
+    min-height: 530px;
   }
 
   .search input:focus ~ .search-button {
@@ -1024,22 +1038,23 @@ th {
     display: none;
   }
   .product {
-    border-radius: 0px;
+    border: none;
     height: 325px;
   }
   .product a {
-    border-radius: 0px;
+  
     height: 250px;
   }
   .product .Homepage-recenze {
     display: flex;
     justify-content: center;
-    width: 70%;
-  }
-  .product:hover {
-    box-shadow: 10px 0px 15px 2px rgba(0, 0, 0, 0.2);
+    
   }
 
+  .product .hlavni-popis{
+    flex-direction: column;
+    justify-content: center;
+  }
 
 }
 @media screen and (min-width: 1025px) {
@@ -1049,7 +1064,9 @@ th {
   .Homepage-recommended {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-
+  .Homepage-recommended-p3 {
+    grid-template-columns: 1fr 1fr 1fr ;
+  }
   .search input:focus ~ .search-button p {
     display: block;
   }
@@ -1107,7 +1124,7 @@ th {
     overflow-x: auto; /* Enable horizontal scrolling */
   }
 
-  .Recommended-products .product {
+   .product {
     display: inline-flex;
     width: 200px;
     min-width: 200px; /* Set minimum width for each product */
@@ -1115,7 +1132,12 @@ th {
     padding: 0;
     border-bottom: none;
   }
-  
+  .product .hlavni-popis{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /*
   .hlavni-popis {
     display: grid;
     grid-template-columns: auto;
@@ -1123,7 +1145,7 @@ th {
     border-bottom: none;
     justify-items: center;
     align-items: center;
-  }
+  }*/
 
 
 
