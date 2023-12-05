@@ -974,7 +974,10 @@ nav  .selected{
   margin: 20px 0;
 }
 
-/* Initially show the description tab content */
+#parameters-table{
+  border: solid black 2px;
+}
+
 .tab-content.description {
   display: block;
 }
