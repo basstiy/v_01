@@ -527,7 +527,7 @@ footer .odstavec{
 
 #catalog .menu-list-catalog h3,
 #catalog .Homepage-catalog h2 {
-  margin-left: 6px;
+  margin-left: 5px;
 }
 
 
@@ -1107,8 +1107,16 @@ th {
     display: none;
   }
   #category .menu{
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
   }
+  #category .menu p{
+    font-size: 20px;
+   }
+   #category .menu-list-catalog a{
+    font-size: 18px;
+   }
   .product {
     border: none;
     height: 365px;
@@ -1206,6 +1214,10 @@ th {
 #category .menu p{
  font-size: 20px;
 }
+#category .menu-list-catalog a,
+#catalog a{
+  font-size: 18px;
+ }
 #catalog .Homepage-catalog{
     min-height: 530px;
     padding: 15px;
