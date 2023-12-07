@@ -365,14 +365,25 @@ footer .odstavec{
 
  .btn-go-to-catalog {
   color: #ffffff;
-  background-color: #000000;
+  background-color: #001831;
+  /*#007bff;*/
   font-size: 1rem;
   text-align: center;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
-
 }
+.btn-go-to-catalog-2{
+  text-align: center;
+  background-color: #fff;
+  font-size: 1rem;
+  border: 1px solid #000;
+  width: 150px;
+  height: 30px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
 #homepage .o_nas{
   padding: 15px;
 }
@@ -515,11 +526,12 @@ footer .odstavec{
 
 
 /*  POZOR STYL PRO MENU a menu-list-catalog BUDE VSUDE STEJNI*/
- .menu {
+ .menu, .sub-menu {
   width: 100%;
   height: 30px;
   cursor: pointer;
 }
+
 #catalog .menu {
   border: solid 1px #333;
   background-color: #333;
@@ -531,13 +543,13 @@ footer .odstavec{
 }
 
 
- .menu:hover {
+ .menu:hover , .sub-menu:hover {
   background-color: #706b6b;
 }
- .menu img {
+ .menu img
+ ,.sub-menu img {
   width: 20px;
   cursor: pointer;
-
 }
 #catalog .menu img{
   filter: invert(100%);
@@ -555,7 +567,7 @@ footer .odstavec{
 }
 
 .menu-list-catalog {
-  display: none; /**/
+  display: none; 
   flex-direction: column;
   /*flex: 1;*/
   font-size: 2vb;
@@ -594,7 +606,8 @@ footer .odstavec{
  .menu-list-catalog li a:hover {
   background-color: #ddd;
 }
- .menu:hover ~ .menu-list-catalog/*[style *= "display: flex;"]*/ {
+ .menu:hover ~ .menu-list-catalog,
+ .sub-menu:hover ~ .menu-list-catalog {
   display: flex;
   /*background-color: #007bff;*/
 } /*nefunguje*/
@@ -1100,18 +1113,20 @@ th {
   #catalog {
     flex-direction: row;
   }
-  #catalog .menu-list-catalog {
+  #catalog .menu .menu-list-catalog {
     display: flex;
   }
   #catalog .menu {
     display: none;
   }
-  #category .menu{
+  #category .menu,
+  #category .sub-menu{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
   }
-  #category .menu p{
+  #category .menu p,
+  #category .sub-menu p{
     font-size: 20px;
    }
    #category .menu-list-catalog a{
@@ -1140,8 +1155,13 @@ th {
     height: 200px;
   }
   
-
+  .Recommended-products {
+    display: flex;
+    overflow-x: scroll; 
+  }
 }
+
+
 @media screen and (min-width: 1025px) {
   header {
     grid-template-areas: "a b b b right-header right-header";
@@ -1160,19 +1180,17 @@ th {
   .search input:focus ~ .search-button p {
     display: block;
   }
-  /*PC*/
+  
   #catalog {
     flex-direction: row;
   }
-  #catalog .menu-list-catalog {
+  #catalog .menu ~ .menu-list-catalog {
     display: flex;
   }
   #catalog .menu {
     display: none;
   }
-  #category .menu{
-    display: block;
-  }
+
 
   .product {
     border-radius: 0px;
@@ -1206,12 +1224,14 @@ th {
     padding: 0 5px;
     min-width: 150px;
 }
-#category .menu{
+#category .menu,
+#category .sub-menu{
   display: flex;
   justify-content: space-between;
   flex-direction: row;
 }
-#category .menu p{
+#category .menu p,
+#category .sub-menu p{
  font-size: 20px;
 }
 #category .menu-list-catalog a,
@@ -1245,7 +1265,7 @@ th {
   
   .Recommended-products {
     display: flex;
-    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-x: scroll; 
   }
 
    .product {
