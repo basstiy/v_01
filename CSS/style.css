@@ -342,6 +342,7 @@ footer .odstavec{
   flex-direction: column;
   height: 100%;
   background-color: #fff;
+  overflow: hidden;
 }
 
 /***************************/
@@ -531,7 +532,9 @@ footer .odstavec{
   height: 30px;
   cursor: pointer;
 }
-
+.seznam{
+  position: relative;
+}
 #catalog .menu {
   border: solid 1px #333;
   background-color: #333;
@@ -573,17 +576,22 @@ footer .odstavec{
   font-size: 2vb;
   background-color: #fff;
   padding: 0px;
+  margin: 0;
   border: 1px solid #ddd;
-  z-index: 0;
+  /*z-index: 0;*/
   height: 100%;
+  position: relative;
+
 }
 
 .menu-list-catalog ul {
+  position: relative;
   width: 100%;
-  display: flex; /*flex*/
+  display: flex; 
   flex-direction: column;
 }
 .menu-list-catalog li {
+  position: relative;
   margin: 0px;
   padding: 0px;
   width: 100%;
@@ -1096,7 +1104,8 @@ th {
   .Homepage-recommended-p3{
     display: flex;
     justify-content: center;
-    
+    margin-top: 10%;
+    position: relative;
 
   }
   #homepage .Homepage-catalog{
@@ -1223,6 +1232,9 @@ th {
 #catalog .menu-list-catalog {
     padding: 0 5px;
     min-width: 150px;
+}
+#catalog #category .menu-list-catalog{
+  min-width: auto;
 }
 #category .menu,
 #category .sub-menu{
