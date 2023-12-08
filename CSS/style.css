@@ -527,15 +527,19 @@ footer .odstavec{
 
 
 /*  POZOR STYL PRO MENU a menu-list-catalog BUDE VSUDE STEJNI*/
- .menu, .sub-menu {
+ .menu, .menu-down, .sub-menu {
   width: 100%;
   height: 30px;
   cursor: pointer;
 }
+.sub-menu{
+  display: flex;
+  justify-content: space-between;
+}
 .seznam{
   position: relative;
 }
-#catalog .menu {
+#catalog .menu, #catalog .menu-down {
   border: solid 1px #333;
   background-color: #333;
 }
@@ -546,15 +550,13 @@ footer .odstavec{
 }
 
 
- .menu:hover , .sub-menu:hover {
-  background-color: #706b6b;
-}
  .menu img
- ,.sub-menu img {
+ ,.sub-menu img
+ ,.menu-down img {
   width: 20px;
   cursor: pointer;
 }
-#catalog .menu img{
+#catalog .menu img, #catalog .menu-down img{
   filter: invert(100%);
   float: left;
   position: relative;
@@ -614,12 +616,18 @@ footer .odstavec{
  .menu-list-catalog li a:hover {
   background-color: #ddd;
 }
+.menu:hover {
+  visibility: visible;
+  opacity: 0;
+}
  .menu:hover ~ .menu-list-catalog,
  .sub-menu:hover ~ .menu-list-catalog {
   display: flex;
   /*background-color: #007bff;*/
 } /*nefunguje*/
-
+.menu-list-catalog:hover .menu {
+  visibility: visible;
+} 
  .menu-list-catalog:hover {
   display: flex;
 }
@@ -1083,6 +1091,7 @@ th {
 
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
+
   header {
     grid-template-areas: "a . right-header" "b b b";
   }
@@ -1291,6 +1300,9 @@ th {
   .product .hlavni-popis{
     flex-direction: column;
     justify-content: center;
+  }
+  .catalog{
+    display: none;
   }
 
     /*
