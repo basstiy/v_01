@@ -768,15 +768,14 @@ input[type="radio"]{
 }
 .card-vyber-placeni input[type="radio"]:checked 
 + p  {
-  background-color: #b9b7b7;
+  background-color: rgb(243, 244, 248);
+  box-shadow: 0px 0px 2px 2px #333;
 }
 .card-vyber-placeni p:hover{
   cursor: pointer;
 }
 
-input[type="radio"][value="kaarta"]:checked ~ .bank-card{
-  display: none;
-}
+
 
 .osobni_udaje .group{ 
   position:relative; 

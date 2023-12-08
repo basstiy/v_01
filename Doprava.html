@@ -62,15 +62,52 @@
       <div id="doprava">
 
 
-        
-        <div class="delivery-options">
-            <p class="delivery-option">Způsob dopravy:</p>
-            <select name="delivery" id="delivery">
-                <option value="osobni-odber">Osobní odběr - prodejna Sapa (zdarma)</option>
-                <option value="doprava-ceskou-postaou">Balík - Česká pošta (99 Kč)</option>
-                <option value="doprava-kuryrem">Kurýr GLS (199 Kč)</option>
-            </select>
+      
+
+        <div class="udaje">
+      
+
+          <h3>Způsob dopravy </h3>
+         
+             <ul>
+                <li>
+                <div class="card-vyber-placeni">
+                  <label>
+                  <input type="radio" id="karta-a" name="payment-method" value="bankovni-prevod" checked/>
+                   <p>Osobní odběr </p>
+                  </label>
+                </div>
+                </li>
+                <li>
+                <div class="card-vyber-placeni">
+                  <label>
+                  <input type="radio" id="karta-c" name="payment-method" value="dobirka"/>
+                  <p>Obchodni Box</p>
+                  </label>
+                </div>
+                </li>
+                <li>
+                <div class="card-vyber-placeni">
+                  <label >
+                  <input type="radio" id="karta-b" name="payment-method" value="karta"/>
+                   <p>Doprava do domu (199 Kč)</p>
+                  </label>
+                </div>
+              </li>
+              </ul>
         </div>
+
+        <span class="dolni-c">
+          <button
+            type="button"
+            class="btn-go-to-catalog"
+            onclick="window.location.href='checkout.html'"
+          >
+            Platba
+          </button>
+        </span>
+
+
         <script src="Javascript/doprova_cheaked.js">
 
         </script>
