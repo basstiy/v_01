@@ -395,7 +395,12 @@ footer .odstavec{
   border: 1px solid #ddd;
   margin-left: 0;
   height: auto;
-  min-height: 1450px;
+  min-height: 1550px;
+  /*overflow: hidden;*/
+}
+#homepage .Homepage-catalog:first-child {
+  /*flex: 5;*/
+  min-height: 620px;
   /*overflow: hidden;*/
 }
 #homepage .Homepage-catalog:last-child{
@@ -1180,6 +1185,9 @@ th {
     display: flex;
     overflow-x: scroll; 
   }
+  .menu-down{
+    display: none;
+  }
 }
 
 
@@ -1318,7 +1326,9 @@ th {
     justify-items: center;
     align-items: center;
   }*/
-
+  .menu-down{
+    display: none;
+  }
   
 
 }
