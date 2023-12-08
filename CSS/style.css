@@ -750,6 +750,66 @@ ul {
 li {
   margin-bottom: 10px;
 }
+.card-vyber-placeni {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  width: 250px;
+  height: 35px;
+  padding: 2px;
+}
+.card-vyber-placeni p{
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  
+}
+input[type="radio"]{
+  display: none;
+}
+.card-vyber-placeni input[type="radio"]:checked 
++ p  {
+  background-color: #b9b7b7;
+}
+.card-vyber-placeni p:hover{
+  cursor: pointer;
+}
+
+input[type="radio"][value="kaarta"]:checked ~ .bank-card{
+  display: none;
+}
+
+.osobni_udaje .group{ 
+  position:relative; 
+  margin-bottom:45px; 
+}
+.osobni_udaje input{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+.osobni_udaje input:focus { outline:none; }
+
+
+.osobni_udaje label 				 {
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
 
 /**********************/
 /*---Checkout-konec---*/

@@ -8,7 +8,12 @@
 </head>
 
 <body>
+
+
+
+
   <header>
+
     <div id="name_E_shop">
       <a href="index.html">
         <h1>Název E-Shopu</h1>
@@ -53,62 +58,134 @@
     <a href="#" class="selected">Platba</a>
 
   </nav>
+
     <div class="container">
       <div id="checkout">
-
-
-    <!-- CHECKOUT-ZACATEK -->
-    <!-- Vyuziva class z ,,kosik.html", jelikoz se jedna o podobny typ stranky -->
-    <div class="kosik-header">Souhrn a platba</div>
+      <h2>Platba</h2>
     
-    <div class="kosik-container">
 
-      <form action="index.html">
-      <h3>Billing Address</h3>
-      <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-      <label for="email"><i class="fa fa-envelope"></i> Email</label>
-      <input type="text" id="email" name="email" placeholder="john@example.com">
-      <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-      <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-      <label for="city"><i class="fa fa-institution"></i> City</label>
-      <input type="text" id="city" name="city" placeholder="New York">
+    <div class = "osobni_udaje">
+    <form action="#">
 
-      <div class="row">
-        <div class="col-50">
-          <label for="state">State</label>
-          <input type="text" id="state" name="state" placeholder="NY">
-        </div>
-        <div class="col-50">
-          <label for="zip">Zip</label>
-          <input type="text" id="zip" name="zip" placeholder="10001">
-        </div>
+      <h3>Kontakt</h3>
+
+      <div class="group">      
+        <input type="text" required>
+        <label>Email</label>
       </div>
-    </div>
-  </form>
 
-      <p class="total-price">Celková cena objednávky: <strong>3 479 Kč</strong></p>
+      <h3>Bydliste</h3>
 
-      <h4>Způsob platby:</h4>
-      <ul>
-          <li>
-              <input type="radio" name="payment-method" value="bankovni-prevod">
-              <label for="bankovni-prevod">Bankovní převod (zdarma)</label>
-          </li>
-          <li>
-              <input type="radio" name="payment-method" value="dobirka">
-              <label for="dobirka">Dobírka (zdarma)</label>
-          </li>
-      </ul>
-      <button type="button" class="btn-remove-product">Závazně objednat</button>
-
-    <!-- CHECKOUT-KONEC -->
-
+      <div class="group">      
+        <input type="text" required>
+        <label>Address</label>
       </div>
-      <!-- -->
+
+      <div class="group">      
+        <input type="text" required>
+        <label>City</label>
+      </div>
+
+      <div class="group">      
+        <input type="text" required>
+        <label>State</label>
+      </div>
+      
+      <div class="group">      
+        <input type="text" required>
+        <label>Zip</label>
+      </div>
+
+  
+    </form>
     </div>
-    <!--container-->
+    
+
+    <div class="udaje">
+      
+
+      <h3>Zpusob placeni</h3>
+     
+         <ul>
+            <li>
+            <div class="card-vyber-placeni">
+              <label>
+              <input type="radio" id="karta-a" name="payment-method" value="bankovni-prevod"/>
+               <p>Bankovní převod</p>
+              </label>
+            </div>
+            </li>
+            <li>
+            <div class="card-vyber-placeni">
+              <label>
+              <input type="radio" id="karta-c" name="payment-method" value="dobirka"/>
+              <p>Dobírka</p>
+              </label>
+            </div>
+            </li>
+            <li>
+            <div class="card-vyber-placeni">
+              <label >
+              <input type="radio" id="karta-b" name="payment-method" value="karta"/>
+               <p>Platebni karta</p>
+              </label>
+            </div>
+          </li>
+          </ul>
     </div>
+
+    <div id="bank-card" style="display: none;">
+      <!-- form -->
+      <div class="pay_online">
+      <form action="checkout.html">
+
+        <div class="col">
+
+          <h3>Payment</h3>
+          
+          <div class="col">
+            <label for="cname">Name on Card</label>
+            <input type="text" name="cardname" placeholder="John More Doe">
+
+            <label for="ccnum">Credit card number</label>
+            <input type="text" name="cardnumber" placeholder="1111-2222-3333-4444">
+          </div>
+
+          <div class="col">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" name="expmonth" placeholder="September">
+          </div>
+            <div class="row">
+
+              <div class="col">
+                <label for="expyear">Exp Year</label>
+                <input type="text" name="expyear" placeholder="2018">
+              </div>
+              <div class="col">
+                <label for="cvv">CVV</label>
+                <input type="text" name="cvv" placeholder="352">
+              </div>
+
+            </div> <!--row-->
+        
+          
+        
+            <input type="submit" value="Přejít k souhrnu objednávky" class="btn">
+        </div>
+      
+      </form>
+     </div>
+
+    </div><!--bank-card-->
+
+
+    <p class="total-price">Celková cena objednávky: <strong>3 479 Kč</strong></p>
+    <button type="button" class="btn-remove-product">Závazně objednat</button>
+      
+      
+    </div> <!--checkout-->
+   
+    </div>  <!--container-->  
   
     <!-- FOOTER -->
     <footer>
@@ -137,5 +214,31 @@
         <a href="#" class="social-icon">Instagram</a>
       </div>
     </footer>
+
+    <script>
+      // Získání reference na radio button a element s třídou "karta"
+      const kartaRadioo = document.getElementById('karta-a');
+      const kartaRadio = document.getElementById('karta-b');
+      const kartaRadioo1 = document.getElementById('karta-c');
+      const kartaElement = document.getElementById('bank-card');
+  
+      // Přidání posluchače události změny na radio button
+      kartaRadio.addEventListener('change', function () {
+          
+              kartaElement.style.display = 'block';
+          
+      });
+      kartaRadioo.addEventListener('change', function () {
+
+              kartaElement.style.display = 'none';
+         
+      });
+      kartaRadioo1.addEventListener('change', function () {
+
+      kartaElement.style.display = 'none';
+
+      });
+    </script>
+
   </body>
 </html>
