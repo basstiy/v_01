@@ -398,6 +398,9 @@ footer .odstavec{
   min-height: 1450px;
   /*overflow: hidden;*/
 }
+#homepage .Homepage-catalog:last-child{
+  min-height: 650px;
+}
 #homepage .Homepage-catalog h2 {
   margin-left: 10px;
   font-size: 2vh;
@@ -408,7 +411,7 @@ footer .odstavec{
   display: grid;
   grid-template-columns: 1fr; /*mobile*/
   /*min-height: 2500px;/***/
-  justify-items: start;
+  justify-items: center;
   align-items: start;
   column-gap: 5px;
   row-gap: 5px;
@@ -1113,7 +1116,7 @@ th {
   .Homepage-recommended-p3{
     display: flex;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 5%;
     position: relative;
 
   }
@@ -1122,7 +1125,7 @@ th {
     
   }
   #homepage .o_nas{
-    padding: 15px;
+    padding: 10px;
   }
   .search input:focus ~ .search-button {
     display: block;
@@ -1193,7 +1196,8 @@ th {
    
   }
   #homepage .o_nas{
-    padding: 0;
+    padding: 10px;
+   
   }
   .search input:focus ~ .search-button p {
     display: block;
