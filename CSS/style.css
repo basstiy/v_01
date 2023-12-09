@@ -255,6 +255,9 @@ header .right-header .catalog,
 nav img {
   filter: invert(100%);
 }
+header .home{
+  filter: invert(100%);
+}
 nav img {
   height: 20px;
 }
@@ -1156,6 +1159,58 @@ th {
 /* Konec catalog */
 /*****************/
 
+/****************/
+/*Zacatek Finish*/
+/****************/
+
+#finish main {
+  /* CSS pravidla pro elementy uvnitř <main>, který je potomkem s ID "finish" */
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+#finish main p {
+  /* CSS pravidla pro všechny <p> elementy uvnitř <main> v elementu s ID "finish" */
+  color: #333;
+  font-size: 16px;
+}
+
+
+#finish main ul li {
+  /* CSS pravidla pro všechny <li> elementy uvnitř <ul> uvnitř <main> v elementu s ID "finish" */
+  margin-bottom: 8px;
+}
+
+/* Další CSS pravidla podle potřeby pro různé elementy uvnitř <main> v elementu s ID "finish" */
+#finish .close {
+  color: #aaa;
+  float: left;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+}
+
+#finish .close:hover,
+#finish .close:focus {
+  color: black;
+}
+#finish main{
+  display: flex;
+  flex-direction: column;
+} 
+#finish .objednavka{
+  margin-left: 15px;
+
+}
+#finish, #finish main{
+  height: 100%;
+}
+
+/***************/
+/* konc Finish */
+/***************/
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
 
