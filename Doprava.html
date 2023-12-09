@@ -74,27 +74,28 @@
                 <div class="card-vyber-placeni">
                   <label>
                   <input type="radio" id="karta-a" name="payment-method" value="bankovni-prevod" checked/>
-                   <p>Osobní odběr </p>
+                   <p>Osobní odběr (Zdarma)</p>
                   </label>
                 </div>
                 </li>
                 <li>
                 <div class="card-vyber-placeni">
                   <label>
-                  <input type="radio" id="karta-c" name="payment-method" value="dobirka"/>
-                  <p>Obchodni Box</p>
+                  <input type="radio" id="karta-b" name="payment-method" value="dobirka"/>
+                  <p>Obchodni Box (50 Kč) </p>
                   </label>
                 </div>
                 </li>
                 <li>
                 <div class="card-vyber-placeni">
                   <label >
-                  <input type="radio" id="karta-b" name="payment-method" value="karta"/>
-                   <p>Doprava do domu (199 Kč)</p>
+                  <input type="radio" id="karta-c" name="payment-method" value="karta"/>
+                   <p>Doprava az do domu (199 Kč)</p>
                   </label>
                 </div>
               </li>
               </ul>
+              <p class="total-price">Celková cena objednávky: <strong><spane id="celkova_cena">3 479</spane>Kč </strong></p>
         </div>
 
         <span class="dolni-c">
@@ -108,16 +109,33 @@
         </span>
 
 
-        <script src="Javascript/doprova_cheaked.js">
+        <script >
+           const karta_a = document.getElementById('karta-a');
+           const karta_b = document.getElementById('karta-b');
+           const karta_c = document.getElementById('karta-c');
+           const cena = document.getElementById('celkova_cena');
+           console.log('funguje');
+  
+          // Přidání posluchače události změny na radio button
+          karta_a.addEventListener('change', function () {
+          
+            cena.innerText = '3 479';
+            console('tady');
+          
+          });
+          karta_b.addEventListener('change', function () {
 
+          cena.innerText = '3 529';
+        
+          });
+          karta_c.addEventListener('change', function () {
+
+           cena.innerText =  '3 678';
+
+         });
         </script>
 
        </div>
-
-
-
-
-
 
       </div>
       <!-- -->
