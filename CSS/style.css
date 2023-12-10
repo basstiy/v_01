@@ -1420,7 +1420,7 @@ main #finish {
     justify-content: space-between;
   }
 
-  #description-content img {
+  #description-content figure {
     width: 40%; 
     max-width: 300px;
     margin-right: 20px;
