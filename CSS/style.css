@@ -539,7 +539,6 @@ footer .odstavec {
   border: none;
   cursor: pointer;
   width: 110px;
-  font-size: 1,5vb;
   position: relative;
   top: 20%;
   transform: translateY(-50%);
@@ -555,10 +554,6 @@ footer .odstavec {
 .Homepage-add-to-cart:hover {
   background-color: #0056b3;
 }
-
-
-
-
 
 /*  POZOR STYL PRO MENU a menu-list-catalog BUDE VSUDE STEJNI*/
  .menu, .menu-down, .sub-menu {
@@ -737,15 +732,13 @@ footer .odstavec {
 
 #doprava .col {
   display: inline-block;
-  -width: 45%;
+  max-width: 45%;
   margin: 10px;
 }
 
 #doprava .row {
   display: flex;
 }
-
-
 
 #doprava .btn {
   background-color: #4caf50;
@@ -819,12 +812,11 @@ input[type="radio"]{
 .osobni_udaje input:focus { outline:none; }
 
 
-.osobni_udaje label 				 {
+.osobni_udaje label {
   color:#999; 
   font-size:18px;
   font-weight:normal;
   position:absolute;
-  pointer-events:none;
   left:5px;
   top:10px;
   transition:0.2s ease all; 
