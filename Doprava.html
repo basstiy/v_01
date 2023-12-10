@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Název E-Shopu</title>
+  <title>Doprava</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="CSS/style.css" />
 </head>
@@ -17,32 +17,30 @@
     <!--1-->
 
     <!--<input type="text" placeholder="Vyhledat"> -->
-    <form class="search">
-      <input type="text" class="search-box" required placeholder="Vyhledat" />
-      <div class="search-dropdown">
-        <ul>
-          <li><a href="">První položka</a></li>
-          <li><a href="">Druhá položka</a></li>
-          <li><a href="">Třetí položka</a></li>
-          <li><a href="">Položka</a></li>
-          <li><a href="">Položka</a></li>
-        </ul>
-      </div>
-      <button class="x-button" type="reset"></button>
-      <button class="search-button">
-        <img src="svg/find_manager_w.svg" class="lupa" alt="Přihlšení" />
-        <p>Hledat</p>
-      </button>
-      <div class="search-icon">
-        <button>
-          <img src="svg/find_manager_w.svg" /> zobrazit vsechny vysledky
+    <article>
+      <form class="search" onsubmit="redirectToSearchResults(); return false;">
+        <input type="text" autocomplete="off" class="search-box" required placeholder="Vyhledat" id="searchInput" />
+        <section class="search-dropdown">
+          <ul>
+            <li><a href="search_result_positive.html?query=iFong%207">iFong 7</a></li>
+            <li><a href="search_result_positive.html?query=iPhone%2012">iPhone 12</a></li>
+            <li><a href="search_result_positive.html?query=iPhone%2013%20Plus">iPhone 13 Plus</a></li>
+            <li><a href="search_result_positive.html?query=Samsung%20Galaxie%20Fold">Samsung Galaxie Fold</a></li>
+            <li><a href="search_result_positive.html?query=Nothing%20Phone%202">Nothing Phone 2</a></li>
+          </ul>
+        </section>
+        <button class="x-button" type="reset"></button>
+        <button class="search-button">
+          <img src="svg/find_manager_w.svg" class="lupa" alt="Vyhledat" />
+  
         </button>
         <div class="search-icon">
           <button>
-            <img src="svg/find_manager_w.svg" /> zobrazit vsechny vysledky
+            <img src="svg/find_manager_w.svg" /> Zobrazit všechny výsledky
           </button>
         </div>
       </form>
+    </article>
       <!-- search --><!--2-->
 
       <div class="right-header">
@@ -151,33 +149,35 @@
           <p>Email nemáme, použijte fax.</p>
           <p>Adresa: Kamýcká 129, Praha, 165 00</p>
         </div>
+        
         <div class="quick-links">
           <h3>Rychlé odkazy</h3>
           <ul>
             <li><a href="https://cat-bounce.com/">Obchodní podmínky</a></li>
             <li>
               <a
-                href="https://lh4.googleusercontent.com/DVb-o1HfuVaUjEn6_o0fkzID2l6YVBabDgvUUyjwCJgr9--wQI7Rx2O5lLYn802yrCD0j7d4OUleZoQf4BRTkrvwh-7O71xInbHzNvFHRsT6bpg4B_9KsOm7pFx1aEQxNd-h0uNx"
-                >Ochrana osobních údajů</a
-              >
+                href="https://lh4.googleusercontent.com/DVb-o1HfuVaUjEn6_o0fkzID2l6YVBabDgvUUyjwCJgr9--wQI7Rx2O5lLYn802yrCD0j7d4OUleZoQf4BRTkrvwh-7O71xInbHzNvFHRsT6bpg4B_9KsOm7pFx1aEQxNd-h0uNx">Ochrana
+                osobních údajů</a>
             </li>
             <li><a href="index.html">O nás</a></li>
           </ul>
         </div>
+  
+      </div>
+      <div class="footer-content">
+  
+        <div class="social-media">
+          <h3>Sociální média</h3>
+          <a href="https://twitter.com/tweetingtoaster" class="social-icon">Platforma X</a>
+          <a href="https://www.instagram.com/world_record_egg/?hl=cs" class="social-icon">Instagram</a>
+        </div>
         
+        <div class="FAQ">
+          <h3>Časté dotazy</h3>
+          <p id="disclaimer">Tento web není plně funkční e-shop, jedná se o studentský projekt.</p>
+        </div>
+  
       </div>
-      <div class="social-media">
-        <h3>Sociální média</h3>
-        <a href="https://twitter.com/tweetingtoaster" class="social-icon"
-          >Platforma X</a
-        >
-        <a
-          href="https://www.instagram.com/world_record_egg/?hl=cs"
-          class="social-icon"
-          >Instagram</a
-        >
-      </div>
-      <div class="odstavec"></div>
     </footer>
   </body>
 </html>

@@ -16,32 +16,34 @@
     </div>
 
     <!-- Index/Homepage header -->
-    <form class="search">
-      <input type="text" class="search-box" required placeholder="Vyhledat" />
-      <div class="search-dropdown">
-        <ul>
-          <li><a href="">iFong 7</a></li>
-          <li><a href="">iPhone 12</a></li>
-          <li><a href="">iPhone 13 Plus</a></li>
-          <li><a href="">Samsung Galaxie Fold</a></li>
-          <li><a href="">Nothing Phone 2</a></li>
-        </ul>
-      </div>
-      <button class="x-button" type="reset"></button>
-      <button class="search-button">
-        <img src="svg/find_manager_w.svg" class="lupa" alt="Přihlášení" />
-        <p>Hledat</p>
-      </button>
-      <div class="search-icon">
-        <button>
-          <img src="svg/find_manager_w.svg" /> Zobrazit všechny výsledky
+    <article>
+      <form class="search" onsubmit="redirectToSearchResults(); return false;">
+        <input type="text" autocomplete="off" class="search-box" required placeholder="Vyhledat" id="searchInput" />
+        <section class="search-dropdown">
+          <ul>
+            <li><a href="search_result_positive.html?query=iFong%207">iFong 7</a></li>
+            <li><a href="search_result_positive.html?query=iPhone%2012">iPhone 12</a></li>
+            <li><a href="search_result_positive.html?query=iPhone%2013%20Plus">iPhone 13 Plus</a></li>
+            <li><a href="search_result_positive.html?query=Samsung%20Galaxie%20Fold">Samsung Galaxie Fold</a></li>
+            <li><a href="search_result_positive.html?query=Nothing%20Phone%202">Nothing Phone 2</a></li>
+          </ul>
+        </section>
+        <button class="x-button" type="reset"></button>
+        <button class="search-button">
+          <img src="svg/find_manager_w.svg" class="lupa" alt="Vyhledat" />
+  
         </button>
-      </div>
-    </form>
+        <div class="search-icon">
+          <button>
+            <img src="svg/find_manager_w.svg" /> Zobrazit všechny výsledky
+          </button>
+        </div>
+      </form>
+    </article>
 
     <div class="right-header">
       <div class="cart">
-        <a href="kosik 2.html">
+        <a href="kosik.html">
           <img src="svg/basket_Wight.svg" alt="Nákupní košík" />
         </a>
       </div>
@@ -55,10 +57,10 @@
 
   <nav>
     <nav>
-     <a href="index.html" ><img src="svg/hause.svg" class="star" /></a>
-     <a href="category_pc.html" > Kategorie zboží </a>
-     <a href="catalog.html" > Mobilní telefony</a>
-     <a class="selected"> iPhone 12</a>
+      <a href="index.html"><img src="svg/hause.svg" class="star" /></a>
+      <a href="category_pc.html"> Kategorie zboží </a>
+      <a href="catalog.html"> Mobilní telefony</a>
+      <a class="selected"> iPhone 12</a>
     </nav>
     <span></span>
 
@@ -159,7 +161,10 @@
 
     <div id="description-content" class="tab-content description">
 
-      <img src="https://picsum.photos/id/5/367/267" />
+      <figure>
+        <img src="https://picsum.photos/id/5/367/267" />
+        <figcaption>Tento produkt vám změní život</figcaption>
+      </figure>
       <p>I když se to zdálo prakticky nemožné, tak iPhone 13 posouvá kvalitu fotoaparátů na úplně nový level. Zcela
         nový širokoúhlý fotoaparát má snímač s 1,7 µm pixely pro méně šumu a rychlejší závěrku potřebnou pro kvalitní
         snímky za různých světelných podmínek. Ve spojení s clonou ƒ/1,6 nabízí širokoúhlý fotoaparát iPhone 13
@@ -234,8 +239,8 @@
 
     </div>
 
-    <div id="reviews-content" class="tab-content reviews" style="display: none;">
-      <div class="review">
+    <article id="reviews-content" class="tab-content reviews" style="display: none;">
+      <section class="review">
         <h4>Honza</h4>
         <p>Jsem velmi spokojen s tímto telefonem. Má skvělý displej, výkonný procesor a dlouhou výdrž baterie.
           Fotoaparát je také velmi dobrý a pořizuje krásné fotografie a videa. Doporučuji tento telefon každému, kdo
@@ -247,11 +252,11 @@
           <img src="svg/star.svg" class="star" />
           <img src="svg/star.svg" class="star" />
         </rating-stars>
-      </div>
+      </section>
 
       <hr>
 
-      <div class="review">
+      <section class="review">
         <h4>Pepa</h4>
         <p>Tento telefon je prostě úžasný! Má vše, co potřebuji, a dokonce i něco navíc. Displej je jasný a ostrý,
           procesor je rychlý a fotoaparát je skvělý. Baterie vydrží celý den, i když telefon používám intenzivně. Jsem
@@ -263,11 +268,11 @@
           <img src="svg/star.svg" class="star" />
           <img src="svg/star.svg" class="star" />
         </rating-stars>
-      </div>
+      </section>
 
       <hr>
 
-      <div class="review">
+      <section class="review">
         <h4>Igor</h4>
         <p>Tento telefon je můj nový oblíbený. Má krásný design, skvělý výkon a dlouhou výdrž baterie. Fotoaparát je
           také velmi dobrý a pořizuje krásné fotografie a videa. Doporučuji tento telefon každému, kdo hledá prémiový
@@ -279,11 +284,11 @@
           <img src="svg/star.svg" class="star" />
           <img src="svg/star.svg" class="star" />
         </rating-stars>
-      </div>
+      </section>
 
       <hr>
 
-      <div class="review">
+      <section class="review">
         <h4>Unknown</h4>
         <p>Telefon je celkově velmi dobrý, ale má pár nedostatků. Displej je trochu tmavý, fotoaparát v noci není tak
           dobrý jako v denním světle a baterie by mohla vydržet o něco déle. I přes tyto nedostatky je telefon stále
@@ -295,8 +300,8 @@
           <img src="svg/star.svg" class="star" />
           <img src="svg/star_blank.svg" class="star" />
         </rating-stars>
-      </div>
-    </div>
+      </section>
+    </article>
 
     <div id="other-products-content" class="tab-content other-products" style="display: none;">
       <h2>Podobné telefony</h2>
@@ -599,6 +604,7 @@
         <p>Email nemáme, použijte fax.</p>
         <p>Adresa: Kamýcká 129, Praha, 165 00</p>
       </div>
+      
       <div class="quick-links">
         <h3>Rychlé odkazy</h3>
         <ul>
@@ -613,14 +619,21 @@
       </div>
 
     </div>
-    <div class="social-media">
-      <h3>Sociální média</h3>
-      <a href="https://twitter.com/tweetingtoaster" class="social-icon">Platforma X</a>
-      <a href="https://www.instagram.com/world_record_egg/?hl=cs" class="social-icon">Instagram</a>
-    </div>
-    <div class="odstavec"></div>
-  </footer>
+    <div class="footer-content">
 
+      <div class="social-media">
+        <h3>Sociální média</h3>
+        <a href="https://twitter.com/tweetingtoaster" class="social-icon">Platforma X</a>
+        <a href="https://www.instagram.com/world_record_egg/?hl=cs" class="social-icon">Instagram</a>
+      </div>
+      
+      <div class="FAQ">
+        <h3>Časté dotazy</h3>
+        <p id="disclaimer">Tento web není plně funkční e-shop, jedná se o studentský projekt.</p>
+      </div>
+
+    </div>
+  </footer>
 
   <script src="Javascript/productDetail.js">
 

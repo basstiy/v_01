@@ -2,12 +2,12 @@
 <html>
 
 <head>
-  <title>Název E-Shopu</title>
+  <title>Kategorie</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="CSS/style.css" />
 </head>
 
-  <body>
+<body>
   <header>
     <section id="name_E_shop">
       <a href="index.html">
@@ -18,163 +18,176 @@
 
     <!--<input type="text" placeholder="Vyhledat"> -->
     <article>
-    <form class="search">
-      <input type="text" class="search-box" required placeholder="Vyhledat" />
-      <section class="search-dropdown">
-        <ul>
-          <li><a href="">iFong 7</a></li>
-          <li><a href="">iPhone 12</a></li>
-          <li><a href="">iPhone 13 Plus</a></li>
-          <li><a href="">Samsung Galaxie Fold</a></li>
-          <li><a href="">Nothing Phone 2</a></li>
-        </ul>
-      </section>
-      <button class="x-button" type="reset"></button>
-      <button class="search-button">
-        <img src="svg/find_manager_w.svg" class="lupa" alt="Přihlášení" />
-        <p>Hledat</p>
-      </button>
-      <div class="search-icon">
-        <button>
-          <img src="svg/find_manager_w.svg" /> Zobrazit všechny výsledky
+      <form class="search" onsubmit="redirectToSearchResults(); return false;">
+        <input type="text" autocomplete="off" class="search-box" required placeholder="Vyhledat" id="searchInput" />
+        <section class="search-dropdown">
+          <ul>
+            <li><a href="search_result_positive.html?query=iFong%207">iFong 7</a></li>
+            <li><a href="search_result_positive.html?query=iPhone%2012">iPhone 12</a></li>
+            <li><a href="search_result_positive.html?query=iPhone%2013%20Plus">iPhone 13 Plus</a></li>
+            <li><a href="search_result_positive.html?query=Samsung%20Galaxie%20Fold">Samsung Galaxie Fold</a></li>
+            <li><a href="search_result_positive.html?query=Nothing%20Phone%202">Nothing Phone 2</a></li>
+          </ul>
+        </section>
+        <button class="x-button" type="reset"></button>
+        <button class="search-button">
+          <img src="svg/find_manager_w.svg" class="lupa" alt="Vyhledat" />
+  
         </button>
         <div class="search-icon">
           <button>
             <img src="svg/find_manager_w.svg" /> Zobrazit všechny výsledky
           </button>
         </div>
-      </div>
-    </form>
-      <!-- search --><!--2-->
+      </form>
     </article>
-      
 
-      
-      <div class="right-header">
-        <div class="cart">
-          <a href="kosik 2.html">
-            <img src="svg/basket_Wight.svg" alt="Nákupní košík" />
-          </a>
-          
-        </div>
-        <div class="cart home">
-         <a href="index.html" ><img src="svg/hause.svg" class="star" /></a>
-        </div>
+
+
+    <div class="right-header">
+      <div class="cart">
+        <a href="kosik 2.html">
+          <img src="svg/basket_Wight.svg" alt="Nákupní košík" />
+        </a>
+
       </div>
-      <!--3-->
-    </header>
-
-    <main id="category">
-      <h2>Katalog zboží</h2>
-        <div class = "seznam">
-          <div class="sub-menu"><p>Mobilní telefony</p><img src="svg/down_icon.svg" />
-          </div>
-   
-            <div class="menu-list-catalog">
-              <!-- Obsah katalogu zboží zde -->
-              <ul>
-                <li><a href="catalog.html"><p>iPhone</p></a></li>
-                <li><a href="catalog.html"><p>Samsung</p></a></li>
-                <li><a href="catalog.html"><p>Nokia</p></a></li>
-                <li><a href="catalog.html"><p>Motorola</p></a></li>
-                <li><a href="catalog.html"><p>Ostatní</p></a></li>
-              </ul>
-            </div>
-        </div>
- 
-          <div class = "seznam">
-            <div class="sub-menu"><p>Tablety</p><img src="svg/down_icon.svg" /></div>
-      
-              <div class="menu-list-catalog">
-                <!-- Obsah katalogu zboží zde -->
-                <ul>
-                  <li><a href="catalog.html">iPad</a></li>
-                  <li><a href="catalog.html">Galaxy Tab</a></li>
-                  <li><a href="catalog.html">Xiaomi Pad</a></li>
-                  <li><a href="catalog.html">Aligator Pad</a></li>
-                  <li><a href="catalog.html">Nothing Pad</a></li>
-                </ul>
-              </div>
-           
-          </div>
-
-
-            <div class = "seznam">
-              <div class="sub-menu"><p>Nabíječky</p><img src="svg/down_icon.svg" />
-              </div>
-              
-              <div class="menu-list-catalog">
-                  <!-- Obsah katalogu zboží zde -->
-                  <ul>
-                    <li><a href="catalog.html">5W USB-A</a></li>
-                    <li><a href="catalog.html">Quick Charge</a></li>
-                    <li><a href="catalog.html">Bezdrátové</a></li>
-                    <li><a href="catalog.html">GaN 60W</a></li>
-                    <li><a href="catalog.html">GaN 120W</a></li>
-                  </ul>
-              </div>
-        
-            </div>
-
-
-              <div class = "seznam">
-                <div class="sub-menu"><p>Příslušenství</p><img src="svg/down_icon.svg" />
-                </div>
-            
-                <div class="menu-list-catalog">
-                    <!-- Obsah katalogu zboží zde -->
-                    <ul>
-                      <li><a href="catalog.html">USB-A kabely</a></li>
-                      <li><a href="catalog.html">USB-C kabely</a></li>
-                      <li><a href="catalog.html">Pouzdra</a></li>
-                      <li><a href="catalog.html">Redukce</a></li>
-                      <li><a href="catalog.html">Lightning kabely</a></li>
-                    </ul>
-                </div>
-        
-              </div>
-
-        <!--zde pis svuj kod-->
-      </main>
-      <!-- -->
-
-    <!--container-->
-
-    <footer>
-      <div class="footer-content">
-
-        <div class="contact-info">
-          <h3>Kontaktujte nás</h3>
-          <p>Telefon: +123 456 789</p>
-          <p>Email nemáme, použijte fax.</p>
-          <p>Adresa: Kamýcká 129, Praha, 165 00</p>
-        </div>
-        <div class="quick-links">
-          <h3>Rychlé odkazy</h3>
-          <ul>
-            <li><a href="https://cat-bounce.com/">Obchodní podmínky</a></li>
-            <li>
-              <a
-                href="https://lh4.googleusercontent.com/DVb-o1HfuVaUjEn6_o0fkzID2l6YVBabDgvUUyjwCJgr9--wQI7Rx2O5lLYn802yrCD0j7d4OUleZoQf4BRTkrvwh-7O71xInbHzNvFHRsT6bpg4B_9KsOm7pFx1aEQxNd-h0uNx"
-                >Ochrana osobních údajů</a
-              >
-            </li>
-            <li><a href="index.html">O nás</a></li>
-          </ul>
-        </div>
-        
+      <div class="cart home">
+        <a href="index.html"><img src="svg/hause.svg" class="star" /></a>
       </div>
+    </div>
+    <!--3-->
+  </header>
+
+  <main id="category">
+    <h2>Katalog zboží</h2>
+    <div class="seznam">
+      <div class="sub-menu">
+        <p>Mobilní telefony</p><img src="svg/down_icon.svg" />
+      </div>
+
+      <div class="menu-list-catalog">
+        <!-- Obsah katalogu zboží zde -->
+        <ul>
+          <li><a href="catalog.html">
+              <p>iPhone</p>
+            </a></li>
+          <li><a href="catalog.html">
+              <p>Samsung</p>
+            </a></li>
+          <li><a href="catalog.html">
+              <p>Nokia</p>
+            </a></li>
+          <li><a href="catalog.html">
+              <p>Motorola</p>
+            </a></li>
+          <li><a href="catalog.html">
+              <p>Ostatní</p>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="seznam">
+      <div class="sub-menu">
+        <p>Tablety</p><img src="svg/down_icon.svg" />
+      </div>
+
+      <div class="menu-list-catalog">
+        <!-- Obsah katalogu zboží zde -->
+        <ul>
+          <li><a href="catalog.html">iPad</a></li>
+          <li><a href="catalog.html">Galaxy Tab</a></li>
+          <li><a href="catalog.html">Xiaomi Pad</a></li>
+          <li><a href="catalog.html">Aligator Pad</a></li>
+          <li><a href="catalog.html">Nothing Pad</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+
+    <div class="seznam">
+      <div class="sub-menu">
+        <p>Nabíječky</p><img src="svg/down_icon.svg" />
+      </div>
+
+      <div class="menu-list-catalog">
+        <!-- Obsah katalogu zboží zde -->
+        <ul>
+          <li><a href="catalog.html">5W USB-A</a></li>
+          <li><a href="catalog.html">Quick Charge</a></li>
+          <li><a href="catalog.html">Bezdrátové</a></li>
+          <li><a href="catalog.html">GaN 60W</a></li>
+          <li><a href="catalog.html">GaN 120W</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+
+    <div class="seznam">
+      <div class="sub-menu">
+        <p>Příslušenství</p><img src="svg/down_icon.svg" />
+      </div>
+
+      <div class="menu-list-catalog">
+        <!-- Obsah katalogu zboží zde -->
+        <ul>
+          <li><a href="catalog.html">USB-A kabely</a></li>
+          <li><a href="catalog.html">USB-C kabely</a></li>
+          <li><a href="catalog.html">Pouzdra</a></li>
+          <li><a href="catalog.html">Redukce</a></li>
+          <li><a href="catalog.html">Lightning kabely</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!--zde pis svuj kod-->
+  </main>
+  <!-- -->
+
+  <!--container-->
+
+  <footer>
+    <div class="footer-content">
+
+      <div class="contact-info">
+        <h3>Kontaktujte nás</h3>
+        <p>Telefon: +123 456 789</p>
+        <p>Email nemáme, použijte fax.</p>
+        <p>Adresa: Kamýcká 129, Praha, 165 00</p>
+      </div>
+
+      <div class="quick-links">
+        <h3>Rychlé odkazy</h3>
+        <ul>
+          <li><a href="https://cat-bounce.com/">Obchodní podmínky</a></li>
+          <li>
+            <a
+              href="https://lh4.googleusercontent.com/DVb-o1HfuVaUjEn6_o0fkzID2l6YVBabDgvUUyjwCJgr9--wQI7Rx2O5lLYn802yrCD0j7d4OUleZoQf4BRTkrvwh-7O71xInbHzNvFHRsT6bpg4B_9KsOm7pFx1aEQxNd-h0uNx">Ochrana
+              osobních údajů</a>
+          </li>
+          <li><a href="index.html">O nás</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer-content">
+
       <div class="social-media">
         <h3>Sociální média</h3>
-        <a href="https://twitter.com/tweetingtoaster" class="social-icon"
-          >Platforma X</a
-        >
-        <a
-          href="https://www.instagram.com/world_record_egg/?hl=cs"
-          class="social-icon"
-          >Instagram</a
-        >
+        <a href="https://twitter.com/tweetingtoaster" class="social-icon">Platforma X</a>
+        <a href="https://www.instagram.com/world_record_egg/?hl=cs" class="social-icon">Instagram</a>
       </div>
-    </footer>
-  </body>
+
+      <div class="FAQ">
+        <h3>Časté dotazy</h3>
+        <p id="disclaimer">Tento web není plně funkční e-shop, jedná se o studentský projekt.</p>
+      </div>
+
+    </div>
+  </footer>
+</body>
+
 </html>
