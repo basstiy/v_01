@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Název E-Shopu</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
-  </head>
 
-  <body>
-    <header>
-      <section id="name_E_shop">
-        <a href="index.html">
-          <h1>Název E-Shopu</h1>
-        </a>
-      </section>
+<head>
+  <title>Název E-Shopu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+</head>
 
-      <!-- Index/Homepage header -->
-      <article>
+<body>
+  <header>
+    <section id="name_E_shop">
+      <a href="index.html">
+        <h1>Název E-Shopu</h1>
+      </a>
+    </section>
+
+    <!-- Index/Homepage header -->
+    <article>
       <form class="search" onsubmit="redirectToSearchResults(); return false;">
-        <input type="text" autocomplete="off" class="search-box" required placeholder="Vyhledat"  id="searchInput" />
+        <input type="text" autocomplete="off" class="search-box" required placeholder="Vyhledat" id="searchInput" />
         <section class="search-dropdown">
           <ul>
             <li><a href="#">iFong 7</a></li>
@@ -30,7 +31,7 @@
         <button class="x-button" type="reset"></button>
         <button class="search-button">
           <img src="svg/find_manager_w.svg" class="lupa" alt="Přihlášení" />
-          
+
         </button>
         <div class="search-icon">
           <button>
@@ -38,238 +39,216 @@
           </button>
         </div>
       </form>
+    </article>
+
+    <section class="right-header">
+      <div class="cart">
+        <a href="kosik 2.html">
+          <img src="svg/basket_Wight.svg" alt="Nákupní košík" />
+        </a>
+      </div>
+      <div class="cart catalog">
+        <a href="category.html">
+          <img src="svg/menu_lines.svg" alt="Kategorie" />
+        </a>
+      </div>
+    </section>
+  </header>
+
+  <!-- Index/Homepage obsah -->
+  <main>
+    <div id="homepage">
+      <article class="Homepage-catalog">
+        <p style="margin-left: 8px">
+          <i>Tento web není plně funkční e-shop, jedná se o studentský
+            projekt.</i>
+        </p>
+        <h2 class="trhak-dne">SLEVY DNE:</h2>
+
+        <section class="Homepage-recommended-p3">
+          <!-- Doporucene zbozi zde -->
+
+          <!-- Produkt 1-->
+          <div class="product">
+            <a href="detail_product.html">
+              <img src=https://picsum.photos/id/9/367/267 alt="Produkt" class="product_photo" />
+              <span class="hlavni-popis">
+                <h3>iFong 7S Plus</h3>
+
+                <span class="Homepage-recenze">
+                  <img src="svg/star.svg" class="star" />
+                  <img src="svg/star.svg" class="star" />
+                  <img src="svg/star.svg" class="star" />
+                  <img src="svg/star.svg" class="star" />
+                  <img src="svg/star.svg" class="star" />
+                </span>
+              </span>
+              <p class="popis red-text">
+                Čerstvě importováno z Hong Kongu!
+              </p>
+            </a>
+
+            <span>
+              <p class="cena">2.990,- Kč</p>
+              <button class="Homepage-add-to-cart">Do košíku</button>
+            </span>
+          </div>
+
+          <!-- Produkt 2-->
+          <div class="product">
+            <a href="detail_product.html">
+              <img src="https://picsum.photos/id/9/367/267" alt="Produkt" class="product_photo" />
+              <span class="hlavni-popis">
+                <h3>iPhone 12</h3>
+
+                <span class="Homepage-recenze">
+                  <img src="svg/star.svg" class="star" alt="*" />
+                  <img src="svg/star.svg" class="star" alt="*" />
+                  <img src="svg/star.svg" class="star" alt="*" />
+                  <img src="svg/star.svg" class="star" alt="*" />
+                  <img src="svg/star.svg" class="star" alt="*" />
+                </span>
+              </span>
+              <p class="popis red-text">
+                Zbývají poslední kusy za zvýhodněnou cenu!
+              </p>
+            </a>
+
+            <span>
+              <p class="cena">24.990,- Kč</p>
+              <button class="Homepage-add-to-cart">Do košíku</button>
+            </span>
+          </div>
+
+          <!--Produkt 3-->
+          <div class="product">
+            <a href="detail_product.html">
+              <img src="https://picsum.photos/id/9/367/267" alt="Produkt" class="product_photo" />
+              <span class="hlavni-popis">
+                <h3>Google Pixel 8</h3>
+
+                <span class="Homepage-recenze">
+                  <img src="svg/star.svg" class="star" />
+                  <img src="svg/star.svg" class="star" />
+                  <img src="svg/star.svg" class="star" />
+                  <img src="svg/star.svg" class="star" />
+                  <img src="svg/star.svg" class="star" />
+                </span>
+              </span>
+              <p class="popis red-text">
+                Akce! Kup 2 za cenu 3!
+              </p>
+            </a>
+
+            <span>
+              <p class="cena">29.990,- Kč</p>
+              <button class="Homepage-add-to-cart">Do košíku</button>
+            </span>
+          </div>
+          <!--product-->
+        </section>
+
+        <span class="dolni-c">
+          <button type="button" class="btn-go-to-catalog" onclick="window.location.href='catalog.html'">
+            Mobilní telefony
+          </button>
+        </span>
+      </article>
+      <article class="Homepage-catalog">
+        <h2>Hlavní nabídka</h2>
+        <section class="Homepage-recommended-p3">
+          <button type="button" class="btn-go-to-catalog-2" onclick="window.location.href='catalog.html'">
+            <p>Mobilní telefony</p>
+          </button>
+          <button type="button" class="btn-go-to-catalog-2" onclick="window.location.href='catalog.html'">
+            <p>Tablety</p>
+          </button>
+          <button type="button" class="btn-go-to-catalog-2" onclick="window.location.href='catalog.html'">
+            <p>Notebooky</p>
+          </button>
+        </section>
+
+
+        <h2>Příslušenství</h2>
+        <section class="Homepage-recommended-p3">
+          <button type="button" class="btn-go-to-catalog-2" onclick="window.location.href='catalog.html'">
+            <p>Ochranná skla</p>
+          </button>
+          <button type="button" class="btn-go-to-catalog-2" onclick="window.location.href='catalog.html'">
+            <p>Pouzdra</p>
+          </button>
+          <button type="button" class="btn-go-to-catalog-2" onclick="window.location.href='catalog.html'">
+            <p>Nabíječky</p>
+          </button>
+        </section>
+        <section class="dolni-c">
+          <button type="button" class="btn-go-to-catalog" onclick="window.location.href='category_PC.html'">
+            <p>Zobrazit úplný katalog</p>
+          </button>
+        </section>
+        <section class="o_nas">
+          <h3>O nás:</h3>
+          <ul>
+            <li>
+              Zabýváme se prodejem mobilních telefonů již od roku 18 před naším
+              letopočtem.
+            </li>
+            <li>Prodej pouze bez faktury.</li>
+            <li>Nejsme plátci DPH, firma je registrována v Albánii.</li>
+            <li>
+              Záruku na zboží neposkytujeme, naše produkty jsou určené na
+              náhradní díly.
+            </li>
+          </ul>
+        </section>
       </article>
 
-      <section class="right-header">
-        <div class="cart">
-          <a href="kosik 2.html">
-            <img src="svg/basket_Wight.svg" alt="Nákupní košík" />
-          </a>
-        </div>
-        <div class="cart catalog">
-          <a href="category.html">
-            <img src="svg/menu_lines.svg" alt="Kategorie" />
-          </a>
-        </div>
-      </section>
-    </header>
+    </div>
 
-    <!-- Index/Homepage obsah -->
-    <main>
-      <div id="homepage">
-        <article class="Homepage-catalog">
-          <p style="margin-left: 8px">
-            <i>Tento web není plně funkční e-shop, jedná se o studentský
-              projekt.</i>
-          </p>
-          <h2 class="trhak-dne">SLEVY DNE:</h2>
+    <!--homepage-->
+  </main>
 
-          <section class="Homepage-recommended-p3">
-            <!-- Doporucene zbozi zde -->
+  <footer>
+    <div class="footer-content">
 
-            <!-- Produkt 1-->
-            <div class="product">
-              <a href="detail_product.html">
-                <img
-                  src=https://picsum.photos/id/9/367/267
-                  alt="Produkt"
-                  class="product_photo"
-                />
-                <span class="hlavni-popis">
-                  <h3>iFong 7S Plus</h3>
-
-                  <span class="Homepage-recenze">
-                    <img src="svg/star.svg" class="star" />
-                    <img src="svg/star.svg" class="star" />
-                    <img src="svg/star.svg" class="star" />
-                    <img src="svg/star.svg" class="star" />
-                    <img src="svg/star.svg" class="star" />
-                  </span>
-                </span>
-                <p class="popis red-text">
-                  Čerstvě importováno z Hong Kongu!
-                </p>
-              </a>
-
-              <span>
-                <p class="cena">2.990,- Kč</p>
-                <button class="Homepage-add-to-cart">Do košíku</button>
-              </span>
-            </div>
-            
-            <!-- Produkt 2-->
-            <div class="product">
-              <a href="detail_product.html">
-                <img
-                  src="https://picsum.photos/id/9/367/267"
-                  alt="Produkt"
-                  class="product_photo"
-                />
-                <span class="hlavni-popis">
-                  <h3>iPhone 12</h3>
-
-                  <span class="Homepage-recenze">
-                    <img src="svg/star.svg" class="star" alt="*" />
-                    <img src="svg/star.svg" class="star" alt="*" />
-                    <img src="svg/star.svg" class="star" alt="*" />
-                    <img src="svg/star.svg" class="star" alt="*" />
-                    <img src="svg/star.svg" class="star" alt="*" />
-                  </span>
-                </span>
-                <p class="popis red-text">
-                  Zbývají poslední kusy za zvýhodněnou cenu!
-                </p>
-              </a>
-
-              <span>
-                <p class="cena">24.990,- Kč</p>
-                <button class="Homepage-add-to-cart">Do košíku</button>
-              </span>
-            </div>
-            
-            <!--Produkt 3-->
-            <div class="product">
-              <a href="detail_product.html">
-                <img
-                  src="https://picsum.photos/id/9/367/267"
-                  alt="Produkt"
-                  class="product_photo"
-                />
-                <span class="hlavni-popis">
-                  <h3>Google Pixel 8</h3>
-
-                  <span class="Homepage-recenze">
-                    <img src="svg/star.svg" class="star" />
-                    <img src="svg/star.svg" class="star" />
-                    <img src="svg/star.svg" class="star" />
-                    <img src="svg/star.svg" class="star" />
-                    <img src="svg/star.svg" class="star" />
-                  </span>
-                </span>
-                <p class="popis red-text">
-                  Akce! Kup 2 za cenu 3!
-                </p>
-              </a>
-
-              <span>
-                <p class="cena">29.990,- Kč</p>
-                <button class="Homepage-add-to-cart">Do košíku</button>
-              </span>
-            </div>
-            <!--product-->
-          </section>
-
-          <span class="dolni-c">
-            <button
-              type="button"
-              class="btn-go-to-catalog"
-              onclick="window.location.href='catalog.html'"
-            >
-             Mobilní telefony
-            </button>
-          </span>
-        </article>
-        <article class="Homepage-catalog">
-          <h2>Hlavní nabídka</h2>
-          <section class="Homepage-recommended-p3">
-            <button
-              type="button"
-              class="btn-go-to-catalog-2"
-              onclick="window.location.href='catalog.html'"><p>Mobilní telefony</p></button>
-              <button
-              type="button"
-              class="btn-go-to-catalog-2"
-              onclick="window.location.href='catalog.html'"><p>Tablety</p></button>
-              <button
-              type="button"
-              class="btn-go-to-catalog-2"
-              onclick="window.location.href='catalog.html'"><p>Notebooky</p></button>
-          </section>
-
-
-          <h2>Příslušenství</h2>
-          <section class="Homepage-recommended-p3">
-            <button
-              type="button"
-              class="btn-go-to-catalog-2"
-              onclick="window.location.href='catalog.html'"><p>Ochranná skla</p></button>
-              <button
-              type="button"
-              class="btn-go-to-catalog-2"
-              onclick="window.location.href='catalog.html'"><p>Pouzdra</p></button>
-              <button
-              type="button"
-              class="btn-go-to-catalog-2"
-              onclick="window.location.href='catalog.html'"><p>Nabíječky</p></button>
-          </section>
-          <section class="dolni-c">
-            <button
-              type="button"
-              class="btn-go-to-catalog"
-              onclick="window.location.href='category_PC.html'"
-            >
-              <p>Zobrazit úplný katalog</p>
-            </button>
-          </section>
-          <section class="o_nas">
-            <h3>O nás:</h3>
-            <ul>
-              <li>
-                Zabýváme se prodejem mobilních telefonů již od roku 18 před naším
-                letopočtem.
-              </li>
-              <li>Prodej pouze bez faktury.</li>
-              <li>Nejsme plátci DPH, firma je registrována v Albánii.</li>
-              <li>
-                Záruku na zboží neposkytujeme, naše produkty jsou určené na
-                náhradní díly.
-              </li>
-            </ul>
-          </section>
-        </article>
- 
+      <div class="contact-info">
+        <h3>Kontaktujte nás</h3>
+        <p>Telefon: +123 456 789</p>
+        <p>Email nemáme, použijte fax.</p>
+        <p>Adresa: Kamýcká 129, Praha, 165 00</p>
       </div>
 
-      <!--homepage-->
-    </main>
-
-    <footer>
-      <div class="footer-content">
-
-        <div class="contact-info">
-          <h3>Kontaktujte nás</h3>
-          <p>Telefon: +123 456 789</p>
-          <p>Email nemáme, použijte fax.</p>
-          <p>Adresa: Kamýcká 129, Praha, 165 00</p>
-        </div>
-        <div class="quick-links">
-          <h3>Rychlé odkazy</h3>
-          <ul>
-            <li><a href="https://cat-bounce.com/">Obchodní podmínky</a></li>
-            <li>
-              <a
-                href="https://lh4.googleusercontent.com/DVb-o1HfuVaUjEn6_o0fkzID2l6YVBabDgvUUyjwCJgr9--wQI7Rx2O5lLYn802yrCD0j7d4OUleZoQf4BRTkrvwh-7O71xInbHzNvFHRsT6bpg4B_9KsOm7pFx1aEQxNd-h0uNx"
-                >Ochrana osobních údajů</a
-              >
-            </li>
-            <li><a href="index.html">O nás</a></li>
-          </ul>
-        </div>
-        
+      <div class="quick-links">
+        <h3>Rychlé odkazy</h3>
+        <ul>
+          <li><a href="https://cat-bounce.com/">Obchodní podmínky</a></li>
+          <li>
+            <a
+              href="https://lh4.googleusercontent.com/DVb-o1HfuVaUjEn6_o0fkzID2l6YVBabDgvUUyjwCJgr9--wQI7Rx2O5lLYn802yrCD0j7d4OUleZoQf4BRTkrvwh-7O71xInbHzNvFHRsT6bpg4B_9KsOm7pFx1aEQxNd-h0uNx">Ochrana
+              osobních údajů</a>
+          </li>
+          <li><a href="index.html">O nás</a></li>
+        </ul>
       </div>
+
+    </div>
+    <div class="footer-content">
+
       <div class="social-media">
         <h3>Sociální média</h3>
-        <a href="https://twitter.com/tweetingtoaster" class="social-icon"
-          >Platforma X</a
-        >
-        <a
-          href="https://www.instagram.com/world_record_egg/?hl=cs"
-          class="social-icon"
-          >Instagram</a
-        >
+        <a href="https://twitter.com/tweetingtoaster" class="social-icon">Platforma X</a>
+        <a href="https://www.instagram.com/world_record_egg/?hl=cs" class="social-icon">Instagram</a>
       </div>
-    </footer>
 
-    <script src="Javascript/Search_result_support.js"></script>
-  </body>
+      <div class="FAQ">
+        <h3>Časté dotazy</h3>
+        <p id="disclaimer">Tento web není plně funkční e-shop, jedná se o studentský projekt.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="Javascript/Search_result_support.js"></script>
+</body>
+
 </html>
