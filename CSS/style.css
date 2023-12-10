@@ -66,6 +66,7 @@ header #name_E_shop h1 {
 */
 header article{
   grid-area: b;
+  position: relative;
 }
 header .search {
   display: flex;
