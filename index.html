@@ -15,15 +15,15 @@
       </div>
 
       <!-- Index/Homepage header -->
-      <form class="search">
-        <input type="text" class="search-box" required placeholder="Vyhledat" />
+      <form class="search" onsubmit="redirectToSearchResults(); return false;">
+        <input type="text" class="search-box" required placeholder="Vyhledat" id="searchInput" />
         <div class="search-dropdown">
           <ul>
-            <li><a href="">iFong 7</a></li>
-            <li><a href="">iPhone 12</a></li>
-            <li><a href="">iPhone 13 Plus</a></li>
-            <li><a href="">Samsung Galaxie Fold</a></li>
-            <li><a href="">Nothing Phone 2</a></li>
+            <li><a href="search_result_positive.html">iFong 7</a></li>
+            <li><a href="search_result_positive.html">iPhone 12</a></li>
+            <li><a href="search_result_positive.html">iPhone 13 Plus</a></li>
+            <li><a href="search_result_positive.html">Samsung Galaxie Fold</a></li>
+            <li><a href="search_result_positive.html">Nothing Phone 2</a></li>
           </ul>
         </div>
         <button class="x-button" type="reset"></button>
@@ -276,16 +276,6 @@
       </div>
     </footer>
 
-    <script>
-      const addToCartButtons = document.querySelectorAll(
-        ".product button.Homepage-add-to-cart"
-      );
-
-      addToCartButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-          window.location.href = "kosik.html";
-        });
-      });
-    </script>
+    <script src="Javascript/Search_result_support.js"></script>
   </body>
 </html>
