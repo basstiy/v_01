@@ -64,7 +64,10 @@ header #name_E_shop h1 {
     justify-content: space-between;
 }
 */
-
+header article{
+  grid-area: b;
+  position: relative;
+}
 header .search {
   display: flex;
   align-items: center;
@@ -275,6 +278,13 @@ nav img {
   min-height: 750px;
 
   /*monile*/
+}
+main {
+  max-width: 1200px; /*pc*/
+  margin: 0 auto;
+  padding: 0px;
+  height: 100%;
+  min-height: 750px;
 }
 
 /****************************/
@@ -1163,21 +1173,21 @@ th {
 /*Zacatek Finish*/
 /****************/
 
-#finish main {
+main #finish  {
   /* CSS pravidla pro elementy uvnitř <main>, který je potomkem s ID "finish" */
   background-color: #f0f0f0;
   padding: 20px;
   border: 1px solid #ccc;
 }
 
-#finish main p {
+main #finish  p {
   /* CSS pravidla pro všechny <p> elementy uvnitř <main> v elementu s ID "finish" */
   color: #333;
   font-size: 16px;
 }
 
 
-#finish main ul li {
+main #finish ul li {
   /* CSS pravidla pro všechny <li> elementy uvnitř <ul> uvnitř <main> v elementu s ID "finish" */
   margin-bottom: 8px;
 }
@@ -1196,7 +1206,7 @@ th {
 #finish .close:focus {
   color: black;
 }
-#finish main{
+main #finish {
   display: flex;
   flex-direction: column;
 } 
@@ -1204,7 +1214,7 @@ th {
   margin-left: 15px;
 
 }
-#finish, #finish main{
+#finish,main #finish {
   height: 100%;
 }
 
@@ -1225,7 +1235,9 @@ th {
 /*481px — 768 px: iPads, Tablets
     769px — 1024px: Small screens, laptops*/
 @media screen and (min-width: 480px) {
-  
+  header .search-icon {
+    display: none;
+  }
   header {
     grid-template-areas: "a . right-header" "b b b";
   }
@@ -1306,6 +1318,9 @@ th {
 
 
 @media screen and (min-width: 1025px) {
+  header .search-icon {
+    display: none;
+  }
   header {
     grid-template-areas: "a b b b right-header right-header";
   }

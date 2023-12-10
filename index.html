@@ -8,11 +8,11 @@
 
   <body>
     <header>
-      <div id="name_E_shop">
+      <section id="name_E_shop">
         <a href="index.html">
           <h1>Název E-Shopu</h1>
         </a>
-      </div>
+      </section>
 
       <!-- Index/Homepage header -->
       <form class="search" onsubmit="redirectToSearchResults(); return false;">
@@ -25,11 +25,11 @@
             <li><a href="search_result_positive.html">Samsung Galaxie Fold</a></li>
             <li><a href="search_result_positive.html">Nothing Phone 2</a></li>
           </ul>
-        </div>
+        </section>
         <button class="x-button" type="reset"></button>
         <button class="search-button">
           <img src="svg/find_manager_w.svg" class="lupa" alt="Přihlášení" />
-          <p>Hledat</p>
+          
         </button>
         <div class="search-icon">
           <button>
@@ -37,8 +37,9 @@
           </button>
         </div>
       </form>
+      </article>
 
-      <div class="right-header">
+      <section class="right-header">
         <div class="cart">
           <a href="kosik 2.html">
             <img src="svg/basket_Wight.svg" alt="Nákupní košík" />
@@ -49,20 +50,20 @@
             <img src="svg/menu_lines.svg" alt="Kategorie" />
           </a>
         </div>
-      </div>
+      </section>
     </header>
 
     <!-- Index/Homepage obsah -->
-    <div class="container">
+    <main>
       <div id="homepage">
-        <div class="Homepage-catalog">
+        <article class="Homepage-catalog">
           <p style="margin-left: 8px">
             <i>Tento web není plně funkční e-shop, jedná se o studentský
               projekt.</i>
           </p>
           <h2 class="trhak-dne">SLEVY DNE:</h2>
 
-          <div class="Homepage-recommended-p3">
+          <section class="Homepage-recommended-p3">
             <!-- Doporucene zbozi zde -->
 
             <!-- Produkt 1-->
@@ -155,7 +156,7 @@
               </span>
             </div>
             <!--product-->
-          </div>
+          </section>
 
           <span class="dolni-c">
             <button
@@ -163,13 +164,13 @@
               class="btn-go-to-catalog"
               onclick="window.location.href='catalog.html'"
             >
-              Zobrazit úplný katalog
+             Mobilní telefony
             </button>
           </span>
-        </div>
-        <div class="Homepage-catalog">
+        </article>
+        <article class="Homepage-catalog">
           <h2>Hlavní nabídka</h2>
-          <div class="Homepage-recommended-p3">
+          <section class="Homepage-recommended-p3">
             <button
               type="button"
               class="btn-go-to-catalog-2"
@@ -182,19 +183,11 @@
               type="button"
               class="btn-go-to-catalog-2"
               onclick="window.location.href='catalog.html'"><p>Notebooky</p></button>
-          </div>
-          <span class="dolni-c">
-            <button
-              type="button"
-              class="btn-go-to-catalog"
-              onclick="window.location.href='category_PC.html'"
-            >
-              <p>Vice</p>
-            </button>
-          </span>
+          </section>
+
 
           <h2>Příslušenství</h2>
-          <div class="Homepage-recommended-p3">
+          <section class="Homepage-recommended-p3">
             <button
               type="button"
               class="btn-go-to-catalog-2"
@@ -207,17 +200,17 @@
               type="button"
               class="btn-go-to-catalog-2"
               onclick="window.location.href='catalog.html'"><p>Nabíječky</p></button>
-          </div>
-          <span class="dolni-c">
+          </section>
+          <section class="dolni-c">
             <button
               type="button"
               class="btn-go-to-catalog"
               onclick="window.location.href='category_PC.html'"
             >
-              <p>Vice</p>
+              <p>Zobrazit úplný katalog</p>
             </button>
-          </span>
-          <div class="o_nas">
+          </section>
+          <section class="o_nas">
             <h3>O nás:</h3>
             <ul>
               <li>
@@ -231,13 +224,13 @@
                 náhradní díly.
               </li>
             </ul>
-          </div>
-        </div>
+          </section>
+        </article>
  
       </div>
 
       <!--homepage-->
-    </div>
+    </main>
 
     <footer>
       <div class="footer-content">
