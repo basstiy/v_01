@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="cs">
 
 <head>
-  <title>Název E-Shopu</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+  <title>Platební brána</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
 </head>
 
 <body>
-
-
-
 
   <header>
 
@@ -24,16 +21,15 @@
     <!--<input type="text" placeholder="Vyhledat"> -->
     <article>
       <form class="search" onsubmit="redirectToSearchResults(); return false;">
-        <input type="text" autocomplete="off" class="search-box" required placeholder="Vyhledat" id="searchInput" />
+        <input type="text" autocomplete="off" class="search-box" required placeholder="Vyhledat" id="searchInput">
 
         <button class="x-button" type="reset"></button>
         <button class="search-button">
-          <img src="svg/find_manager_w.svg" class="lupa" alt="Vyhledat" />
-  
+          <img src="svg/find_manager_w.svg" class="lupa" alt="Vyhledat">
         </button>
         <div class="search-icon">
           <button>
-            <img src="svg/find_manager_w.svg" /> Zobrazit všechny výsledky
+            <img src="svg/find_manager_w.svg" alt="Vyhledat"> Zobrazit všechny výsledky
           </button>
         </div>
       </form>
@@ -45,7 +41,7 @@
     </div>
     <!--3-->
   </header>
-  <nav> 
+  <nav>
 
     <a href="kosik.html">1. Košík</a>
     <a href="Doprava.html">2. Doprava</a>
@@ -53,205 +49,199 @@
 
   </nav>
 
-    <main>
-      <article id="checkout">
+  <main>
+    <article id="checkout">
       <h2>Platba</h2>
-    
 
-    <section class = "osobni_udaje">
-    <form action="#">
 
-      <h3>Kontakt</h3>
+      <section class="osobni_udaje">
+        <form action="#">
 
-      <div class="group">      
-        <input type="text" required>
-        <label>Email</label>
-      </div>
+          <h3>Kontakt</h3>
 
-      <h3>Bydliste</h3>
+          <div class="group">
+            <input type="text" required>
+            <label>Email</label>
+          </div>
 
-      <div class="group">      
-        <input type="text" required>
-        <label>Address</label>
-      </div>
+          <h3>Bydliste</h3>
 
-      <div class="group">      
-        <input type="text" required>
-        <label>City</label>
-      </div>
+          <div class="group">
+            <input type="text" required>
+            <label>Address</label>
+          </div>
 
-      <div class="group">      
-        <input type="text" required>
-        <label>State</label>
-      </div>
-      
-      <div class="group">      
-        <input type="text" required>
-        <label>Zip</label>
-      </div>
+          <div class="group">
+            <input type="text" required>
+            <label>City</label>
+          </div>
 
-  
-    </form>
-    </section>
-    
+          <div class="group">
+            <input type="text" required>
+            <label>State</label>
+          </div>
 
-    <section class="udaje">
-      
+          <div class="group">
+            <input type="text" required>
+            <label>Zip</label>
+          </div>
+        </form>
+      </section>
 
-      <h3>Zpusob placeni</h3>
-     
-         <ul>
-            <li>
+      <section class="udaje">
+
+        <h3>Zpusob placeni</h3>
+
+        <ul>
+          <li>
             <div class="card-vyber-placeni">
               <label>
-              <input type="radio" id="karta-a" name="payment-method" value="bankovni-prevod" checked/>
-               <p>Bankovní převod</p>
-              </label>
-            </div>
-            </li>
-            <li>
-            <div class="card-vyber-placeni">
-              <label>
-              <input type="radio" id="karta-c" name="payment-method" value="dobirka"/>
-              <p>Dobírka</p>
-              </label>
-            </div>
-            </li>
-            <li>
-            <div class="card-vyber-placeni">
-              <label >
-              <input type="radio" id="karta-b" name="payment-method" value="karta"/>
-               <p>Platebni karta</p>
+                <input type="radio" id="karta-a" name="payment-method" value="bankovni-prevod" checked>
+                <span>Bankovní převod</span>
               </label>
             </div>
           </li>
-          </ul>
-    </section>
+          <li>
+            <div class="card-vyber-placeni">
+              <label>
+                <input type="radio" id="karta-b" name="payment-method" value="dobirka">
+                <span>Dobírka</span>
+              </label>
+            </div>
+          </li>
+          <li>
+            <div class="card-vyber-placeni">
+              <label>
+                <input type="radio" id="karta-c" name="payment-method" value="karta">
+                <span>Platebni karta</span>
+              </label>
+            </div>
+          </li>
+        </ul>
+      </section>
 
-    <section id="bank-card" style="display: none;">
-      <!-- form -->
-      <section class="pay_online">
-      <form action="checkout.html">
+      <section id="bank-card" style="display: none;">
+        <!-- form -->
+        <section class="pay_online">
+          <form action="checkout.html">
 
-        
+            <h3>Payment</h3>
 
-          <h3>Payment</h3>
-          
-          <div class="col">
+            <div class="col">
 
-            <label for="cname"><p>Name on Card</p>
-            <input type="text" name="cardname" placeholder="John More Doe">
-            </label>
+              <label for="cname">
+                <span>Name on Card</span>
+                <input id="cname" type="text" name="cardname" placeholder="John More Doe">
+              </label>
 
-            <label for="ccnum"><p>Credit card number</p>
-            <input type="text" name="cardnumber" placeholder="1111-2222-3333-4444">
-          </label>
-          </div>
+              <label for="ccnum">
+                <span>Credit card number</span>
+                <input id="ccnum" type="text" name="cardnumber" placeholder="1111-2222-3333-4444">
+              </label>
+            </div>
 
-          <div class="col">
-            <label for="expmonth"><p>Exp Month</p>
-            <input type="text" name="expmonth" placeholder="September">
-          </label>
-          </div>
-          
+            <div class="col">
+              <label for="expmonth">
+                <span>Exp Month</span>
+                <input id="expmonth" type="text" name="expmonth" placeholder="September">
+              </label>
+            </div>
+
             <div class="row">
 
               <div class="col">
-                <label for="expyear"><p>Exp Year</p>
-                <input type="text" name="expyear" placeholder="2018">
-              </label>
+                <label for="expyear">
+                  <span>Exp Year</span>
+                  <input id="expyear" type="text" name="expyear" placeholder="2018">
+                </label>
               </div>
               <div class="col">
-                <label for="cvv"><p>CVV</p>
-                <input type="text" name="cvv" placeholder="352">
-              </label>
+                <label for="cvv">
+                  <span>CVV</span>
+                  <input id="cvv" type="text" name="cvv" placeholder="352">
+                </label>
               </div>
 
             </div> <!--row-->
-        
-          
-        
-      
-      
-      </form>
-     </section>
 
-    </section><!--bank-card-->
+          </form>
+        </section>
+
+      </section><!--bank-card-->
 
 
-    <p class="total-price">Celková cena objednávky: <strong>3 479 Kč</strong></p>
-    <button type="button" class="btn-remove-product" onclick="window.location.href='finish.html'">Závazně objednat</button>
-      
-      
+      <p class="total-price">Celková cena objednávky: <strong>3 479 Kč</strong></p>
+      <button type="button" class="btn-remove-product" onclick="window.location.href='finish.html'">Závazně
+        objednat</button>
+
+
     </article> <!--checkout-->
-   
-    </main>  <!--container-->  
-  
-    <!-- FOOTER -->
-    <footer>
-      <div class="footer-content">
-  
-        <div class="contact-info">
-          <h3>Kontaktujte nás</h3>
-          <p>Telefon: +123 456 789</p>
-          <p>Email nemáme, použijte fax.</p>
-          <p>Adresa: Kamýcká 129, Praha, 165 00</p>
-        </div>
-        
-        <div class="quick-links">
-          <h3>Rychlé odkazy</h3>
-          <ul>
-            <li><a href="https://cat-bounce.com/">Obchodní podmínky</a></li>
-            <li>
-              <a
-                href="https://lh4.googleusercontent.com/DVb-o1HfuVaUjEn6_o0fkzID2l6YVBabDgvUUyjwCJgr9--wQI7Rx2O5lLYn802yrCD0j7d4OUleZoQf4BRTkrvwh-7O71xInbHzNvFHRsT6bpg4B_9KsOm7pFx1aEQxNd-h0uNx">Ochrana
-                osobních údajů</a>
-            </li>
-            <li><a href="index.html">O nás</a></li>
-          </ul>
-        </div>
-  
-      </div>
-      <div class="footer-content">
-  
-        <div class="social-media">
-          <h3>Sociální média</h3>
-          <a href="https://twitter.com/tweetingtoaster" class="social-icon">Platforma X</a>
-          <a href="https://www.instagram.com/world_record_egg/?hl=cs" class="social-icon">Instagram</a>
-        </div>
-        
-        <div class="FAQ">
-          <h3>Časté dotazy</h3>
-          <p id="disclaimer">Tento web není plně funkční e-shop, jedná se o studentský projekt.</p>
-        </div>
-  
-      </div>
-    </footer>
 
-    <script src="Javascript/Search_result_support.js">
-      // Získání reference na radio button a element s třídou "karta"
-      const kartaRadioo = document.getElementById('karta-a');
-      const kartaRadio = document.getElementById('karta-b');
-      const kartaRadioo1 = document.getElementById('karta-c');
-      const kartaElement = document.getElementById('bank-card');
-  
-      // Přidání posluchače události změny na radio button
-      kartaRadio.addEventListener('change', function () {
-          
-              kartaElement.style.display = 'block';
-          
-      });
-      kartaRadioo.addEventListener('change', function () {
+  </main> <!--container-->
 
-              kartaElement.style.display = 'none';
-         
-      });
-      kartaRadioo1.addEventListener('change', function () {
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+
+      <div class="contact-info">
+        <h3>Kontaktujte nás</h3>
+        <p>Telefon: +123 456 789</p>
+        <p>Email nemáme, použijte fax.</p>
+        <p>Adresa: Kamýcká 129, Praha, 165 00</p>
+      </div>
+
+      <div class="quick-links">
+        <h3>Rychlé odkazy</h3>
+        <ul>
+          <li><a href="https://cat-bounce.com/">Obchodní podmínky</a></li>
+          <li>
+            <a
+              href="https://lh4.googleusercontent.com/DVb-o1HfuVaUjEn6_o0fkzID2l6YVBabDgvUUyjwCJgr9--wQI7Rx2O5lLYn802yrCD0j7d4OUleZoQf4BRTkrvwh-7O71xInbHzNvFHRsT6bpg4B_9KsOm7pFx1aEQxNd-h0uNx">Ochrana
+              osobních údajů</a>
+          </li>
+          <li><a href="index.html">O nás</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer-content">
+
+      <div class="social-media">
+        <h3>Sociální média</h3>
+        <a href="https://twitter.com/tweetingtoaster" class="social-icon">Platforma X</a>
+        <a href="https://www.instagram.com/world_record_egg/?hl=cs" class="social-icon">Instagram</a>
+      </div>
+
+      <div class="FAQ">
+        <h3>Časté dotazy</h3>
+        <p id="disclaimer">Tento web není plně funkční e-shop, jedná se o studentský projekt.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    // Získání reference na radio button a element s třídou "karta"
+    const kartaRadioA = document.getElementById('karta-a');
+    const kartaRadioB = document.getElementById('karta-b');
+    const kartaRadioC = document.getElementById('karta-c');
+    const kartaElement = document.getElementById('bank-card');
+
+    // Přidání posluchače události změny na radio button
+    kartaRadioA.addEventListener('change', function () {
+      kartaElement.style.display = 'none';
+
+    });
+    kartaRadioB.addEventListener('change', function () {
 
       kartaElement.style.display = 'none';
 
-      });
-    </script>
+    });
+    kartaRadioC.addEventListener('change', function () {
+      kartaElement.style.display = 'block';
+    });
+  </script>
 
-  </body>
+</body>
+
 </html>

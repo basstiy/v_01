@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="cs">
 
 <head>
   <title>Doprava</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
 </head>
 
 <body>
@@ -19,158 +19,152 @@
     <!--<input type="text" placeholder="Vyhledat"> -->
     <article>
       <form class="search" onsubmit="redirectToSearchResults(); return false;">
-        <input type="text" autocomplete="off" class="search-box" required placeholder="Vyhledat" id="searchInput" />
+        <input type="text" autocomplete="off" class="search-box" required placeholder="Vyhledat" id="searchInput">
 
         <button class="x-button" type="reset"></button>
         <button class="search-button">
-          <img src="svg/find_manager_w.svg" class="lupa" alt="Vyhledat" />
-  
+          <img src="svg/find_manager_w.svg" class="lupa" alt="Vyhledat">
         </button>
         <div class="search-icon">
           <button>
-            <img src="svg/find_manager_w.svg" /> Zobrazit všechny výsledky
+            <img src="svg/find_manager_w.svg" alt="Vyhledat"> Zobrazit všechny výsledky
           </button>
         </div>
       </form>
     </article>
-      <!-- search --><!--2-->
+    <!-- search --><!--2-->
 
-      <section class="right-header">
+    <section class="right-header">
 
-      </section>
-      
-      <!--3-->
-    </header>
-    <nav> 
+    </section>
 
-      <a href="kosik.html" >1. Košík</a>
-      <a href="#" class="selected">2. Doprava</a>
-      <a href="checkout.html">3. Platba</a>
+    <!--3-->
+  </header>
+  <nav>
 
-    </nav>
-    <main id="doprava">
-    
+    <a href="kosik.html">1. Košík</a>
+    <a href="#" class="selected">2. Doprava</a>
+    <a href="checkout.html">3. Platba</a>
 
+  </nav>
+  <main id="doprava">
 
-      
+    <section class="udaje">
 
-        <section class="udaje">
-      
+      <h3>Způsob dopravy </h3>
 
-          <h3>Způsob dopravy </h3>
-         
-             <ul>
-                <li>
-                <div class="card-vyber-placeni">
-                  <label>
-                  <input type="radio" id="karta-a" name="payment-method" value="bankovni-prevod" checked/>
-                   <p>Osobní odběr (Zdarma)</p>
-                  </label>
-                </div>
-                </li>
-                <li>
-                <div class="card-vyber-placeni">
-                  <label>
-                  <input type="radio" id="karta-b" name="payment-method" value="dobirka"/>
-                  <p>Obchodni Box (50 Kč) </p>
-                  </label>
-                </div>
-                </li>
-                <li>
-                <div class="card-vyber-placeni">
-                  <label >
-                  <input type="radio" id="karta-c" name="payment-method" value="karta"/>
-                   <p>Doprava az do domu (199 Kč)</p>
-                  </label>
-                </div>
-              </li>
-              </ul>
-              <p class="total-price">Celková cena objednávky: <strong><spane id="celkova_cena">3 479</spane>Kč </strong></p>
-        </section>
+      <ul>
+        <li>
+          <div class="card-vyber-placeni">
+            <label>
+              <input type="radio" id="karta-a" name="payment-method" value="bankovni-prevod" checked>
+              <span>Osobní odběr (Zdarma)</span>
+            </label>
+          </div>
+        </li>
+        <li>
+          <div class="card-vyber-placeni">
+            <label>
+              <input type="radio" id="karta-b" name="payment-method" value="dobirka">
+              <span>Obchodni Box (50 Kč) </span>
+            </label>
+          </div>
+        </li>
+        <li>
+          <div class="card-vyber-placeni">
+            <label>
+              <input type="radio" id="karta-c" name="payment-method" value="karta">
+              <span>Doprava az do domu (199 Kč)</span>
+            </label>
+          </div>
+        </li>
+      </ul>
+      <p class="total-price">Celková cena objednávky:
+        <strong>
+          <span id="celkova_cena">3 479</span>Kč
+        </strong>
+      </p>
+    </section>
 
-        <section class="dolni-c">
-          <button
-            type="button"
-            class="btn-go-to-catalog"
-            onclick="window.location.href='checkout.html'"
-          >
-            Platba
-          </button>
-        </section>
+    <section class="dolni-c">
+      <button type="button" class="btn-go-to-catalog" onclick="window.location.href='checkout.html'">
+        Platba
+      </button>
+    </section>
 
 
-        <script >
-           const karta_a = document.getElementById('karta-a');
-           const karta_b = document.getElementById('karta-b');
-           const karta_c = document.getElementById('karta-c');
-           const cena = document.getElementById('celkova_cena');
-           console.log('funguje');
-  
-          // Přidání posluchače události změny na radio button
-          karta_a.addEventListener('change', function () {
-          
-            cena.innerText = '3 479';
-            console('tady');
-          
-          });
-          karta_b.addEventListener('change', function () {
+    <script>
+      const karta_a = document.getElementById('karta-a');
+      const karta_b = document.getElementById('karta-b');
+      const karta_c = document.getElementById('karta-c');
+      const cena = document.getElementById('celkova_cena');
+      console.log('funguje');
 
-          cena.innerText = '3 529';
-        
-          });
-          karta_c.addEventListener('change', function () {
+      // Přidání posluchače události změny na radio button
+      karta_a.addEventListener('change', function () {
 
-           cena.innerText =  '3 678';
+        cena.innerText = '3 479';
+        console('tady');
 
-         });
-        </script>
+      });
+      karta_b.addEventListener('change', function () {
 
-      
+        cena.innerText = '3 529';
 
-      </main>
-      <!-- -->
+      });
+      karta_c.addEventListener('change', function () {
+
+        cena.innerText = '3 678';
+
+      });
+    </script>
+
+
+
+  </main>
+  <!-- -->
+  <!--container-->
+
+  <footer>
+    <div class="footer-content">
+
+      <div class="contact-info">
+        <h3>Kontaktujte nás</h3>
+        <p>Telefon: +123 456 789</p>
+        <p>Email nemáme, použijte fax.</p>
+        <p>Adresa: Kamýcká 129, Praha, 165 00</p>
+      </div>
+
+      <div class="quick-links">
+        <h3>Rychlé odkazy</h3>
+        <ul>
+          <li><a href="https://cat-bounce.com/">Obchodní podmínky</a></li>
+          <li>
+            <a
+              href="https://lh4.googleusercontent.com/DVb-o1HfuVaUjEn6_o0fkzID2l6YVBabDgvUUyjwCJgr9--wQI7Rx2O5lLYn802yrCD0j7d4OUleZoQf4BRTkrvwh-7O71xInbHzNvFHRsT6bpg4B_9KsOm7pFx1aEQxNd-h0uNx">Ochrana
+              osobních údajů</a>
+          </li>
+          <li><a href="index.html">O nás</a></li>
+        </ul>
+      </div>
+
     </div>
-    <!--container-->
+    <div class="footer-content">
 
-    <footer>
-      <div class="footer-content">
-  
-        <div class="contact-info">
-          <h3>Kontaktujte nás</h3>
-          <p>Telefon: +123 456 789</p>
-          <p>Email nemáme, použijte fax.</p>
-          <p>Adresa: Kamýcká 129, Praha, 165 00</p>
-        </div>
-        
-        <div class="quick-links">
-          <h3>Rychlé odkazy</h3>
-          <ul>
-            <li><a href="https://cat-bounce.com/">Obchodní podmínky</a></li>
-            <li>
-              <a
-                href="https://lh4.googleusercontent.com/DVb-o1HfuVaUjEn6_o0fkzID2l6YVBabDgvUUyjwCJgr9--wQI7Rx2O5lLYn802yrCD0j7d4OUleZoQf4BRTkrvwh-7O71xInbHzNvFHRsT6bpg4B_9KsOm7pFx1aEQxNd-h0uNx">Ochrana
-                osobních údajů</a>
-            </li>
-            <li><a href="index.html">O nás</a></li>
-          </ul>
-        </div>
-  
+      <div class="social-media">
+        <h3>Sociální média</h3>
+        <a href="https://twitter.com/tweetingtoaster" class="social-icon">Platforma X</a>
+        <a href="https://www.instagram.com/world_record_egg/?hl=cs" class="social-icon">Instagram</a>
       </div>
-      <div class="footer-content">
-  
-        <div class="social-media">
-          <h3>Sociální média</h3>
-          <a href="https://twitter.com/tweetingtoaster" class="social-icon">Platforma X</a>
-          <a href="https://www.instagram.com/world_record_egg/?hl=cs" class="social-icon">Instagram</a>
-        </div>
-        
-        <div class="FAQ">
-          <h3>Časté dotazy</h3>
-          <p id="disclaimer">Tento web není plně funkční e-shop, jedná se o studentský projekt.</p>
-        </div>
-  
+
+      <div class="FAQ">
+        <h3>Časté dotazy</h3>
+        <p id="disclaimer">Tento web není plně funkční e-shop, jedná se o studentský projekt.</p>
       </div>
-    </footer>
-    <script src="Javascript/Search_result_support.js"></script>
-  </body>
+
+    </div>
+  </footer>
+  <script src="Javascript/Search_result_support.js"></script>
+</body>
+
 </html>
