@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="cs">
 
 <head>
   <title>Název E-Shopu</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
 </head>
 
 <body>
@@ -19,93 +19,87 @@
     <!--<input type="text" placeholder="Vyhledat"> -->
     <article>
       <form class="search" onsubmit="redirectToSearchResults(); return false;">
-        <input type="text" autocomplete="off" class="search-box" required placeholder="Vyhledat" id="searchInput" />
-        <section class="search-dropdown">
-          <ul>
-            <li><a href="search_result_positive.html?query=iFong%207">iFong 7</a></li>
-            <li><a href="search_result_positive.html?query=iPhone%2012">iPhone 12</a></li>
-            <li><a href="search_result_positive.html?query=iPhone%2013%20Plus">iPhone 13 Plus</a></li>
-            <li><a href="search_result_positive.html?query=Samsung%20Galaxie%20Fold">Samsung Galaxie Fold</a></li>
-            <li><a href="search_result_positive.html?query=Nothing%20Phone%202">Nothing Phone 2</a></li>
-          </ul>
-        </section>
+        <input type="text" class="search-box" required placeholder="Vyhledat" id="searchInput">
         <button class="x-button" type="reset"></button>
         <button class="search-button">
-          <img src="svg/find_manager_w.svg" class="lupa" alt="Vyhledat" />
-  
+          <img src="svg/find_manager_w.svg" class="lupa" alt="Vyhledat">
         </button>
         <div class="search-icon">
           <button>
-            <img src="svg/find_manager_w.svg" /> Zobrazit všechny výsledky
+            <img src="svg/find_manager_w.svg" alt="Vyhledat"> Zobrazit všechny výsledky
           </button>
         </div>
       </form>
     </article>
-      <!-- search --><!--2-->
+    <!-- search --><!--2-->
 
-      <div class="right-header">
-        <div class="cart">
-          <a href="kosik.html">
-            <img src="svg/basket_Wight.svg" alt="Nákupní košík" />
-          </a>
-        </div>
-        <div class="cart catalog">
-          <a href="catalog.html">
-            <img src="svg/menu_lines.svg" alt="Nákupní košík" />
-          </a>
-        </div>
+    <div class="right-header">
+      <div class="cart">
+        <a href="kosik.html">
+          <img src="svg/basket_Wight.svg" alt="Nákupní košík">
+        </a>
       </div>
-      
-      <!--3-->
-    </header>
+      <div class="cart catalog">
+        <a href="catalog.html">
+          <img src="svg/menu_lines.svg" alt="Nákupní košík">
+        </a>
+      </div>
+    </div>
 
-      
-     
+    <!--3-->
+  </header>
 
 
-    <main >
-      <div id="finish">
+
+
+
+  <main>
+    <div id="finish">
 
       <div class="modal">
-            <span class="close" onclick="window.location.href='index.html'">&times;</span>
+        <span class="close" onclick="window.location.href='index.html'">&times;</span>
       </div> <!--Tlacitko X-->
 
       <div class="objednavka">
-      <p><strong>Gratulujeme! Vaše objednávka byla úspěšně dokončena.</strong></p>
+        <p><strong>Gratulujeme! Vaše objednávka byla úspěšně dokončena.</strong></p>
 
-      <p>Děkujeme za nákup v našem online obchodě. Těšíme se, že vám můžeme přinést kvalitní produkty a skvělý zákaznický zážitek. Níže najdete detaily vaší objednávky:</p>
-      
-      <ul>
+        <p>Děkujeme za nákup v našem online obchodě. Těšíme se, že vám můžeme přinést kvalitní produkty a skvělý
+          zákaznický zážitek. Níže najdete detaily vaší objednávky:</p>
+
+        <ul>
           <li><strong>Číslo objednávky:</strong> 112233</li>
           <li><strong>Datum objednávky:</strong> 18.12.2023</li>
           <li><strong>Položky objednávky:</strong>
-              <ul>
-                  <li>
-                    <p>iFong 7S Plus. 1 ks. </p>
-                  </li>
-                  <li>Fucci iFong 7S Plus. 1 ks.</li>
-            
-                  <li><p class="total-price">Celková cena objednávky: <strong>3 380 Kč</strong></p></li>
-              </ul>
+            <ul>
+              <li>
+                <p>iFong 7S Plus. 1 ks. </p>
+              </li>
+              <li>Fucci iFong 7S Plus. 1 ks.</li>
+
+              <li>
+                <p class="total-price">Celková cena objednávky: <strong>3 380 Kč</strong></p>
+              </li>
+            </ul>
           </li>
-      </ul>
+        </ul>
 
-      <p><strong>Faktura:</strong><br>
-      Faktura za vaši objednávku byla odeslána na váš e-mail. Pro každou další komunikaci ohledně faktury nás neváhejte kontaktovat.</p>
+        <p><strong>Faktura:</strong><br>
+          Faktura za vaši objednávku byla odeslána na váš e-mail. Pro každou další komunikaci ohledně faktury nás
+          neváhejte kontaktovat.</p>
 
-      <p><strong>Vyzvednutí objednávky:</strong><br>
-      Objednávku můžete vyzvednout v naší prodejně v Kamýcká 129, Praha, 165 00 od 9:00 do 17:00 v úterý. </p>
+        <p><strong>Vyzvednutí objednávky:</strong><br>
+          Objednávku můžete vyzvednout v naší prodejně v Kamýcká 129, Praha, 165 00 od 9:00 do 17:00 v úterý. </p>
 
-      <p><strong>Další informace:</strong><br>
-      Pokud máte jakékoliv dotazy nebo potřebujete další asistenci, neváhejte nás kontaktovat. Jsme tu pro vás!</p>
-    </div><!--objednavka-->
-    
-  </div>
-  <!-- -->
+        <p><strong>Další informace:</strong><br>
+          Pokud máte jakékoliv dotazy nebo potřebujete další asistenci, neváhejte nás kontaktovat. Jsme tu pro vás!</p>
+      </div><!--objednavka-->
+
+    </div>
+    <!-- -->
   </main>
 
-        
-    
+
+
 
   <footer>
     <div class="footer-content">
@@ -116,7 +110,7 @@
         <p>Email nemáme, použijte fax.</p>
         <p>Adresa: Kamýcká 129, Praha, 165 00</p>
       </div>
-      
+
       <div class="quick-links">
         <h3>Rychlé odkazy</h3>
         <ul>
@@ -138,7 +132,7 @@
         <a href="https://twitter.com/tweetingtoaster" class="social-icon">Platforma X</a>
         <a href="https://www.instagram.com/world_record_egg/?hl=cs" class="social-icon">Instagram</a>
       </div>
-      
+
       <div class="FAQ">
         <h3>Časté dotazy</h3>
         <p id="disclaimer">Tento web není plně funkční e-shop, jedná se o studentský projekt.</p>
@@ -146,6 +140,8 @@
 
     </div>
   </footer>
-  </body>
   <script src="Javascript/Search_result_support.js"></script>
+
+</body>
+
 </html>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="cs">
 
 <head>
-  <title id="search-title"></title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+  <title id="search-title">Výsledek hledání</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
 </head>
 
 <body>
@@ -19,24 +19,15 @@
     <!--<input type="text" placeholder="Vyhledat"> -->
     <article>
       <form class="search" onsubmit="redirectToSearchResults(); return false;">
-        <input type="text" autocomplete="off" class="search-box" required placeholder="Vyhledat" id="searchInput" />
-        <section class="search-dropdown">
-          <ul>
-            <li><a href="search_result_positive.html?query=iFong%207">iFong 7</a></li>
-            <li><a href="search_result_positive.html?query=iPhone%2012">iPhone 12</a></li>
-            <li><a href="search_result_positive.html?query=iPhone%2013%20Plus">iPhone 13 Plus</a></li>
-            <li><a href="search_result_positive.html?query=Samsung%20Galaxie%20Fold">Samsung Galaxie Fold</a></li>
-            <li><a href="search_result_positive.html?query=Nothing%20Phone%202">Nothing Phone 2</a></li>
-          </ul>
-        </section>
+        <input type="text" class="search-box" required placeholder="Vyhledat" id="searchInput">
         <button class="x-button" type="reset"></button>
         <button class="search-button">
-          <img src="svg/find_manager_w.svg" class="lupa" alt="Vyhledat" />
-  
+          <img src="svg/find_manager_w.svg" class="lupa" alt="Vyhledat">
+
         </button>
         <div class="search-icon">
           <button>
-            <img src="svg/find_manager_w.svg" /> Zobrazit všechny výsledky
+            <img src="svg/find_manager_w.svg" alt="Vyhledat"> Zobrazit všechny výsledky
           </button>
         </div>
       </form>
@@ -46,12 +37,12 @@
     <div class="right-header">
       <div class="cart">
         <a href="kosik.html">
-          <img src="svg/basket_Wight.svg" alt="Nákupní košík" />
+          <img src="svg/basket_Wight.svg" alt="Nákupní košík">
         </a>
       </div>
       <div class="cart catalog">
         <a href="category.html">
-          <img src="svg/menu_lines.svg" alt="Kategorie" />
+          <img src="svg/menu_lines.svg" alt="Kategorie">
         </a>
       </div>
 
@@ -60,14 +51,13 @@
     <!--3-->
   </header>
 
-  <nav> 
-    <nav> 
-
-    <a href="/index.html" ><img src="/svg/hause.svg" class="star" /></a>
-    <a href="/category_pc.html" > Kategorie zboží</a>
-    <a href="/catalog.html" class="selected"> Mobilní telefony</a>
-    <span > </span>
-    </nav> 
+  <nav>
+    <nav>
+      <a href="/index.html"><img src="/svg/hause.svg" class="star" alt="Hvězda"></a>
+      <a href="/category_pc.html"> Kategorie zboží</a>
+      <a href="/catalog.html" class="selected"> Mobilní telefony</a>
+      <span> </span>
+    </nav>
     <span> </span>
   </nav>
 
@@ -75,246 +65,244 @@
   <div class="container">
     <div id="catalog">
 
-      <div class="menu"><img src="svg/down_icon.svg" />
+      <div class="menu"><img src="svg/down_icon.svg" alt="menu">
       </div>
-      
-        
-        <div class="menu-list-catalog">
-         
-          <!-- Obsah katalogu zboží zde -->
-          <h3>Mobilní telefony</h3>
-          <ul>
-            
 
-            <li><a href="/catalog.html">iPhone</a></li>
-            <li><a href="/catalog.html">Samsung</a></li>
-            <li><a href="/catalog.html">Nokia</a></li>
-            <li><a href="/catalog.html">Motorola</a></li>
-            <li><a href="/catalog.html">Ostatní</a></li>
 
-          </ul>
-          <div class="menu-down"><img src="/svg/down_icon.svg" />
-          </div>
+      <div class="menu-list-catalog">
+
+        <!-- Obsah katalogu zboží zde -->
+        <h3>Mobilní telefony</h3>
+        <ul>
+
+
+          <li><a href="/catalog.html">iPhone</a></li>
+          <li><a href="/catalog.html">Samsung</a></li>
+          <li><a href="/catalog.html">Nokia</a></li>
+          <li><a href="/catalog.html">Motorola</a></li>
+          <li><a href="/catalog.html">Ostatní</a></li>
+
+        </ul>
+        <div class="menu-down"><img src="/svg/down_icon.svg" alt="menu">
         </div>
+      </div>
 
 
 
-        <div class="Homepage-catalog">
-          <h2 id="searchQueryHeading"></h2>
+      <div class="Homepage-catalog">
+        <h2 id="searchQueryHeading">Výsledek hledání</h2>
 
 
-          <div class="Homepage-recommended">
-            <!-- Doporucene zbozi zde -->
+        <div class="Homepage-recommended">
+          <!-- Doporucene zbozi zde -->
 
-            
-            <div class="product">
-             
-              <a href="detail_product.html">
-                <img src="https://picsum.photos/id/9/367/267" alt="iPhone 10" class="product_photo" />
-                
-                <span class="hlavni-popis">
+
+          <div class="product">
+
+            <a href="detail_product.html">
+              <img src="https://picsum.photos/id/9/367/267" alt="iPhone 10" class="product_photo">
+
+              <div class="hlavni-popis">
                 <h3>iFong 7S Plus</h3>
 
                 <span class="Homepage-recenze">
-                  <img src="svg/star.svg" class="star" />
-                  <img src="svg/star.svg" class="star" />
-                  <img src="svg/star.svg" class="star" />
-                  <img src="svg/star.svg" class="star" />
-                  <img src="svg/star.svg" class="star" />
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
                 </span>
+              </div>
+              <p class="popis">Čínská kopie jablečného telefonu.</p>
+            </a>
 
-                </span>
-                <p class="popis">Čínská kopie jablečného telefonu.</p>
-              </a>
-            
-              <span> 
-                <p class="cena">25000 kc</p>
-                <button class="Homepage-add-to-cart">Do košíku</button>
-              </span>
-            </div><!-- Produkt -->
-            
+            <div>
+              <p class="cena">25000 kc</p>
+              <button class="Homepage-add-to-cart">Do košíku</button>
+            </div>
+          </div><!-- Produkt -->
 
-            <div class="product">
-             
-              <a href="detail_product.html">
-                <img src="https://picsum.photos/id/9/367/267" alt="iPhone 11" class="product_photo" />
-                
-                <span class="hlavni-popis">
+
+          <div class="product">
+
+            <a href="detail_product.html">
+              <img src="https://picsum.photos/id/9/367/267" alt="iPhone 11" class="product_photo">
+
+              <div class="hlavni-popis">
                 <h3>iPhone 11</h3>
                 <span class="Homepage-recenze">
-                  <img src="svg/star.svg" class="star" />
-                  <img src="svg/star.svg" class="star" />
-                  <img src="svg/star.svg" class="star" />
-                  <img src="svg/star.svg" class="star" />
-                  <img src="svg/star.svg" class="star" />
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
                 </span>
-                </span>
-                <p class="popis">Nejlevnější iPhone</p>
-              </a>
-              <span> 
-                <p class="cena">10.990,- Kč</p>
-                <button class="Homepage-add-to-cart">Do košíku</button>
-              </span>
-            </div><!-- Produkt -->
-            
+              </div>
+              <p class="popis">Nejlevnější iPhone</p>
+            </a>
+            <div>
+              <p class="cena">10.990,- Kč</p>
+              <button class="Homepage-add-to-cart">Do košíku</button>
+            </div>
+          </div><!-- Produkt -->
 
-            <div class="product">
-             
-              <a href="detail_product.html">
-                <img src="https://picsum.photos/id/9/367/267" alt="iPhone 12" class="product_photo" />
-                
-                <span class="hlavni-popis">
+
+          <div class="product">
+
+            <a href="detail_product.html">
+              <img src="https://picsum.photos/id/9/367/267" alt="iPhone 12" class="product_photo">
+
+              <div class="hlavni-popis">
                 <h3>iPhone 12</h3>
                 <span class="Homepage-recenze">
-                  <img src="svg/star.svg" class="star" />
-                  <img src="svg/star.svg" class="star" />
-                  <img src="svg/star.svg" class="star" />
-                  <img src="svg/star.svg" class="star" />
-                  <img src="svg/star.svg" class="star" />
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
                 </span>
-                </span>
-                <p class="popis">Dvanácté jablíčko</p>
-              </a>
-            
-              <span> 
-                <p class="cena">17.990,- Kč</p>
-                <button class="Homepage-add-to-cart">Do košíku</button>
-              </span>
-            </div><!-- Produkt -->
-           
-            
-            <div class="product">
-             
-              <a href="detail_product.html">
-                <img src="https://picsum.photos/id/9/367/267" alt="iPhone 13" class="product_photo" />
-                
-                <span class="hlavni-popis">
+              </div>
+              <p class="popis">Dvanácté jablíčko</p>
+            </a>
+
+            <div>
+              <p class="cena">17.990,- Kč</p>
+              <button class="Homepage-add-to-cart">Do košíku</button>
+            </div>
+          </div><!-- Produkt -->
+
+
+          <div class="product">
+
+            <a href="detail_product.html">
+              <img src="https://picsum.photos/id/9/367/267" alt="iPhone 13" class="product_photo">
+
+              <div class="hlavni-popis">
                 <h3>iPhone 13</h3>
                 <span class="Homepage-recenze">
-                  <img src="svg/star.svg" class="star" />
-                  <img src="svg/star.svg" class="star" />
-                  <img src="svg/star.svg" class="star" />
-                  <img src="svg/star.svg" class="star" />
-                  <img src="svg/star.svg" class="star" />
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
                 </span>
-                </span>
-                <p class="popis">Podporuje nejnovejší iOS</p>
-              </a>
-              <span> 
-                <p class="cena">20.990,- Kč</p>
-                <button class="Homepage-add-to-cart">Do košíku</button>
-              </span>
-            </div><!-- Produkt -->
-            
-            
-            <div class="product">
-             
-              <a href="detail_product.html">
-                <img src="https://picsum.photos/id/9/367/267" alt="iPhone 14" class="product_photo" />
-                
-                <span class="hlavni-popis">
+              </div>
+              <p class="popis">Podporuje nejnovejší iOS</p>
+            </a>
+            <div>
+              <p class="cena">20.990,- Kč</p>
+              <button class="Homepage-add-to-cart">Do košíku</button>
+            </div>
+          </div><!-- Produkt -->
+
+
+          <div class="product">
+
+            <a href="detail_product.html">
+              <img src="https://picsum.photos/id/9/367/267" alt="iPhone 14" class="product_photo">
+
+              <div class="hlavni-popis">
                 <h3>iPhone 14</h3>
                 <span class="Homepage-recenze">
-                  <img src="svg/star.svg" class="star" />
-                  <img src="svg/star.svg" class="star" />
-                  <img src="svg/star.svg" class="star" />
-                  <img src="svg/star.svg" class="star" />
-                  <img src="svg/star.svg" class="star" />
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
                 </span>
-                </span>
-                <p class="popis">Loňský model</p>
-              </a>
-            
-              <span> 
-                <p class="cena">25.990,- Kč kc</p>
-                <button class="Homepage-add-to-cart">Do košíku</button>
-              </span>
-            </div><!-- Produkt -->
-            
-            
-            <div class="product">
-             
-              <a href="detail_product.html">
-                <img src="https://picsum.photos/id/9/367/267" alt="iPhone 15" class="product_photo" />
-                
-                <span class="hlavni-popis">
+              </div>
+              <p class="popis">Loňský model</p>
+            </a>
+
+            <div>
+              <p class="cena">25.990,- Kč kc</p>
+              <button class="Homepage-add-to-cart">Do košíku</button>
+            </div>
+          </div><!-- Produkt -->
+
+
+          <div class="product">
+
+            <a href="detail_product.html">
+              <img src="https://picsum.photos/id/9/367/267" alt="iPhone 15" class="product_photo">
+
+              <div class="hlavni-popis">
                 <h3>iPhone 15</h3>
                 <span class="Homepage-recenze">
-                  <img src="svg/star.svg" class="star" />
-                  <img src="svg/star.svg" class="star" />
-                  <img src="svg/star.svg" class="star" />
-                  <img src="svg/star.svg" class="star" />
-                  <img src="svg/star.svg" class="star" />
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
                 </span>
-                </span>
-                <p class="popis">Nejnovější model.</p>
-              </a>
-              <span> 
-                <p class="cena">30.990,- Kč</p>
-                <button class="Homepage-add-to-cart">Do košíku</button>
-              </span>
-            </div><!-- Produkt -->
-            
-            
-            <div class="product">
-             
-              <a href="detail_product.html">
-                <img src="https://picsum.photos/id/9/367/267" alt="iPhone 16" class="product_photo" />
-                
-                <span class="hlavni-popis">
+              </div>
+              <p class="popis">Nejnovější model.</p>
+            </a>
+            <div>
+              <p class="cena">30.990,- Kč</p>
+              <button class="Homepage-add-to-cart">Do košíku</button>
+            </div>
+          </div><!-- Produkt -->
+
+
+          <div class="product">
+
+            <a href="detail_product.html">
+              <img src="https://picsum.photos/id/9/367/267" alt="iPhone 16" class="product_photo">
+
+              <div class="hlavni-popis">
                 <h3>iPhone 16</h3>
                 <span class="Homepage-recenze">
-                  <img src="svg/star.svg" class="star" />
-                  <img src="svg/star.svg" class="star" />
-                  <img src="svg/star.svg" class="star" />
-                  <img src="svg/star.svg" class="star" />
-                  <img src="svg/star.svg" class="star" />
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
                 </span>
-                </span>
-                <p class="popis">Přijímáme předobjednávky</p>
-              </a>
-            
-              <span> 
-                <p class="cena">48.990,- Kč</p>
-                <button class="Homepage-add-to-cart">Do košíku</button>
-              </span>
-            </div><!-- Produkt -->
-            
-            
-            <div class="product">
-             
-              <a href="detail_product.html">
-                <img src="https://picsum.photos/id/9/367/267" alt="iPhone 17" class="product_photo" />
-                
-                <span class="hlavni-popis">
+              </div>
+              <p class="popis">Přijímáme předobjednávky</p>
+            </a>
+
+            <div>
+              <p class="cena">48.990,- Kč</p>
+              <button class="Homepage-add-to-cart">Do košíku</button>
+            </div>
+          </div><!-- Produkt -->
+
+
+          <div class="product">
+
+            <a href="detail_product.html">
+              <img src="https://picsum.photos/id/9/367/267" alt="iPhone 17" class="product_photo">
+
+              <div class="hlavni-popis">
                 <h3>iPhone 17</h3>
                 <span class="Homepage-recenze">
-                  <img src="svg/star.svg" class="star" />
-                  <img src="svg/star.svg" class="star" />
-                  <img src="svg/star.svg" class="star" />
-                  <img src="svg/star.svg" class="star" />
-                  <img src="svg/star.svg" class="star" />
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
+                  <img src="svg/star.svg" class="star" alt="Hvězda">
                 </span>
-                </span>
-                <p class="popis">Přijímáme předobjednávky</p>
-              </a>
-              <span> 
-                <p class="cena">57.890,- Kč</p>
-                <button class="Homepage-add-to-cart">Do košíku</button>
-              </span>
-            </div><!-- Produkt -->
-            
-            
+              </div>
+              <p class="popis">Přijímáme předobjednávky</p>
+            </a>
+            <div>
+              <p class="cena">57.890,- Kč</p>
+              <button class="Homepage-add-to-cart">Do košíku</button>
             </div>
-          </div>
-          
+          </div><!-- Produkt -->
+
+
         </div>
+      </div>
 
-
-    
     </div>
-    <!--catalog-->
+
+
+
   </div>
+  <!--catalog-->
   <!--container-->
 
   <footer>
@@ -326,7 +314,7 @@
         <p>Email nemáme, použijte fax.</p>
         <p>Adresa: Kamýcká 129, Praha, 165 00</p>
       </div>
-      
+
       <div class="quick-links">
         <h3>Rychlé odkazy</h3>
         <ul>
@@ -348,7 +336,7 @@
         <a href="https://twitter.com/tweetingtoaster" class="social-icon">Platforma X</a>
         <a href="https://www.instagram.com/world_record_egg/?hl=cs" class="social-icon">Instagram</a>
       </div>
-      
+
       <div class="FAQ">
         <h3>Časté dotazy</h3>
         <p id="disclaimer">Tento web není plně funkční e-shop, jedná se o studentský projekt.</p>

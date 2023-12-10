@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="cs">
 
 <head>
   <title>kosik</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="CSS/style.css" >
 </head>
 
 <body>
@@ -19,24 +19,14 @@
     <!--<input type="text" placeholder="Vyhledat"> -->
     <article>
       <form class="search" onsubmit="redirectToSearchResults(); return false;">
-        <input type="text" autocomplete="off" class="search-box" required placeholder="Vyhledat" id="searchInput" />
-        <section class="search-dropdown">
-          <ul>
-            <li><a href="search_result_positive.html?query=iFong%207">iFong 7</a></li>
-            <li><a href="search_result_positive.html?query=iPhone%2012">iPhone 12</a></li>
-            <li><a href="search_result_positive.html?query=iPhone%2013%20Plus">iPhone 13 Plus</a></li>
-            <li><a href="search_result_positive.html?query=Samsung%20Galaxie%20Fold">Samsung Galaxie Fold</a></li>
-            <li><a href="search_result_positive.html?query=Nothing%20Phone%202">Nothing Phone 2</a></li>
-          </ul>
-        </section>
+        <input type="text" class="search-box" required placeholder="Vyhledat" id="searchInput" >
         <button class="x-button" type="reset"></button>
         <button class="search-button">
-          <img src="svg/find_manager_w.svg" class="lupa" alt="Vyhledat" />
-  
+          <img src="svg/find_manager_w.svg" class="lupa" alt="Vyhledat" >
         </button>
         <div class="search-icon">
           <button>
-            <img src="svg/find_manager_w.svg" /> Zobrazit všechny výsledky
+            <img src="svg/find_manager_w.svg" alt="Vyhledat"> Zobrazit všechny výsledky
           </button>
         </div>
       </form>
@@ -44,7 +34,6 @@
     <!-- search --><!--2-->
 
     <div class="right-header">
-
 
     </div>
     <!--3-->
@@ -61,9 +50,6 @@
   <div class="container">
     <div id="kosik_2">
 
-
-
-
       <div class="kosik-container">
         <table class="product-list">
 
@@ -75,7 +61,7 @@
               <td>
                 <span class="kus">
                   <span class="input-number-decrement">–</span>
-                  <input class="input-number" type="text" value="1" min="0" max="10">
+                  <input class="input-number" type="text" value="1">
                   <span class="input-number-increment">+</span>
                 </span>
               </td>
@@ -89,7 +75,7 @@
               <td>
                 <span class="kus">
                   <span class="input-number-decrement">–</span>
-                  <input class="input-number" type="text" value="1" min="0" max="10">
+                  <input class="input-number" type="text" value="1">
                   <span class="input-number-increment">+</span>
                 </span>
               </td>
