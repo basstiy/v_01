@@ -181,6 +181,11 @@ header .search-dropdown ul li {
   padding: 10px;
   border-bottom: 1px solid #ddd;
 }
+
+header .search-dropdown a {
+  display: block;
+}
+
 header .search-dropdown ul li:hover,
 header .list_catalog li:hover {
   background: #707070;

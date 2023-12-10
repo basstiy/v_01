@@ -22,28 +22,30 @@
     <!--1-->
 
     <!--<input type="text" placeholder="Vyhledat"> -->
-    <form class="search">
-      <input type="text" class="search-box" required placeholder="Vyhledávání" />
-      <div class="search-dropdown">
-        <ul>
-          <li><a href="">První položka</a></li>
-          <li><a href="">Druhá položka</a></li>
-          <li><a href="">Třetí položka</a></li>
-          <li><a href="">Čtvrtá položka</a></li>
-          <li><a href="">Pátá položka</a></li>
-        </ul>
-      </div>
-      <button class="x-button" type="reset"></button>
-      <button class="search-button">
-        <img src="svg/find_manager_w.svg" class="lupa" alt="Vyhledat" />
-        <p>Hledat</p>
-      </button>
-      <div class="search-icon">
-        <button>
-          <img src="svg/find_manager_w.svg" /> zobrazit vsechny vysledky
+    <article>
+      <form class="search" onsubmit="redirectToSearchResults(); return false;">
+        <input type="text" autocomplete="off" class="search-box" required placeholder="Vyhledat" id="searchInput" />
+        <section class="search-dropdown">
+          <ul>
+            <li><a href="search_result_positive.html?query=iFong%207">iFong 7</a></li>
+            <li><a href="search_result_positive.html?query=iPhone%2012">iPhone 12</a></li>
+            <li><a href="search_result_positive.html?query=iPhone%2013%20Plus">iPhone 13 Plus</a></li>
+            <li><a href="search_result_positive.html?query=Samsung%20Galaxie%20Fold">Samsung Galaxie Fold</a></li>
+            <li><a href="search_result_positive.html?query=Nothing%20Phone%202">Nothing Phone 2</a></li>
+          </ul>
+        </section>
+        <button class="x-button" type="reset"></button>
+        <button class="search-button">
+          <img src="svg/find_manager_w.svg" class="lupa" alt="Vyhledat" />
+  
         </button>
-      </div>
-    </form>
+        <div class="search-icon">
+          <button>
+            <img src="svg/find_manager_w.svg" /> Zobrazit všechny výsledky
+          </button>
+        </div>
+      </form>
+    </article>
     <!-- search --><!--2-->
 
     <div class="right-header">
@@ -51,207 +53,209 @@
     </div>
     <!--3-->
   </header>
-  <nav> 
+  <nav>
 
-    <a href="kosik 2.html" >1. Košík</a>
+    <a href="kosik 2.html">1. Košík</a>
     <a href="Doprava.html">2. Doprava</a>
     <a href="#" class="selected">3. Platba</a>
 
   </nav>
 
-    <main>
-      <article id="checkout">
+  <main>
+    <article id="checkout">
       <h2>Platba</h2>
-    
 
-    <section class = "osobni_udaje">
-    <form action="#">
 
-      <h3>Kontakt</h3>
+      <section class="osobni_udaje">
+        <form action="#">
 
-      <div class="group">      
-        <input type="text" required>
-        <label>Email</label>
-      </div>
+          <h3>Kontakt</h3>
 
-      <h3>Bydliste</h3>
+          <div class="group">
+            <input type="text" required>
+            <label>Email</label>
+          </div>
 
-      <div class="group">      
-        <input type="text" required>
-        <label>Address</label>
-      </div>
+          <h3>Bydliste</h3>
 
-      <div class="group">      
-        <input type="text" required>
-        <label>City</label>
-      </div>
+          <div class="group">
+            <input type="text" required>
+            <label>Address</label>
+          </div>
 
-      <div class="group">      
-        <input type="text" required>
-        <label>State</label>
-      </div>
-      
-      <div class="group">      
-        <input type="text" required>
-        <label>Zip</label>
-      </div>
+          <div class="group">
+            <input type="text" required>
+            <label>City</label>
+          </div>
 
-  
-    </form>
-    </section>
-    
+          <div class="group">
+            <input type="text" required>
+            <label>State</label>
+          </div>
 
-    <section class="udaje">
-      
+          <div class="group">
+            <input type="text" required>
+            <label>Zip</label>
+          </div>
 
-      <h3>Zpusob placeni</h3>
-     
-         <ul>
-            <li>
+
+        </form>
+      </section>
+
+
+      <section class="udaje">
+
+
+        <h3>Zpusob placeni</h3>
+
+        <ul>
+          <li>
             <div class="card-vyber-placeni">
               <label>
-              <input type="radio" id="karta-a" name="payment-method" value="bankovni-prevod" checked/>
-               <p>Bankovní převod</p>
-              </label>
-            </div>
-            </li>
-            <li>
-            <div class="card-vyber-placeni">
-              <label>
-              <input type="radio" id="karta-c" name="payment-method" value="dobirka"/>
-              <p>Dobírka</p>
-              </label>
-            </div>
-            </li>
-            <li>
-            <div class="card-vyber-placeni">
-              <label >
-              <input type="radio" id="karta-b" name="payment-method" value="karta"/>
-               <p>Platebni karta</p>
+                <input type="radio" id="karta-a" name="payment-method" value="bankovni-prevod" checked />
+                <p>Bankovní převod</p>
               </label>
             </div>
           </li>
-          </ul>
-    </section>
+          <li>
+            <div class="card-vyber-placeni">
+              <label>
+                <input type="radio" id="karta-c" name="payment-method" value="dobirka" />
+                <p>Dobírka</p>
+              </label>
+            </div>
+          </li>
+          <li>
+            <div class="card-vyber-placeni">
+              <label>
+                <input type="radio" id="karta-b" name="payment-method" value="karta" />
+                <p>Platebni karta</p>
+              </label>
+            </div>
+          </li>
+        </ul>
+      </section>
 
-    <section id="bank-card" style="display: none;">
-      <!-- form -->
-      <div class="pay_online">
-      <form action="checkout.html">
+      <section id="bank-card" style="display: none;">
+        <!-- form -->
+        <div class="pay_online">
+          <form action="checkout.html">
 
-        <div class="col">
+            <div class="col">
 
-          <h3>Payment</h3>
-          
-          <div class="col">
-            <label for="cname">Name on Card</label>
-            <input type="text" name="cardname" placeholder="John More Doe">
-
-            <label for="ccnum">Credit card number</label>
-            <input type="text" name="cardnumber" placeholder="1111-2222-3333-4444">
-          </div>
-
-          <div class="col">
-            <label for="expmonth">Exp Month</label>
-            <input type="text" name="expmonth" placeholder="September">
-          </div>
-            <div class="row">
+              <h3>Payment</h3>
 
               <div class="col">
-                <label for="expyear">Exp Year</label>
-                <input type="text" name="expyear" placeholder="2018">
-              </div>
-              <div class="col">
-                <label for="cvv">CVV</label>
-                <input type="text" name="cvv" placeholder="352">
+                <label for="cname">Name on Card</label>
+                <input type="text" name="cardname" placeholder="John More Doe">
+
+                <label for="ccnum">Credit card number</label>
+                <input type="text" name="cardnumber" placeholder="1111-2222-3333-4444">
               </div>
 
-            </div> <!--row-->
-        
-          
-        
-            <input type="submit" value="Přejít k souhrnu objednávky" class="btn">
+              <div class="col">
+                <label for="expmonth">Exp Month</label>
+                <input type="text" name="expmonth" placeholder="September">
+              </div>
+              <div class="row">
+
+                <div class="col">
+                  <label for="expyear">Exp Year</label>
+                  <input type="text" name="expyear" placeholder="2018">
+                </div>
+                <div class="col">
+                  <label for="cvv">CVV</label>
+                  <input type="text" name="cvv" placeholder="352">
+                </div>
+
+              </div> <!--row-->
+
+
+
+              <input type="submit" value="Přejít k souhrnu objednávky" class="btn">
+            </div>
+
+          </form>
         </div>
-      
-      </form>
-     </div>
 
-    </section><!--bank-card-->
+      </section><!--bank-card-->
 
 
-    <p class="total-price">Celková cena objednávky: <strong>3 479 Kč</strong></p>
-    <button type="button" class="btn-remove-product" onclick="window.location.href='finish.html'">Závazně objednat</button>
-      
-      
+      <p class="total-price">Celková cena objednávky: <strong>3 479 Kč</strong></p>
+      <button type="button" class="btn-remove-product" onclick="window.location.href='finish.html'">Závazně
+        objednat</button>
+
+
     </article> <!--checkout-->
-   
-    </main>  <!--container-->  
-  
-    <!-- FOOTER -->
-    <footer>
-      <div class="footer-content">
-  
-        <div class="contact-info">
-          <h3>Kontaktujte nás</h3>
-          <p>Telefon: +123 456 789</p>
-          <p>Email nemáme, použijte fax.</p>
-          <p>Adresa: Kamýcká 129, Praha, 165 00</p>
-        </div>
-        
-        <div class="quick-links">
-          <h3>Rychlé odkazy</h3>
-          <ul>
-            <li><a href="https://cat-bounce.com/">Obchodní podmínky</a></li>
-            <li>
-              <a
-                href="https://lh4.googleusercontent.com/DVb-o1HfuVaUjEn6_o0fkzID2l6YVBabDgvUUyjwCJgr9--wQI7Rx2O5lLYn802yrCD0j7d4OUleZoQf4BRTkrvwh-7O71xInbHzNvFHRsT6bpg4B_9KsOm7pFx1aEQxNd-h0uNx">Ochrana
-                osobních údajů</a>
-            </li>
-            <li><a href="index.html">O nás</a></li>
-          </ul>
-        </div>
-  
-      </div>
-      <div class="footer-content">
-  
-        <div class="social-media">
-          <h3>Sociální média</h3>
-          <a href="https://twitter.com/tweetingtoaster" class="social-icon">Platforma X</a>
-          <a href="https://www.instagram.com/world_record_egg/?hl=cs" class="social-icon">Instagram</a>
-        </div>
-        
-        <div class="FAQ">
-          <h3>Časté dotazy</h3>
-          <p id="disclaimer">Tento web není plně funkční e-shop, jedná se o studentský projekt.</p>
-        </div>
-  
-      </div>
-    </footer>
 
-    <script>
-      // Získání reference na radio button a element s třídou "karta"
-      const kartaRadioo = document.getElementById('karta-a');
-      const kartaRadio = document.getElementById('karta-b');
-      const kartaRadioo1 = document.getElementById('karta-c');
-      const kartaElement = document.getElementById('bank-card');
-  
-      // Přidání posluchače události změny na radio button
-      kartaRadio.addEventListener('change', function () {
-          
-              kartaElement.style.display = 'block';
-          
-      });
-      kartaRadioo.addEventListener('change', function () {
+  </main> <!--container-->
 
-              kartaElement.style.display = 'none';
-         
-      });
-      kartaRadioo1.addEventListener('change', function () {
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+
+      <div class="contact-info">
+        <h3>Kontaktujte nás</h3>
+        <p>Telefon: +123 456 789</p>
+        <p>Email nemáme, použijte fax.</p>
+        <p>Adresa: Kamýcká 129, Praha, 165 00</p>
+      </div>
+
+      <div class="quick-links">
+        <h3>Rychlé odkazy</h3>
+        <ul>
+          <li><a href="https://cat-bounce.com/">Obchodní podmínky</a></li>
+          <li>
+            <a
+              href="https://lh4.googleusercontent.com/DVb-o1HfuVaUjEn6_o0fkzID2l6YVBabDgvUUyjwCJgr9--wQI7Rx2O5lLYn802yrCD0j7d4OUleZoQf4BRTkrvwh-7O71xInbHzNvFHRsT6bpg4B_9KsOm7pFx1aEQxNd-h0uNx">Ochrana
+              osobních údajů</a>
+          </li>
+          <li><a href="index.html">O nás</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer-content">
+
+      <div class="social-media">
+        <h3>Sociální média</h3>
+        <a href="https://twitter.com/tweetingtoaster" class="social-icon">Platforma X</a>
+        <a href="https://www.instagram.com/world_record_egg/?hl=cs" class="social-icon">Instagram</a>
+      </div>
+
+      <div class="FAQ">
+        <h3>Časté dotazy</h3>
+        <p id="disclaimer">Tento web není plně funkční e-shop, jedná se o studentský projekt.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    // Získání reference na radio button a element s třídou "karta"
+    const kartaRadioo = document.getElementById('karta-a');
+    const kartaRadio = document.getElementById('karta-b');
+    const kartaRadioo1 = document.getElementById('karta-c');
+    const kartaElement = document.getElementById('bank-card');
+
+    // Přidání posluchače události změny na radio button
+    kartaRadio.addEventListener('change', function () {
+
+      kartaElement.style.display = 'block';
+
+    });
+    kartaRadioo.addEventListener('change', function () {
 
       kartaElement.style.display = 'none';
 
-      });
-    </script>
+    });
+    kartaRadioo1.addEventListener('change', function () {
 
-  </body>
+      kartaElement.style.display = 'none';
+
+    });
+  </script>
+
+</body>
+
 </html>

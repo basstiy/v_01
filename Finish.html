@@ -17,32 +17,30 @@
     <!--1-->
 
     <!--<input type="text" placeholder="Vyhledat"> -->
-    <form class="search">
-      <input type="text" class="search-box" required placeholder="Vyhledat" />
-      <div class="search-dropdown">
-        <ul>
-          <li><a href="">První položka</a></li>
-          <li><a href="">Druhá položka</a></li>
-          <li><a href="">Třetí položka</a></li>
-          <li><a href="">Položka</a></li>
-          <li><a href="">Položka</a></li>
-        </ul>
-      </div>
-      <button class="x-button" type="reset"></button>
-      <button class="search-button">
-        <img src="svg/find_manager_w.svg" class="lupa" alt="Přihlšení" />
-        <p>Hledat</p>
-      </button>
-      <div class="search-icon">
-        <button>
-          <img src="svg/find_manager_w.svg" /> zobrazit vsechny vysledky
+    <article>
+      <form class="search" onsubmit="redirectToSearchResults(); return false;">
+        <input type="text" autocomplete="off" class="search-box" required placeholder="Vyhledat" id="searchInput" />
+        <section class="search-dropdown">
+          <ul>
+            <li><a href="search_result_positive.html?query=iFong%207">iFong 7</a></li>
+            <li><a href="search_result_positive.html?query=iPhone%2012">iPhone 12</a></li>
+            <li><a href="search_result_positive.html?query=iPhone%2013%20Plus">iPhone 13 Plus</a></li>
+            <li><a href="search_result_positive.html?query=Samsung%20Galaxie%20Fold">Samsung Galaxie Fold</a></li>
+            <li><a href="search_result_positive.html?query=Nothing%20Phone%202">Nothing Phone 2</a></li>
+          </ul>
+        </section>
+        <button class="x-button" type="reset"></button>
+        <button class="search-button">
+          <img src="svg/find_manager_w.svg" class="lupa" alt="Vyhledat" />
+  
         </button>
         <div class="search-icon">
           <button>
-            <img src="svg/find_manager_w.svg" /> zobrazit vsechny vysledky
+            <img src="svg/find_manager_w.svg" /> Zobrazit všechny výsledky
           </button>
         </div>
       </form>
+    </article>
       <!-- search --><!--2-->
 
       <div class="right-header">
