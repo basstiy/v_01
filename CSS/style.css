@@ -276,6 +276,13 @@ nav img {
 
   /*monile*/
 }
+main {
+  max-width: 1200px; /*pc*/
+  margin: 0 auto;
+  padding: 0px;
+  height: 100%;
+  min-height: 750px;
+}
 
 /****************************/
 /* Zacatek stylu pro FOOTER */
