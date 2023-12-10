@@ -180,10 +180,13 @@ header .list_catalog ul {
 header .search-dropdown ul li {
   padding: 10px;
   border-bottom: 1px solid #ddd;
+  padding: 0;
 }
 
 header .search-dropdown a {
   display: block;
+
+
 }
 
 header .search-dropdown ul li:hover,
@@ -719,6 +722,7 @@ footer .odstavec {
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+  margin-bottom: 25px;
 }
 
 .kosik-margin {
@@ -836,8 +840,20 @@ input:focus ~ label, input:valid ~ label 		{
 .pay_online form{
   display: grid;
 }
-.pay_online col
+.pay_online col{
 
+}
+.pay_online input{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+  margin-bottom: 5px;
+}
+
+.pay_online input:focus { outline:none; }
 /**********************/
 /*---Checkout-konec---*/
 /**********************/
