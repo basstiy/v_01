@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="cs">
 
 <head>
   <title>iphone 12</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
 </head>
 
 <body>
@@ -18,24 +18,15 @@
     <!-- Index/Homepage header -->
     <article>
       <form class="search" onsubmit="redirectToSearchResults(); return false;">
-        <input type="text" autocomplete="off" class="search-box" required placeholder="Vyhledat" id="searchInput" />
-        <section class="search-dropdown">
-          <ul>
-            <li><a href="search_result_positive.html?query=iFong%207">iFong 7</a></li>
-            <li><a href="search_result_positive.html?query=iPhone%2012">iPhone 12</a></li>
-            <li><a href="search_result_positive.html?query=iPhone%2013%20Plus">iPhone 13 Plus</a></li>
-            <li><a href="search_result_positive.html?query=Samsung%20Galaxie%20Fold">Samsung Galaxie Fold</a></li>
-            <li><a href="search_result_positive.html?query=Nothing%20Phone%202">Nothing Phone 2</a></li>
-          </ul>
-        </section>
+        <input type="text" autocomplete="off" class="search-box" required placeholder="Vyhledat" id="searchInput">
         <button class="x-button" type="reset"></button>
         <button class="search-button">
-          <img src="svg/find_manager_w.svg" class="lupa" alt="Vyhledat" />
+          <img src="svg/find_manager_w.svg" class="lupa" alt="Vyhledat">
   
         </button>
         <div class="search-icon">
           <button>
-            <img src="svg/find_manager_w.svg" /> Zobrazit všechny výsledky
+            <img src="svg/find_manager_w.svg" alt="Vyhledat"> Zobrazit všechny výsledky
           </button>
         </div>
       </form>
@@ -44,12 +35,12 @@
     <div class="right-header">
       <div class="cart">
         <a href="kosik.html">
-          <img src="svg/basket_Wight.svg" alt="Nákupní košík" />
+          <img src="svg/basket_Wight.svg" alt="Nákupní košík">
         </a>
       </div>
       <div class="cart catalog">
         <a href="category.html">
-          <img src="svg/menu_lines.svg" alt="Kategorie" />
+          <img src="svg/menu_lines.svg" alt="Kategorie">
         </a>
       </div>
     </div>
@@ -57,7 +48,7 @@
 
   <nav>
     <nav>
-      <a href="index.html"><img src="svg/hause.svg" class="star" /></a>
+      <a href="index.html"><img src="svg/hause.svg" class="star" alt="domů"></a>
       <a href="category_pc.html"> Kategorie zboží </a>
       <a href="catalog.html"> Mobilní telefony</a>
       <a class="selected"> iPhone 12</a>
@@ -71,27 +62,27 @@
       <div class="Product-head-info">
         <h1 id="item-name">iPhone 12</h1>
         <span class="product-recenze">
-          <img src="svg/star.svg" class="star" />
-          <img src="svg/star.svg" class="star" />
-          <img src="svg/star.svg" class="star" />
-          <img src="svg/star.svg" class="star" />
-          <img src="svg/star.svg" class="star" />
-          <p>4,8</p>
+          <img src="svg/star.svg"  class="star" alt="Hvězda">
+          <img src="svg/star.svg"  class="star" alt="Hvězda">
+          <img src="svg/star.svg"  class="star" alt="Hvězda">
+          <img src="svg/star.svg"  class="star" alt="Hvězda">
+          <img src="svg/star.svg"  class="star" alt="Hvězda">
+          <span>4,8</span>
           <a href="#reviews-content" id="reviewsLink">10 hodnocení</a>
         </span>
       </div>
       <div class="carousel">
         <div class="carousel-slides">
           <div class="carousel-slide">
-            <img class="item-image" src="https://picsum.photos/id/9/367/267" alt="Image 1">
+            <img class="item-image" src="https://picsum.photos/id/9/367/267" alt="Fotka produktu 1">
           </div>
 
           <div class="carousel-slide">
-            <img class="item-image" src="https://picsum.photos/id/2/367/267" alt="Image 2">
+            <img class="item-image" src="https://picsum.photos/id/2/367/267" alt="Fotka produktu 2">
           </div>
 
           <div class="carousel-slide">
-            <img class="item-image" src="https://picsum.photos/id/3/367/267" alt="Image 3">
+            <img class="item-image" src="https://picsum.photos/id/3/367/267" alt="Fotka produktu 3">
           </div>
 
         </div>
@@ -104,18 +95,18 @@
 
       <div class="combos">
         <div class="combo-container">
-          <label for="combo1">Barva</label>
+          <label for="combo-color">Barva</label>
 
-          <select class="combo">
+          <select id="combo-color" class="combo">
             <option value="option1">Modrá</option>
             <option value="option2">Žlutá</option>
             <option value="option3">Černá</option>
           </select>
         </div>
         <div class="combo-container">
-          <label for="combo2">Vnitřní paměť</label>
+          <label for="combo-memory">Vnitřní paměť</label>
 
-          <select class="combo">
+          <select id="combo-memory" class="combo">
             <option value="option1">128 GB</option>
             <option value="option2">256 GB</option>
             <option value="option3">512 GB</option>
@@ -159,10 +150,10 @@
       </div>
     </div>
 
-    <div id="description-content" class="tab-content description">
-
+    <article id="description-content" class="tab-content description">
+      <h2>Co přináší nový mobilní telefon?</h2>
       <figure>
-        <img src="https://picsum.photos/id/5/367/267" />
+        <img src="https://picsum.photos/id/5/367/267">
         <figcaption>Tento produkt vám změní život</figcaption>
       </figure>
       <p>I když se to zdálo prakticky nemožné, tak iPhone 13 posouvá kvalitu fotoaparátů na úplně nový level. Zcela
@@ -173,7 +164,7 @@
         a stabilizuje snímač namísto objektivu, takže snímky jsou plynulé a video stabilní, i když se pohybujete.
         Rovněž budete mít k dispozici ultraširokoúhlou kameru se 120stupňovým zorným polem.
       </p>
-    </div>
+    </article>
 
     <div id="parameters-content" class="tab-content parameters" style="display: none;">
       <table id="parameters-table">
@@ -240,17 +231,18 @@
     </div>
 
     <article id="reviews-content" class="tab-content reviews" style="display: none;">
+      <h2>Recenze produktu: iPhone 12</h2>
       <section class="review">
         <h4>Honza</h4>
         <p>Jsem velmi spokojen s tímto telefonem. Má skvělý displej, výkonný procesor a dlouhou výdrž baterie.
           Fotoaparát je také velmi dobrý a pořizuje krásné fotografie a videa. Doporučuji tento telefon každému, kdo
           hledá kvalitní telefon s vynikajícími funkčemi.</p>
         <rating-stars>
-          <img src="svg/star.svg" class="star" />
-          <img src="svg/star.svg" class="star" />
-          <img src="svg/star.svg" class="star" />
-          <img src="svg/star.svg" class="star" />
-          <img src="svg/star.svg" class="star" />
+          <img src="svg/star.svg"  class="star" alt="Hvězda">
+          <img src="svg/star.svg"  class="star" alt="Hvězda">
+          <img src="svg/star.svg"  class="star" alt="Hvězda">
+          <img src="svg/star.svg"  class="star" alt="Hvězda">
+          <img src="svg/star.svg"  class="star" alt="Hvězda">
         </rating-stars>
       </section>
 
@@ -262,11 +254,11 @@
           procesor je rychlý a fotoaparát je skvělý. Baterie vydrží celý den, i když telefon používám intenzivně. Jsem
           velmi spokojený s tímto nákupem.</p>
         <rating-stars>
-          <img src="svg/star.svg" class="star" />
-          <img src="svg/star.svg" class="star" />
-          <img src="svg/star.svg" class="star" />
-          <img src="svg/star.svg" class="star" />
-          <img src="svg/star.svg" class="star" />
+          <img src="svg/star.svg"  class="star" alt="Hvězda">
+          <img src="svg/star.svg"  class="star" alt="Hvězda">
+          <img src="svg/star.svg"  class="star" alt="Hvězda">
+          <img src="svg/star.svg"  class="star" alt="Hvězda">
+          <img src="svg/star.svg"  class="star" alt="Hvězda">
         </rating-stars>
       </section>
 
@@ -278,11 +270,11 @@
           také velmi dobrý a pořizuje krásné fotografie a videa. Doporučuji tento telefon každému, kdo hledá prémiový
           telefon s vynikajícími funkčemi.</p>
         <rating-stars>
-          <img src="svg/star.svg" class="star" />
-          <img src="svg/star.svg" class="star" />
-          <img src="svg/star.svg" class="star" />
-          <img src="svg/star.svg" class="star" />
-          <img src="svg/star.svg" class="star" />
+          <img src="svg/star.svg"  class="star" alt="Hvězda">
+          <img src="svg/star.svg"  class="star" alt="Hvězda">
+          <img src="svg/star.svg"  class="star" alt="Hvězda">
+          <img src="svg/star.svg"  class="star" alt="Hvězda">
+          <img src="svg/star.svg"  class="star" alt="Hvězda">
         </rating-stars>
       </section>
 
@@ -294,11 +286,11 @@
           dobrý jako v denním světle a baterie by mohla vydržet o něco déle. I přes tyto nedostatky je telefon stále
           skvělou volbou pro většinu lidí.</p>
         <rating-stars>
-          <img src="svg/star.svg" class="star" />
-          <img src="svg/star.svg" class="star" />
-          <img src="svg/star.svg" class="star" />
-          <img src="svg/star.svg" class="star" />
-          <img src="svg/star_blank.svg" class="star" />
+          <img src="svg/star.svg"  class="star" alt="Hvězda">
+          <img src="svg/star.svg"  class="star" alt="Hvězda">
+          <img src="svg/star.svg"  class="star" alt="Hvězda">
+          <img src="svg/star.svg"  class="star" alt="Hvězda">
+          <img src="svg/star_blank.svg"  class="star" alt="Hvězda">
         </rating-stars>
       </section>
     </article>
@@ -310,136 +302,136 @@
         <div class="product">
 
           <a href="detail_product.html">
-            <img src=https://picsum.photos/id/9/367/267 alt="Produkt 1" class="product_photo" />
+            <img src=https://picsum.photos/id/9/367/267 alt="Produkt 1" class="product_photo">
 
-            <span class="hlavni-popis">
+            <div class="hlavni-popis">
               <h3>Mobil</h3>
               <span class="Homepage-recenze">
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
               </span>
-            </span>
+            </div>
           </a>
 
-          <span>
+          <div>
             <p class="cena">25000 kč</p>
             <button class="add-to-cart-btn">Do košíku</button>
-          </span>
+          </div>
         </div><!-- Produkt -->
 
 
         <div class="product">
 
           <a href="detail_product.html">
-            <img src=https://picsum.photos/id/9/367/267 alt="Produkt 1" class="product_photo" />
+            <img src=https://picsum.photos/id/9/367/267 alt="Produkt 1" class="product_photo">
 
-            <span class="hlavni-popis">
+            <div class="hlavni-popis">
               <h3>Mobil</h3>
               <span class="Homepage-recenze">
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
               </span>
-            </span>
+            </div>
           </a>
-          <span>
+          <div>
             <p class="cena">25000 kč</p>
             <button class="add-to-cart-btn">Do košíku</button>
-          </span>
+          </div>
         </div><!-- Produkt -->
 
 
         <div class="product">
 
           <a href="detail_product.html">
-            <img src=https://picsum.photos/id/9/367/267 alt="Produkt 1" class="product_photo" />
+            <img src=https://picsum.photos/id/9/367/267 alt="Produkt 1" class="product_photo">
 
-            <span class="hlavni-popis">
+            <div class="hlavni-popis">
               <h3>Mobil</h3>
               <span class="Homepage-recenze">
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
               </span>
-            </span>
+            </div>
           </a>
 
-          <span>
+          <div>
             <p class="cena">25000 kč</p>
             <button class="add-to-cart-btn">Do košíku</button>
-          </span>
+          </div>
         </div><!-- Produkt -->
 
 
         <div class="product">
 
           <a href="detail_product.html">
-            <img src=https://picsum.photos/id/9/367/267 alt="Produkt 1" class="product_photo" />
+            <img src=https://picsum.photos/id/9/367/267 alt="Produkt 1" class="product_photo">
 
-            <span class="hlavni-popis">
+            <div class="hlavni-popis">
               <h3>Mobil</h3>
               <span class="Homepage-recenze">
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
               </span>
-            </span>
+            </div>
           </a>
-          <span>
+          <div>
             <p class="cena">25000 kč</p>
             <button class="add-to-cart-btn">Do košíku</button>
-          </span>
+          </div>
         </div><!-- Produkt -->
         <div class="product">
 
           <a href="detail_product.html">
-            <img src=https://picsum.photos/id/9/367/267 alt="Produkt 1" class="product_photo" />
+            <img src=https://picsum.photos/id/9/367/267 alt="Produkt 1" class="product_photo">
 
-            <span class="hlavni-popis">
+            <div class="hlavni-popis">
               <h3>Mobil</h3>
               <span class="Homepage-recenze">
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
               </span>
-            </span>
+            </div>
           </a>
-          <span>
+          <div>
             <p class="cena">25000 kč</p>
             <button class="add-to-cart-btn">Do košíku</button>
-          </span>
+          </div>
         </div><!-- Produkt -->
         <div class="product">
 
           <a href="detail_product.html">
-            <img src=https://picsum.photos/id/9/367/267 alt="Produkt 1" class="product_photo" />
+            <img src=https://picsum.photos/id/9/367/267 alt="Produkt 1" class="product_photo">
 
-            <span class="hlavni-popis">
+            <div class="hlavni-popis">
               <h3>Mobil</h3>
               <span class="Homepage-recenze">
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
               </span>
-            </span>
+            </div>
           </a>
-          <span>
+          <div>
             <p class="cena">25000 kč</p>
             <button class="add-to-cart-btn">Do košíku</button>
-          </span>
+          </div>
         </div><!-- Produkt -->
       </div>
 
@@ -450,136 +442,136 @@
         <div class="product">
 
           <a href="detail_product.html">
-            <img src=https://picsum.photos/id/9/367/267 alt="Produkt 1" class="product_photo" />
+            <img src=https://picsum.photos/id/9/367/267 alt="Produkt 1" class="product_photo">
 
-            <span class="hlavni-popis">
+            <div class="hlavni-popis">
               <h3>Mobil</h3>
               <span class="Homepage-recenze">
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
               </span>
-            </span>
+            </div>
           </a>
 
-          <span>
+          <div>
             <p class="cena">25000 kč</p>
             <button class="add-to-cart-btn">Do košíku</button>
-          </span>
+          </div>
         </div><!-- Produkt -->
 
 
         <div class="product">
 
           <a href="detail_product.html">
-            <img src=https://picsum.photos/id/9/367/267 alt="Produkt 1" class="product_photo" />
+            <img src=https://picsum.photos/id/9/367/267 alt="Produkt 1" class="product_photo">
 
-            <span class="hlavni-popis">
+            <div class="hlavni-popis">
               <h3>Mobil</h3>
               <span class="Homepage-recenze">
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
               </span>
-            </span>
+            </div>
           </a>
-          <span>
+          <div>
             <p class="cena">25000 kč</p>
             <button class="add-to-cart-btn">Do košíku</button>
-          </span>
+          </div>
         </div><!-- Produkt -->
 
 
         <div class="product">
 
           <a href="detail_product.html">
-            <img src=https://picsum.photos/id/9/367/267 alt="Produkt 1" class="product_photo" />
+            <img src=https://picsum.photos/id/9/367/267 alt="Produkt 1" class="product_photo">
 
-            <span class="hlavni-popis">
+            <div class="hlavni-popis">
               <h3>Mobil</h3>
               <span class="Homepage-recenze">
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
               </span>
-            </span>
+            </div>
           </a>
 
-          <span>
+          <div>
             <p class="cena">25000 kč</p>
             <button class="add-to-cart-btn">Do košíku</button>
-          </span>
+          </div>
         </div><!-- Produkt -->
 
 
         <div class="product">
 
           <a href="detail_product.html">
-            <img src=https://picsum.photos/id/9/367/267 alt="Produkt 1" class="product_photo" />
+            <img src=https://picsum.photos/id/9/367/267 alt="Produkt 1" class="product_photo">
 
-            <span class="hlavni-popis">
+            <div class="hlavni-popis">
               <h3>Mobil</h3>
               <span class="Homepage-recenze">
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
               </span>
-            </span>
+            </div>
           </a>
-          <span>
+          <div>
             <p class="cena">25000 kč</p>
             <button class="add-to-cart-btn">Do košíku</button>
-          </span>
+          </div>
         </div><!-- Produkt -->
         <div class="product">
 
           <a href="detail_product.html">
-            <img src=https://picsum.photos/id/9/367/267 alt="Produkt 1" class="product_photo" />
+            <img src=https://picsum.photos/id/9/367/267 alt="Produkt 1" class="product_photo">
 
-            <span class="hlavni-popis">
+            <div class="hlavni-popis">
               <h3>Mobil</h3>
               <span class="Homepage-recenze">
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
               </span>
-            </span>
+            </div>
           </a>
-          <span>
+          <div>
             <p class="cena">25000 kč</p>
             <button class="add-to-cart-btn">Do košíku</button>
-          </span>
+          </div>
         </div><!-- Produkt -->
         <div class="product">
 
           <a href="detail_product.html">
-            <img src=https://picsum.photos/id/9/367/267 alt="Produkt 1" class="product_photo" />
+            <img src=https://picsum.photos/id/9/367/267 alt="Produkt 1" class="product_photo">
 
-            <span class="hlavni-popis">
+            <div class="hlavni-popis">
               <h3>Mobil</h3>
               <span class="Homepage-recenze">
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
-                <img src="svg/star.svg" class="star" />
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
+                <img src="svg/star.svg"  class="star" alt="Hvězda">
               </span>
-            </span>
+            </div>
           </a>
-          <span>
+          <div>
             <p class="cena">25000 kč</p>
             <button class="add-to-cart-btn">Do košíku</button>
-          </span>
+          </div>
         </div><!-- Produkt -->
       </div>
     </div>

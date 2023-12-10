@@ -832,9 +832,7 @@ input:focus ~ label, input:valid ~ label 		{
 .pay_online form{
   display: grid;
 }
-.pay_online col{
 
-}
 .pay_online input{
   font-size:18px;
   padding:10px 10px 10px 5px;
@@ -1438,12 +1436,17 @@ main #finish {
     display: inline-flex;
     justify-content: space-between;
   }
-
+  #description-content {
+    padding-bottom: 100px;
+  }
   #description-content figure {
     width: 40%; 
     max-width: 300px;
     margin-right: 20px;
     float: right;
+  }
+  #description-content h2 {
+    width: 40%;
   }
   
   .Recommended-products {
