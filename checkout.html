@@ -136,45 +136,51 @@
 
     <section id="bank-card" style="display: none;">
       <!-- form -->
-      <div class="pay_online">
+      <section class="pay_online">
       <form action="checkout.html">
 
-        <div class="col">
+        
 
           <h3>Payment</h3>
           
           <div class="col">
-            <label for="cname">Name on Card</label>
-            <input type="text" name="cardname" placeholder="John More Doe">
 
-            <label for="ccnum">Credit card number</label>
+            <label for="cname"><p>Name on Card</p>
+            <input type="text" name="cardname" placeholder="John More Doe">
+            </label>
+
+            <label for="ccnum"><p>Credit card number</p>
             <input type="text" name="cardnumber" placeholder="1111-2222-3333-4444">
+          </label>
           </div>
 
           <div class="col">
-            <label for="expmonth">Exp Month</label>
+            <label for="expmonth"><p>Exp Month</p>
             <input type="text" name="expmonth" placeholder="September">
+          </label>
           </div>
+          
             <div class="row">
 
               <div class="col">
-                <label for="expyear">Exp Year</label>
+                <label for="expyear"><p>Exp Year</p>
                 <input type="text" name="expyear" placeholder="2018">
+              </label>
               </div>
               <div class="col">
-                <label for="cvv">CVV</label>
+                <label for="cvv"><p>CVV</p>
                 <input type="text" name="cvv" placeholder="352">
+              </label>
               </div>
 
             </div> <!--row-->
         
           
         
-            <input type="submit" value="Přejít k souhrnu objednávky" class="btn">
-        </div>
+      
       
       </form>
-     </div>
+     </section>
 
     </section><!--bank-card-->
 
