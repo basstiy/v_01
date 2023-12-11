@@ -582,6 +582,7 @@ footer .odstavec {
 }
 
 
+
  .menu img
  ,.sub-menu img
  ,.menu-down img {
@@ -1243,6 +1244,10 @@ main #finish {
 /***************/
 /* konc Finish */
 /***************/
+
+main#category{
+  padding: 5px;
+}
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
 
