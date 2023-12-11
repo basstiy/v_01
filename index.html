@@ -16,7 +16,6 @@
     </section>
 
     <!-- Index/Homepage header -->
-    <article>
       <form class="search" onsubmit="redirectToSearchResults(); return false;">
         <input type="text" class="search-box" required placeholder="Vyhledat" id="searchInput">
 
@@ -30,10 +29,9 @@
           </button>
         </div>
       </form>
-    </article>
     
 
-    <section class="right-header">
+    <div class="right-header">
       <div class="cart">
         <a href="kosik.html">
           <img src="svg/basket_Wight.svg" alt="Nákupní košík">
@@ -44,20 +42,16 @@
           <img src="svg/menu_lines.svg" alt="Kategorie">
         </a>
       </div>
-    </section>
+    </div>
   </header>
 
   <!-- Index/Homepage obsah -->
   <main>
     <div id="homepage">
       <article class="Homepage-catalog">
-        <p style="margin-left: 8px">
-          <i>Tento web není plně funkční e-shop, jedná se o studentský
-            projekt.</i>
-        </p>
         <h2 class="trhak-dne">SLEVY DNE:</h2>
 
-        <section class="Homepage-recommended-p3">
+        <div class="Homepage-recommended-p3">
           <!-- Doporucene zbozi zde -->
 
           <!-- Produkt 1-->
@@ -137,7 +131,7 @@
             </div>
           </div>
           <!--product-->
-        </section>
+        </div>
 
         <span class="dolni-c">
           <button type="button" class="btn-go-to-catalog" onclick="window.location.href='catalog.html'">
@@ -147,7 +141,7 @@
       </article>
       <article class="Homepage-catalog">
         <h2>Hlavní nabídka</h2>
-        <section class="Homepage-recommended-p3">
+        <div class="Homepage-recommended-p3">
           <button type="button" class="btn-go-to-catalog-2" onclick="window.location.href='catalog.html'">
             <span>Mobilní telefony</span>
           </button>
@@ -157,11 +151,11 @@
           <button type="button" class="btn-go-to-catalog-2" onclick="window.location.href='catalog.html'">
             <span>Notebooky</span>
           </button>
-        </section>
+        </div>
 
 
         <h2>Příslušenství</h2>
-        <section class="Homepage-recommended-p3">
+        <div class="Homepage-recommended-p3">
           <button type="button" class="btn-go-to-catalog-2" onclick="window.location.href='catalog.html'">
             <span>Ochranná skla</span>
           </button>
@@ -171,12 +165,12 @@
           <button type="button" class="btn-go-to-catalog-2" onclick="window.location.href='catalog.html'">
             <span>Nabíječky</span>
           </button>
-        </section>
-        <section class="dolni-c">
+        </div>
+        <div class="dolni-c">
           <button type="button" class="btn-go-to-catalog" onclick="window.location.href='category_PC.html'">
             <span>Zobrazit úplný katalog</span>
           </button>
-        </section>
+        </div>
         <section class="o_nas">
           <h3>O nás:</h3>
           <ul>
