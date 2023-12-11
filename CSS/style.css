@@ -745,6 +745,9 @@ footer .odstavec {
   margin-top: 20px;
 }
 
+#doprava{
+  padding: 0 25px;
+}
 
 #doprava form {
   
@@ -783,6 +786,9 @@ footer .odstavec {
 /************************/
 
 /*---Vyuziva class z ,,kosik.html", jelikoz se jedna o podobny typ stranky---*/
+#checkout{
+  margin: 0 20px;
+}
 ul {
   list-style-type: none;
   margin-bottom: 20px;
