@@ -120,14 +120,10 @@ header .search input:focus {
   outline: none;
 }
 header .search-button {
-<<<<<<< HEAD
   background-color: var(--svetla-pozadi);
   /*color: var(--svetla-barva-text);*/
   /*padding: 10px 15px; pc*/
   /*padding: 10px;*/ /*mobile*/
-=======
-  background-color: #fff;
->>>>>>> 3f64586ce45c418cbd02ea551a4c6334b9691f56
   border: none;
   border-radius: 4px;
   cursor: pointer;
