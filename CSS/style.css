@@ -103,13 +103,9 @@ header .search input:focus {
 }
 header .search-button {
   background-color: #fff;
-  /*color: #fff;*/
-  /*padding: 10px 15px; pc*/
-  /*padding: 10px;*/ /*mobile*/
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  /*margin-left: 15px; /* Mezi tlačítkem a polem pro vyhledávání bude mezera */
   display: block;
   margin: 0;
   padding: 0;
@@ -119,9 +115,7 @@ header .search-button p {
   display: none;
 }
 header .x-button {
-  /*display: none;*/
   background: none;
-  /*outline: none;*/
   border: solid 2px #333;
   border-radius: 50%;
   width: 25px;
@@ -694,13 +688,17 @@ footer .odstavec {
   padding: 10px;
 }
 
+.product-list .quantity {
+  width: 15%;
+}
+
 .product-list th {
   text-align: left;
 }
 
 .product-list th:last-child,
 .product-list td:last-child {
-  width: 10%;
+  width: 15%;
 }
 
 .total-price {
@@ -851,7 +849,7 @@ input:focus ~ label, input:valid ~ label 		{
 #kosik_2 .kus{
   display: flex;
   margin: 0;
- 
+  
 }
 #kosik_2 .input-number{
  width: 20px;
